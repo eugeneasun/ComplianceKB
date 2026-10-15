@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "eb642f0d7da41a1fb75925f701f3424417af20dade8304e6627e2a46c7116566",
+  "request_bytes": 8367,
+  "input_tokens": 4250,
+  "output_tokens": 460,
+  "estimated_cost_usd": 0.0131,
+  "elapsed_seconds": 5.204310894012451,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-022",
+      "OSHA-REC-013",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "incident_record",
+      "complaint_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(ii)",
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scenario describes proper orientation on injury reporting (satisfying §1904.35(b)(1)(ii)) followed by a supervisor threatening discipline after an employee reported an injury, which implicates the anti-retaliation and reasonable-procedure provisions of §1904.35(b)(1)(i) and (iv). This raises a potential violation requiring judgment about whether the threat constitutes prohibited discrimination/retaliation and what corrective/legal action is warranted, which is beyond a simple factual determination.",
+    "missing_information_or_escalation_reason": "Need details on whether discipline was actually imposed, the nature of the threat, and whether it was connected to the reporting itself versus unrelated conduct, to determine if this constitutes an actionable violation of the anti-retaliation provisions requiring legal/compliance escalation."
+  }
+}

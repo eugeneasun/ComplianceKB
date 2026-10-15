@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-021",
+  "prompt_sha256": "bd47985829ce992450da372bce536d224541e6407cf248ed604a83301d4615b5",
+  "request_bytes": 46263,
+  "input_tokens": 18638,
+  "output_tokens": 340,
+  "estimated_cost_usd": 0.040676,
+  "elapsed_seconds": 4.0452516078948975,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The 24-hour reporting requirement under §1904.39(a)(2) applies only to in-patient hospitalizations that result from a work-related incident. The scenario does not establish whether the illness was work-related or whether the hospital admission was for in-patient treatment (as opposed to observation or emergency room treatment only). Both facts are material predicates for determining whether the 24-hour OSHA notification obligation is triggered.",
+    "missing_information_or_escalation_reason": "Missing facts: (1) whether the illness was work-related, and (2) whether the hospitalization constituted formal in-patient admission for treatment, as required to trigger the 24-hour reporting obligation under §1904.39(a)(2)."
+  }
+}

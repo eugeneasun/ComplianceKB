@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "9bf2d602e284f77c333de055aaf9ed4b4b6fa4f8ae7d4fc71705479df059c65b",
+  "request_bytes": 46275,
+  "input_tokens": 12043,
+  "output_tokens": 915,
+  "estimated_cost_usd": 0.035066,
+  "elapsed_seconds": 9.171377182006836,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-020",
+      "OSHA-PSM-048",
+      "OSHA-PSM-049",
+      "OSHA-PSM-050",
+      "OSHA-PSM-051",
+      "OSHA-PSM-052",
+      "OSHA-PSM-053",
+      "OSHA-PSM-054",
+      "OSHA-PSM-055"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "performance_evaluation",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(iii)",
+      "§1910.119(h)(2)(iv)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(i)",
+      "§1910.119(h)(3)(ii)",
+      "§1910.119(h)(3)(iii)",
+      "§1910.119(h)(3)(iv)",
+      "§1910.119(h)(3)(v)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the contractor is being selected to work in a covered PSM process area and will face known fire, explosion, and toxic-release hazards, the host employer must evaluate the contract employer's safety performance and programs; communicate known hazards and applicable emergency-action-plan provisions; and implement safe work practices governing contractor entrance, presence, and exit. The contract employer must train and instruct its employees, document their receipt and understanding of required training, ensure compliance with facility safety rules, and communicate unique or discovered contractor-work hazards. The host also must maintain a contractor injury-and-illness log related to work in process areas.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

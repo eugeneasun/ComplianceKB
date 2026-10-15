@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "2d924450ca32cea8c1b15aedd8edecd486d86264ba2eb461fc656170f68b0761",
+  "request_bytes": 46237,
+  "input_tokens": 12031,
+  "output_tokens": 470,
+  "estimated_cost_usd": 0.029702,
+  "elapsed_seconds": 5.471454858779907,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-014",
+      "OSHA-REC-022"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "incident_occurrence",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record",
+      "complaint_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(ii)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The new-employee orientation supports the requirement to inform each employee of the employer's work-related injury and illness reporting procedure. The employer must maintain a reporting procedure that does not deter or discourage accurate reporting, and must not discharge or otherwise discriminate against an employee for reporting a work-related injury or illness. A supervisor's threat of discipline after such a report is inconsistent with these reporting-protection requirements.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

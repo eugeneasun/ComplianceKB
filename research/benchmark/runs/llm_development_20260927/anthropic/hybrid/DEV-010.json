@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-010",
+  "prompt_sha256": "e1118da5bfd2273315652703fc19d3278b4b683ba3f75bfd4cb57da580f77e1c",
+  "request_bytes": 9564,
+  "input_tokens": 4597,
+  "output_tokens": 228,
+  "estimated_cost_usd": 0.011474000000000002,
+  "elapsed_seconds": 3.726714611053467,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-024"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(B)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario matches §1904.35(b)(2)(v)(B) exactly: an authorized employee representative requesting OSHA 301 Incident Reports for represented employees at an establishment. The employer must provide copies within 7 calendar days, but only the 'Tell us about the case' section, with all other information redacted.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

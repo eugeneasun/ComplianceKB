@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "636061e0bd0b2e2b2238e2c5f27755f2d07b638f18ebf6fe7476736e84bcd692",
+  "request_bytes": 9287,
+  "input_tokens": 2506,
+  "output_tokens": 164,
+  "estimated_cost_usd": 0.00698,
+  "elapsed_seconds": 2.180185317993164,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-016"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(g)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The technician is an employee who is newly assigned to operate a process covered by §1910.119. Before being involved in operating that newly assigned process, the employer must train the employee in an overview of the process and in the operating procedures specified in §1910.119(f). The stated start date next week makes this a pre-assignment training obligation. The relevant evidence is a record showing completion of that required training.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

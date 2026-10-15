@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-012",
+  "prompt_sha256": "19d5a99c8556e8224891b41279a96237c082150aa45a96b4671ba6403b64251b",
+  "request_bytes": 16498,
+  "input_tokens": 7140,
+  "output_tokens": 340,
+  "estimated_cost_usd": 0.01768,
+  "elapsed_seconds": 3.784536600112915,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007",
+      "OSHA-REC-001",
+      "OSHA-REC-002",
+      "OSHA-REC-003"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)",
+      "§1904.4(a)",
+      "§1904.7(a)",
+      "§1904.29(b)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a work-related amputation with in-patient hospitalization, which is both a recordable event under §1904.4(a)/§1904.7(a) and requires OSHA recording on the 300 Log/301 form within 7 days (§1904.29(b)(3)), plus a mandatory 24-hour report to OSHA under §1904.39(a)(2) since the employer learned of it today. These requirements are directly supported by the given facts without need for further information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

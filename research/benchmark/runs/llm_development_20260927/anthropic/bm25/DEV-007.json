@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-007",
+  "prompt_sha256": "c5a66fd6dc5e70f45eb2c31ee8303f8741b2c91df70c52f5f90a5bc5255f0e59",
+  "request_bytes": 8537,
+  "input_tokens": 4286,
+  "output_tokens": 588,
+  "estimated_cost_usd": 0.014452,
+  "elapsed_seconds": 6.305116415023804,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-003",
+      "OSHA-LOTO-008",
+      "OSHA-LOTO-009",
+      "OSHA-LOTO-005",
+      "OSHA-LOTO-007"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "training_refresh",
+      "periodic_review",
+      "scheduled_inspection"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(4)(ii)",
+      "§1910.147(d)(3)",
+      "§1910.147(d)(5)(i)",
+      "§1910.147(c)(6)(i)",
+      "§1910.147(c)(7)(iii)(A)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes maintenance employees entering a machine to clear a jam where unexpected startup or release of stored pneumatic energy could cause injury—this is squarely covered servicing/maintenance activity under 1910.147. The employer must have an energy control program with documented procedures (c)(1), (c)(4)(i)-(ii), must isolate energy sources via lockout devices (d)(3), and must relieve stored/residual energy such as pneumatic pressure (d)(5)(i). Periodic inspection (c)(6)(i) and retraining upon changes (c)(7)(iii)(A) also apply as ongoing compliance obligations.",
+    "missing_information_or_escalation_reason": "None; the facts given (covered servicing activity involving stored pneumatic energy) are sufficient to determine applicable LOTO requirements without additional information."
+  }
+}

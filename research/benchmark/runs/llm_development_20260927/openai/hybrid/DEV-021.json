@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-021",
+  "prompt_sha256": "583b391ad518990dc450c1d083a8176ed9fa816681ae0c5024a2627da523dc98",
+  "request_bytes": 9363,
+  "input_tokens": 2498,
+  "output_tokens": 207,
+  "estimated_cost_usd": 0.00748,
+  "elapsed_seconds": 2.4279301166534424,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "A report within 24 hours is required only when an employee's in-patient hospitalization results from a work-related incident. The supplied facts establish an illness and hospital admission but do not establish either required predicate.",
+    "missing_information_or_escalation_reason": "Determine whether the illness resulted from a work-related incident and whether the hospital admission was an in-patient hospitalization."
+  }
+}

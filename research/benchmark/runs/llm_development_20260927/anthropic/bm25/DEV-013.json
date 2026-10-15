@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "006519959a89da6f455360d83be5eb55deaa3368666458645089110108a05437",
+  "request_bytes": 8582,
+  "input_tokens": 4298,
+  "output_tokens": 306,
+  "estimated_cost_usd": 0.011656,
+  "elapsed_seconds": 3.8501553535461426,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "incident_record",
+      "complaint_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes an employee reporting a work-related injury and a supervisor threatening discipline in response. This directly implicates the anti-retaliation and reasonable reporting procedure requirements under 1904.35(b)(1)(i) and (b)(1)(iv), which prohibit discouraging or disciplining employees for reporting injuries. These requirements are clearly supported by the facts given without need for additional information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

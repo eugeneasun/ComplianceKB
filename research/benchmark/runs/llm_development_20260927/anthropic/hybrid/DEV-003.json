@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "7747886508959133b186806a7086f402cfa5ddc05a2ea1fa331b32e907919232",
+  "request_bytes": 9826,
+  "input_tokens": 4597,
+  "output_tokens": 536,
+  "estimated_cost_usd": 0.014554000000000001,
+  "elapsed_seconds": 6.0876593589782715,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-043",
+      "OSHA-PSM-022",
+      "OSHA-PSM-004",
+      "OSHA-PSM-047",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change",
+      "new_process_startup",
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(l)(4)",
+      "§1910.119(i)(2)",
+      "§1910.119(d)",
+      "§1910.119(f)(3)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a non-replacement-in-kind modification to process equipment/technology that changes process safety information, followed by introduction of highly hazardous chemicals and restart. This squarely triggers PSM management of change requirements (l)(1) and (l)(4) requiring updated process safety information, the pre-startup safety review (i)(2) which must confirm MOC compliance and training before introducing highly hazardous chemicals, updates to process safety information (d), operating procedure review for changes in equipment/technology (f)(3), and HazCom training obligations for employees facing newly introduced chemical hazards (h)(1) and (h)(3). These are directly supported by the stated facts without need for additional information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

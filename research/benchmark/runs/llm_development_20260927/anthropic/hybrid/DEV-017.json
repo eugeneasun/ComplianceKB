@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-017",
+  "prompt_sha256": "a46abba3abe1aefaf5645cce936126d475978745ae01f71541eb906d9ba231a8",
+  "request_bytes": 9422,
+  "input_tokens": 4532,
+  "output_tokens": 276,
+  "estimated_cost_usd": 0.011824,
+  "elapsed_seconds": 3.685560941696167,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-013"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(f)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a portable container filled from a labeled drum and used immediately by the same employee who made the transfer, with no storage for later use. This squarely fits the labeling exemption in §1910.1200(f)(8), which exempts portable containers intended only for immediate use by the employee who performs the transfer from the general labeling requirement of (f)(6). No other HazCom requirements (training, SDS, program) are directly implicated by this specific transfer/labeling question.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

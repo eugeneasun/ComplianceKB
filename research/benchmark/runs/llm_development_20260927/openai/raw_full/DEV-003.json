@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "e3494267631c969bd93c52ca9be60e7cf16cfee97445091688dc16e9de060033",
+  "request_bytes": 46345,
+  "input_tokens": 12047,
+  "output_tokens": 890,
+  "estimated_cost_usd": 0.034774,
+  "elapsed_seconds": 10.134860038757324,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-005",
+      "OSHA-PSM-013",
+      "OSHA-PSM-018",
+      "OSHA-PSM-021",
+      "OSHA-PSM-022",
+      "OSHA-PSM-029",
+      "OSHA-PSM-030",
+      "OSHA-PSM-042",
+      "OSHA-PSM-043",
+      "OSHA-PSM-047"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change",
+      "new_process_startup"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition",
+      "certification"
+    ],
+    "predicted_citations": [
+      "§1910.119(d)(3)(ii)",
+      "§1910.119(f)(1)",
+      "§1910.119(g)(3)",
+      "§1910.119(i)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(l)(1)",
+      "§1910.119(l)(3)",
+      "§1910.119(l)(2)",
+      "§1910.119(l)(4)",
+      "§1910.119(f)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Federal OSHA PSM applies, and the stated equipment and technology modification is not a replacement in kind and changes process safety information. The employer must manage the change through written MOC procedures, address the specified MOC considerations, update affected process safety information and operating procedures, and inform and train affected operating, maintenance, and contract employees before startup. Because the modification is significant enough to require a change in process safety information, a pre-startup safety review is required. Before highly hazardous chemicals are introduced, that review must confirm equipment conforms to design specifications, adequate safety/operating/maintenance/emergency procedures are in place, MOC has been met for the modified facility, and operator training is complete. Equipment compliance with recognized and generally accepted good engineering practices and records verifying employee training are also required.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

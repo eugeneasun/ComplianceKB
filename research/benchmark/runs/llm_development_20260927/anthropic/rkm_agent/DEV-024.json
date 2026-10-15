@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "6a78472c5d38079bcfcb460c1998e7c33179a67c96056308da619a1a78965da1",
+  "request_bytes": 17502,
+  "input_tokens": 7430,
+  "output_tokens": 376,
+  "estimated_cost_usd": 0.01862,
+  "elapsed_seconds": 4.299453496932983,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-026"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(i)",
+      "§1904.41(a)(1)(ii)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Electronic submission obligations under Part 1904.41 depend on establishment size band and, for the 20-249 employee band, on whether the industry is listed in Appendix A to Subpart E. With 75 employees, the establishment falls in the 20-249 band (OSHA-REC-026), which only applies if the industry is on the designated list; the 250+ requirement (OSHA-REC-017) does not apply since headcount is below 250. Since the industry classification is unknown, applicability cannot be determined.",
+    "missing_information_or_escalation_reason": "The establishment's NAICS industry classification is required to determine whether it falls within Appendix A to Subpart E, which governs whether the 300A electronic submission requirement applies to a 20-249 employee establishment."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "9b1fba7bfc96b72b4607bd21f09adeff48fe4be5ec48ff9a1be9d4c08494b170",
+  "request_bytes": 9620,
+  "input_tokens": 4615,
+  "output_tokens": 461,
+  "estimated_cost_usd": 0.01384,
+  "elapsed_seconds": 5.469172716140747,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-004",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-013",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement",
+      "onboarding_new_employee",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(f)(8)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario is a straightforward HazCom applicability case: employer uses a hazardous chemical, decants it into workplace containers, and has employees not previously trained. This triggers the written hazard communication program requirement, SDS availability, container labeling (with the exception for immediate-use transfer containers noted), and the requirement to train employees on new chemical hazards before/at time of introduction. PSM provisions do not apply absent facts indicating a 'highly hazardous chemical' process covered by 1910.119.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

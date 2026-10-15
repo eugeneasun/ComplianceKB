@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "297ce7479ae8be2a04fc2ec4854abf5f8c241372e03282a979078af9f1fe6706",
+  "request_bytes": 9712,
+  "input_tokens": 2537,
+  "output_tokens": 176,
+  "estimated_cost_usd": 0.0071860000000000005,
+  "elapsed_seconds": 3.7740442752838135,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-006",
+      "OSHA-HAZCOM-005"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(8)",
+      "§1910.1200(g)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The employee handles a hazardous chemical used by the employer in the employee's work area. The employer must have an SDS for that chemical in the workplace and must ensure that it is readily accessible during every work shift when employees are in their work areas. The stated inability to immediately access the SDS during the night shift indicates the immediate-access condition is not met.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

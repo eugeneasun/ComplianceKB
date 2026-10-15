@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "5bdb07c0fde2cd25e78366c966cb4e75779b3d3b7c04ada94e3f7e01896fd93b",
+  "request_bytes": 46376,
+  "input_tokens": 12054,
+  "output_tokens": 799,
+  "estimated_cost_usd": 0.033696000000000004,
+  "elapsed_seconds": 8.658963918685913,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-005",
+      "OSHA-PSM-029",
+      "OSHA-PSM-042",
+      "OSHA-PSM-043",
+      "OSHA-PSM-030"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "inspection_record",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(d)(3)(ii)",
+      "§1910.119(l)(1)",
+      "§1910.119(l)(2)",
+      "§1910.119(l)(4)",
+      "§1910.119(l)(3)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The proposed component has a different material specification and operating limit, while engineering and operations disagree whether it is technically equivalent. The record therefore does not support conclusively treating it as a replacement in kind, which is the exception to the PSM management-of-change requirement. A qualified engineering/process-safety determination is needed. If it is a covered change, written MOC procedures must address the technical basis, safety and health impact, operating-procedure modifications, timing, and authorization before the change; affected employees must be informed and trained before startup. Equipment compliance with recognized and generally accepted good engineering practices must be documented, and process safety information must be updated if the change affects it.",
+    "missing_information_or_escalation_reason": "Escalate to qualified process-safety and engineering personnel to determine replacement-in-kind status using the approved design/process-safety-information specifications, applicable engineering standards, component service conditions, and the effect of the changed material and operating limit on process hazards and equipment integrity. Confirm whether the proposed installation changes process safety information; if so, update it under §1910.119(l)(4) and complete the applicable MOC actions before startup."
+  }
+}

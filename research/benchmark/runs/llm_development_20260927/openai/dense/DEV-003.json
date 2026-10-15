@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "5d1b96d94f76353e699192c38d7e8e40a6c044abbe711f9b0b9b41581974014d",
+  "request_bytes": 9042,
+  "input_tokens": 2372,
+  "output_tokens": 608,
+  "estimated_cost_usd": 0.01204,
+  "elapsed_seconds": 6.583054065704346,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-042",
+      "OSHA-PSM-022"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "new_process_startup"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(l)(2)",
+      "§1910.119(i)(2)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the covered process has a significant equipment and technology modification that is not a replacement in kind, the employer must use written management-of-change procedures. Before the change, those procedures must address the technical basis, safety-and-health impact, operating-procedure modifications, time period, and authorization requirements. Before highly hazardous chemicals are introduced and production is restarted, a pre-startup safety review must confirm conformity with design specifications, adequate safety/operating/maintenance/emergency procedures, completion of management of change for the modified facility, and completed training for each employee involved in operating the process.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

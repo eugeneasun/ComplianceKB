@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "ef30145f11cb81f21164e45a33d5a68174760607b5e9b88b14413bafb05cf757",
+  "request_bytes": 16355,
+  "input_tokens": 7081,
+  "output_tokens": 461,
+  "estimated_cost_usd": 0.018771999999999997,
+  "elapsed_seconds": 5.102899789810181,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-048",
+      "OSHA-PSM-050",
+      "OSHA-PSM-051",
+      "OSHA-PSM-052"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "incident_record",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(iv)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario is a contractor being selected for first-time work in a covered PSM process area, directly triggering the contractor employer obligations under §1910.119(h): evaluating contractor safety performance before selection, informing the contract employer of process hazards, developing safe work practices to control contractor entrance/presence/exit, maintaining a contract employee injury/illness log, and ensuring contract employees are trained on hazards and emergency action plan provisions before starting work. These requirements are all specifically scoped to contractor relationships in covered PSM processes, matching the facts given (fire, explosion, toxic-release hazards, first-time contractor entry).",
+    "missing_information_or_escalation_reason": ""
+  }
+}

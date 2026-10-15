@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "47fef7f8d952ca2c97eb2b8fd528cacf1f86b7ee932da62aaeebaa82e3c3aadc",
+  "request_bytes": 9900,
+  "input_tokens": 2534,
+  "output_tokens": 555,
+  "estimated_cost_usd": 0.011728,
+  "elapsed_seconds": 5.1993327140808105,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-021",
+      "OSHA-PSM-022",
+      "OSHA-PSM-043",
+      "OSHA-PSM-047"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "new_process_startup",
+      "chemical_procurement",
+      "procedure_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(i)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(l)(4)",
+      "§1910.119(f)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because this is a covered PSM process and the equipment/technology modification is not a replacement in kind, written management-of-change procedures apply. The modification changes process safety information, so that information must be updated. Because the modification is significant enough to require a process-safety-information change, a pre-startup safety review is required before restart. Before highly hazardous chemicals are introduced, that review must confirm conformance with design specifications, adequate safety/operating/maintenance/emergency procedures, completion of management of change for the modified facility, and completed training for each employee operating the process. Operating procedures must also be reviewed as necessary to reflect the chemical, technology, equipment, and facility changes.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

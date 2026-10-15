@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-007",
+  "prompt_sha256": "94a4aebd7f9e701c7daca0b6dadfe0c10387a126dfe3f4bc84aca78a12afc8ab",
+  "request_bytes": 8995,
+  "input_tokens": 2397,
+  "output_tokens": 342,
+  "estimated_cost_usd": 0.008898,
+  "elapsed_seconds": 3.4672458171844482,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-006",
+      "OSHA-LOTO-008",
+      "OSHA-LOTO-009"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(7)(i)",
+      "§1910.147(d)(3)",
+      "§1910.147(d)(5)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario is covered servicing under the hazardous-energy-control standard and identifies hazards from unexpected startup and stored pneumatic energy. The employer must maintain an energy-control program; develop, document, and use energy-control procedures; train employees; isolate the machine from its energy source through energy-isolating devices; and relieve, disconnect, restrain, or otherwise render stored pneumatic energy safe after lockout/tagout devices are applied.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

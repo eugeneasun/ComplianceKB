@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "d252acf46a79749c8e2b49807222ddcdd3511d683df835c1aaf5b3d430a5c683",
+  "request_bytes": 46213,
+  "input_tokens": 18627,
+  "output_tokens": 424,
+  "estimated_cost_usd": 0.041494,
+  "elapsed_seconds": 5.190705060958862,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031",
+      "OSHA-PSM-032",
+      "OSHA-PSM-033",
+      "OSHA-PSM-044",
+      "OSHA-PSM-045"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)",
+      "§1910.119(m)(2)",
+      "§1910.119(m)(7)",
+      "§1910.119(m)(5)",
+      "§1910.119(m)(6)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "A near miss involving a covered process that could reasonably have resulted in a catastrophic toxic release triggers the PSM incident investigation requirement under §1910.119(m)(1), regardless of actual injury. The investigation must be initiated within 48 hours (well within the 12-hour window since the event), findings and recommendations must be addressed and documented (m)(5), reports reviewed with affected personnel including contractors (m)(6), and reports retained for five years (m)(7). The scenario provides sufficient facts (covered process, near miss with catastrophic potential, timing, affected employees/contractors) to determine applicable requirements without further information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

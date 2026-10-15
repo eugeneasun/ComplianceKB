@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-007",
+  "prompt_sha256": "2adfe6b6896c04e69f9609fd0f2eb2852d466a4cd9fed7910c4970771f7c7cc8",
+  "request_bytes": 17013,
+  "input_tokens": 7282,
+  "output_tokens": 577,
+  "estimated_cost_usd": 0.020334,
+  "elapsed_seconds": 6.334440231323242,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-006",
+      "OSHA-LOTO-008",
+      "OSHA-LOTO-009"
+    ],
+    "predicted_trigger_labels": [
+      "always_on",
+      "equipment_change",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(7)(i)",
+      "§1910.147(d)(3)",
+      "§1910.147(d)(5)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes maintenance employees entering a machine to clear a jam with risk of unexpected startup or release of stored pneumatic (energy) hazards—this is classic 'servicing/maintenance' covered by OSHA's Lockout/Tagout standard (§1910.147). The organization context confirms this is federal hazardous-energy-control coverage. Core LOTO obligations apply: establishing an energy control program (LOTO-001), documented procedures (LOTO-002), employee training (LOTO-006), ensuring isolation devices properly isolate energy (LOTO-008), and relieving stored/residual energy such as pneumatic pressure (LOTO-009), which is directly relevant given the stored pneumatic energy hazard. PSM requirements are not applicable as this is not described as a covered process with highly hazardous chemicals, and LOTO-011 (outside servicing personnel) and LOTO-007 (retraining due to change) are not triggered by the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

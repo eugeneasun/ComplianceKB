@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "bd2079c216ff5f2ff8c4a5a735dab94e5d9a58108d033e3845c27dcefdcc3393",
+  "request_bytes": 46200,
+  "input_tokens": 18628,
+  "output_tokens": 336,
+  "estimated_cost_usd": 0.040616,
+  "elapsed_seconds": 4.562452077865601,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-016",
+      "OSHA-PSM-018"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(g)(1)",
+      "§1910.119(g)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a technician newly assigned to operate a covered PSM process before beginning work. Under 29 CFR 1910.119(g)(1), each employee before being involved in operating a newly assigned process must be trained in an overview of the process and the operating procedures. Under (g)(3), the employer must ascertain that the employee has received and understood the training and must prepare a record documenting the employee's identity, training date, and means of verification. These requirements directly and determinately apply given the stated facts (federal OSHA jurisdiction, covered process, new employee assignment).",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-015",
+  "prompt_sha256": "ac162b6f0d753156795bdeb7294f0f180727b28a785319e20b10ba5727b25856",
+  "request_bytes": 9039,
+  "input_tokens": 2376,
+  "output_tokens": 399,
+  "estimated_cost_usd": 0.00954,
+  "elapsed_seconds": 4.238228797912598,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-025",
+      "OSHA-PSM-026"
+    ],
+    "predicted_trigger_labels": [
+      "scheduled_inspection"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(j)(4)",
+      "§1910.119(j)(5)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scheduled inspection of covered-process equipment triggers documentation of the inspection and application of the equipment-deficiency requirement. Because the vessel is outside acceptable limits, it must be corrected before further use unless necessary means are taken to assure safe operation while correction occurs in a safe and timely manner. Determining whether continued operation can be made safe requires qualified engineering and safety judgment.",
+    "missing_information_or_escalation_reason": "Escalate to qualified process-safety/engineering personnel to determine whether the vessel must be removed from service before further use or whether necessary means exist to assure safe operation pending timely correction."
+  }
+}

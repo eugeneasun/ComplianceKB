@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "90abccfd35353180edf81f62f6bef23b72c76d7ca4ad9b86fd33b1bc2b8b1a2b",
+  "request_bytes": 8616,
+  "input_tokens": 4295,
+  "output_tokens": 656,
+  "estimated_cost_usd": 0.01515,
+  "elapsed_seconds": 8.361424446105957,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence",
+      "procedure_change"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "Each lockout or tagout device shall be removed from each energy isolating device by the employee who applied the device."
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scenario directly conflicts with the general rule requiring removal by the applying employee. The standard (1910.147(e)(3)) contains a specific exception procedure for situations where the employee who applied the lock is unavailable, requiring verification steps and employer-specific procedures before another employee may remove it. The supplied context only includes the general rule text and does not include the exception/verification procedure language, so a determinate answer cannot be given from the excerpts alone; this requires qualified safety/procedural judgment to ensure compliance with the specific verification steps mandated by the standard.",
+    "missing_information_or_escalation_reason": "The excerpt for §1910.147(e)(3) provided is only the general rule; the full regulatory text includes a specific exception procedure (verification that the employee who applied the lock is not in the area, notification, etc.) that must be followed when the applying employee is unavailable. This specific procedural detail and the organization's written LOTO program provisions addressing this exception are not included in the supplied context, requiring escalation to confirm the correct compliant procedure."
+  }
+}

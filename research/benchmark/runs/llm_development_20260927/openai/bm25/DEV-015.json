@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-015",
+  "prompt_sha256": "7e7bcce3dc51124ca8ff5c2a10d3aadc9cf5349ff5183732251a19e67d382c69",
+  "request_bytes": 9330,
+  "input_tokens": 2440,
+  "output_tokens": 229,
+  "estimated_cost_usd": 0.007627999999999999,
+  "elapsed_seconds": 3.1090500354766846,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-026",
+      "OSHA-PSM-025"
+    ],
+    "predicted_trigger_labels": [
+      "scheduled_inspection"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(j)(5)",
+      "§1910.119(j)(4)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scheduled inspection of covered-process equipment supports the inspection-and-test documentation requirement in §1910.119(j)(4). Because the vessel was found outside acceptable limits, §1910.119(j)(5) requires correction before further use, or correction in a safe and timely manner when necessary means are taken to assure safe operation. Determining whether the vessel may continue to be used and what corrective measures adequately assure safe operation requires qualified engineering and safety judgment.",
+    "missing_information_or_escalation_reason": "Qualified engineering/safety evaluation is needed to determine the applicable process-safety-information limits, the deficiency’s severity, whether continued operation can be made safe, and the corrective-action timeframe and controls."
+  }
+}

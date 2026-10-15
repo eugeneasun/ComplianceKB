@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-009",
+  "prompt_sha256": "5340900eea77b9d55548d6aa790adc25dd6c729acd8f1610090d597d631e6c70",
+  "request_bytes": 8585,
+  "input_tokens": 4304,
+  "output_tokens": 284,
+  "estimated_cost_usd": 0.011448,
+  "elapsed_seconds": 3.359694719314575,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-023"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "(A) When an employee, former employee, or personal representative asks for a copy of the OSHA 301 Incident Report describing an injury or illness to that employee or former employee, you must give the requester a copy of the OSHA 301 Incident Report containing that information by the end of the next business day."
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario directly matches §1904.35(b)(2)(v)(A), which requires the employer to provide a former employee a copy of the OSHA 301 Incident Report describing their own injury by the end of the next business day. No conflicting facts or missing predicates exist.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "9b1fba7bfc96b72b4607bd21f09adeff48fe4be5ec48ff9a1be9d4c08494b170",
+  "request_bytes": 9694,
+  "input_tokens": 2533,
+  "output_tokens": 725,
+  "estimated_cost_usd": 0.013766,
+  "elapsed_seconds": 6.849195241928101,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-004",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "physical_condition",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The plant uses a hazardous chemical, so it must maintain a written hazard communication program, have an SDS in the workplace, and ensure workplace containers are labeled, tagged, or marked. Introduction of a new chemical hazard on which employees have not previously been trained requires effective information and training at introduction. The training must cover detection methods, chemical hazards, protective measures, and the employer's hazard communication program, labels, and SDSs. The portable-container immediate-use exception is not applied because the supplied facts do not establish that transferred containers are intended only for the immediate use of the employee performing the transfer.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

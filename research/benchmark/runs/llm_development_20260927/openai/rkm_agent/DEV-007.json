@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-007",
+  "prompt_sha256": "2adfe6b6896c04e69f9609fd0f2eb2852d466a4cd9fed7910c4970771f7c7cc8",
+  "request_bytes": 17087,
+  "input_tokens": 4428,
+  "output_tokens": 451,
+  "estimated_cost_usd": 0.014268,
+  "elapsed_seconds": 5.098306655883789,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-008",
+      "OSHA-LOTO-009"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(d)(3)",
+      "§1910.147(d)(5)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario expressly states that this is covered servicing under the federal hazardous-energy-control standard and identifies a risk of unexpected startup and stored pneumatic-energy release causing injury. The employer therefore needs an energy-control program and documented energy-control procedures. Before employees enter the machine, required energy-isolating devices must isolate the machine from its energy sources, and stored or residual pneumatic energy must be relieved, disconnected, restrained, or otherwise rendered safe.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

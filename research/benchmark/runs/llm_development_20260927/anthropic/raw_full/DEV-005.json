@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "8894c15326ad97478b4ec2263349330e8b3fd1ff668ad650c000600ba256a442",
+  "request_bytes": 46249,
+  "input_tokens": 18638,
+  "output_tokens": 431,
+  "estimated_cost_usd": 0.041586,
+  "elapsed_seconds": 4.602059364318848,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-004",
+      "OSHA-REC-005",
+      "OSHA-REC-018",
+      "OSHA-REC-019",
+      "OSHA-REC-020",
+      "OSHA-REC-025",
+      "OSHA-REC-017",
+      "OSHA-REC-008"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review",
+      "periodic_review"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "manifest_or_form",
+      "retention_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1904.32(a)(1)",
+      "§1904.32(b)(5)",
+      "§1904.32(a)(2)",
+      "§1904.32(a)(3)",
+      "§1904.32(a)(4)",
+      "§1904.32(b)(6)",
+      "§1904.41(a)(1)(ii)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The establishment with 300 employees is subject to Part 1904 recordkeeping requirements. At year-end, it must review the OSHA 300 Log for accuracy, create and certify the annual summary (300A), post it from Feb 1 to Apr 30, retain records for five years, and, given 300 employees (over the 250-employee electronic submission threshold), electronically submit the 300A data to OSHA.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-009",
+  "prompt_sha256": "80426adaaad49e5cb8b088684e9995d3938cdaaa5455d470e1e326f1221fc40e",
+  "request_bytes": 8900,
+  "input_tokens": 4407,
+  "output_tokens": 223,
+  "estimated_cost_usd": 0.011044000000000002,
+  "elapsed_seconds": 3.148531675338745,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-023"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(A)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario is squarely governed by §1904.35(b)(2)(v)(A), which requires an employer to provide a former employee a copy of their own OSHA 301 Incident Report by the end of the next business day upon request. This provision directly and completely answers the scenario without need for additional facts or escalation.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

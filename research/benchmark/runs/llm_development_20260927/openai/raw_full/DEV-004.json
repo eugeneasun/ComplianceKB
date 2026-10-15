@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "d252acf46a79749c8e2b49807222ddcdd3511d683df835c1aaf5b3d430a5c683",
+  "request_bytes": 46287,
+  "input_tokens": 12044,
+  "output_tokens": 566,
+  "estimated_cost_usd": 0.030879999999999998,
+  "elapsed_seconds": 6.113327264785767,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031",
+      "OSHA-PSM-032",
+      "OSHA-PSM-044",
+      "OSHA-PSM-045",
+      "OSHA-PSM-033"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)",
+      "§1910.119(m)(2)",
+      "§1910.119(m)(5)",
+      "§1910.119(m)(6)",
+      "§1910.119(m)(7)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "This near miss occurred at a PSM-covered process and could reasonably have resulted in a catastrophic toxic release. The employer must investigate it, initiate the investigation as promptly as possible and no later than 48 hours after the incident (36 hours remain based on the supplied timing), document resolution and corrective actions for findings and recommendations, review the report with affected personnel including applicable contract employees, and retain the investigation report for five years. The absence of an injury does not eliminate the PSM incident-investigation obligation.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

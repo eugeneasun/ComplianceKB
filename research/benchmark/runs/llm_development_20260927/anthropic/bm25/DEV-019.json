@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-019",
+  "prompt_sha256": "e6ee41521d9a1f3d91daffdbbd5b63824f54decfb0b8d79820c5179204cd0ea7",
+  "request_bytes": 9176,
+  "input_tokens": 4440,
+  "output_tokens": 425,
+  "estimated_cost_usd": 0.01313,
+  "elapsed_seconds": 5.114310026168823,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-010",
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-002",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "always_on",
+      "onboarding_new_employee",
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(2)",
+      "§1910.1200(e)(1)",
+      "§1910.1200(e)(1)(i)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(2)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a multi-employer worksite where one employer's hazardous chemicals may expose another employer's employees, which directly triggers the HazCom multi-employer provisions requiring the host employer's written program to include methods for providing on-site access to SDSs to the other employer, as well as the standard requirements for a written hazard communication program, chemical inventory list, and employee information/training for hazards present in the work area.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-006",
+  "prompt_sha256": "6aa537dcdedc9d7d7682d6b99dcc8cbd9f60357007f681557ef7cd1cb594f8dc",
+  "request_bytes": 8338,
+  "input_tokens": 4220,
+  "output_tokens": 235,
+  "estimated_cost_usd": 0.01079,
+  "elapsed_seconds": 3.552682638168335,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-005"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(6)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario concerns the approaching anniversary of the last review of a machine-specific energy control procedure. §1910.147(c)(6)(i) requires the employer to conduct a periodic inspection of the energy control procedure at least annually, directly addressing this trigger. No conflicting facts or missing predicates require escalation or further information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

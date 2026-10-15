@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "c2c4967b1baf2a117b3ae049bbbed228f1f3f46a56ed2b98f739b961e42dc1d6",
+  "request_bytes": 9678,
+  "input_tokens": 4616,
+  "output_tokens": 288,
+  "estimated_cost_usd": 0.012112000000000001,
+  "elapsed_seconds": 3.6188406944274902,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-006"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(1)",
+      "§1910.1200(g)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a failure to provide readily accessible SDS during a work shift, directly implicating the requirement that employers maintain SDS in the workplace and ensure ready accessibility during each work shift, including electronic access without barriers. No conflicting facts requiring escalation are present, and the facts are sufficient to determine a violation of §1910.1200(g)(1) and (g)(8).",
+    "missing_information_or_escalation_reason": ""
+  }
+}

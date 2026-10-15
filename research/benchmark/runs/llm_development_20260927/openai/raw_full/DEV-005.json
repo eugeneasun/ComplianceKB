@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "8894c15326ad97478b4ec2263349330e8b3fd1ff668ad650c000600ba256a442",
+  "request_bytes": 46323,
+  "input_tokens": 12049,
+  "output_tokens": 419,
+  "estimated_cost_usd": 0.029126,
+  "elapsed_seconds": 4.797443628311157,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-004",
+      "OSHA-REC-018",
+      "OSHA-REC-019",
+      "OSHA-REC-020",
+      "OSHA-REC-005",
+      "OSHA-REC-025",
+      "OSHA-REC-017",
+      "OSHA-REC-008"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.32(a)(1)",
+      "§1904.32(a)(2)",
+      "§1904.32(a)(3)",
+      "§1904.32(a)(4)",
+      "§1904.32(b)(5)",
+      "§1904.32(b)(6)",
+      "§1904.41(a)(1)(ii)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the establishment is required to keep Part 1904 records and had 300 employees, it must review and correct the OSHA 300 Log, create and certify the annual summary, post it conspicuously no later than February 1 through April 30, electronically submit Form 300A information, and retain the required records for five years.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

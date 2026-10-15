@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-009",
+  "prompt_sha256": "e75d31654e195067cc18cf5ef9bce9ebb0a3ce552fbaf576759af5e77770ad4d",
+  "request_bytes": 8747,
+  "input_tokens": 2366,
+  "output_tokens": 137,
+  "estimated_cost_usd": 0.006376,
+  "elapsed_seconds": 2.004953384399414,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-023"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(A)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The requester is a former employee seeking the OSHA 301 Incident Report describing that former employee's own injury. The employer maintains the requested report and is covered by federal OSHA recordkeeping rules. The employer must provide a copy containing that information by the end of the next business day.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

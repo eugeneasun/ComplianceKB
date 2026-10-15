@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "e3494267631c969bd93c52ca9be60e7cf16cfee97445091688dc16e9de060033",
+  "request_bytes": 46271,
+  "input_tokens": 18634,
+  "output_tokens": 545,
+  "estimated_cost_usd": 0.042718000000000006,
+  "elapsed_seconds": 6.177865743637085,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-021",
+      "OSHA-PSM-022",
+      "OSHA-PSM-029",
+      "OSHA-PSM-042",
+      "OSHA-PSM-043",
+      "OSHA-PSM-030",
+      "OSHA-PSM-004",
+      "OSHA-PSM-013",
+      "OSHA-PSM-047",
+      "OSHA-PSM-016",
+      "OSHA-PSM-007"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change",
+      "new_process_startup",
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(i)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(l)(1)",
+      "§1910.119(l)(2)",
+      "§1910.119(l)(4)",
+      "§1910.119(l)(3)",
+      "§1910.119(d)",
+      "§1910.119(f)(1)",
+      "§1910.119(f)(3)",
+      "§1910.119(g)(1)",
+      "§1910.119(e)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a significant equipment/technology modification changing process safety information, which is not a replacement in kind, triggering PSM management of change requirements (§1910.119(l)) and pre-startup safety review (§1910.119(i)) before introducing highly hazardous chemicals. This also requires updating process safety information, operating procedures, and training affected employees prior to startup, consistent with the cited provisions. The facts given are sufficient to determine applicable PSM requirements without need for additional clarification.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

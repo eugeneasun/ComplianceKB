@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "737b0bd7e72a003e2a4554c1a043649ac69730fa02b49b99d83499e7ee2cc969",
+  "request_bytes": 46341,
+  "input_tokens": 12055,
+  "output_tokens": 755,
+  "estimated_cost_usd": 0.03317,
+  "elapsed_seconds": 9.093028783798218,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-002",
+      "OSHA-HAZCOM-004",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-006",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "safety_data_sheet",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(e)(1)(i)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(g)(8)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(2)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The plant uses a hazardous chemical, so it must maintain its written hazard communication program and hazardous-chemical list, have an accessible SDS, and ensure workplace containers are labeled, tagged, or marked. Because this is a new chemical hazard on which the employees have not previously been trained, effective hazard communication information and training is required when introduced into their work area. Training must cover the required hazard, protective-measure, labeling-system, SDS, and program-information topics. The immediate-use portable-container labeling exception is not selected because the facts do not establish that each transferred container is intended only for the immediate use of the employee performing the transfer.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

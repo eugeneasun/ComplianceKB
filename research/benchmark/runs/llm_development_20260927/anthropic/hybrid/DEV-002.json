@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "795fb1575f238130bd3f5b2bb78526969274d5e8894a730650890b1ff042f0fb",
+  "request_bytes": 9932,
+  "input_tokens": 4683,
+  "output_tokens": 361,
+  "estimated_cost_usd": 0.012976,
+  "elapsed_seconds": 4.495410919189453,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-022",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "procedure",
+      "qualification_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(i)(2)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a new technician assignment to a covered PSM process prior to startup of duties. §1910.119(i)(2) requires pre-startup safety review confirming training of each employee involved in operating the process has been completed. §1910.1200(h)(1) requires HazCom training at initial assignment, with content requirements specified in (h)(3). These are directly triggered by onboarding/process assignment; no conflicting facts require escalation, and the necessary facts (new assignment, covered process, employee status) are present.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

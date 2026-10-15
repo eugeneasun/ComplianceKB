@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "aeb59a4f23af9370269a62cf4575dd10b61db3a2e8db3f31783d22db5dae8527",
+  "request_bytes": 46282,
+  "input_tokens": 18635,
+  "output_tokens": 438,
+  "estimated_cost_usd": 0.04165,
+  "elapsed_seconds": 5.5446836948394775,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Under 29 CFR 1910.1200(h)(1), employee training is required at initial assignment and whenever a new chemical hazard not previously trained on is introduced into the work area. Whether the new cleaning product triggers a training obligation depends on whether it is classified as hazardous under the HCS and whether it presents a hazard class or specific hazard information that employees have not already received training on. The scenario explicitly states these facts are not established.",
+    "missing_information_or_escalation_reason": "The scenario does not establish (1) whether the cleaning product is a 'hazardous chemical' under 1910.1200's classification criteria (i.e., whether it has an SDS indicating hazard classification), and (2) whether the specific hazards of this product are new hazards employees have not already been trained on. Without these facts, it cannot be determined whether §1910.1200(h)(1)'s training trigger applies."
+  }
+}

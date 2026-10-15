@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "eb642f0d7da41a1fb75925f701f3424417af20dade8304e6627e2a46c7116566",
+  "request_bytes": 8441,
+  "input_tokens": 2305,
+  "output_tokens": 210,
+  "estimated_cost_usd": 0.007130000000000001,
+  "elapsed_seconds": 2.6350479125976562,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-022",
+      "OSHA-REC-013",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "incident_occurrence",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record",
+      "complaint_record",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(ii)",
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The new-employee orientation is supported by the requirement to inform each employee of the procedure for reporting work-related injuries and illnesses. The supervisor's threatened discipline following a work-related-injury report is inconsistent with the prohibition on discharging or discriminating in any manner against an employee for reporting, and may also render the reporting procedure unreasonable if it would deter or discourage accurate reporting.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "POST_HOC_RETRIEVAL_ONLY_SENSITIVITY_NO_LLM_RERUN",
+  "model": "intfloat/e5-base-v2",
+  "revision": "f52bf8ec8c7124536f0efb74aca902b2995e5bcd",
+  "seed": 20260930,
+  "device": "cpu",
+  "threads": 4,
+  "batch_size": 8,
+  "max_sequence_length": 512,
+  "prefixes": [
+    "query: ",
+    "passage: "
+  ],
+  "normalization": "L2",
+  "similarity": "dot product",
+  "truncated_documents": 0,
+  "top_k": 10,
+  "component_k": 20,
+  "rrf_k": 60,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "n": 24,
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.14.0",
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.17.0",
+    "numpy": "2.3.5",
+    "huggingface-hub": "1.33.0"
+  },
+  "scenario_sha256": "9389349046910feb113fe1773101f2f098d348f2bfc37b3ecca00a03af68dba1",
+  "dataset_sha256": "2f1ff5148219c23c843f69f99a3892b35634253cbaa6e9ccc16a37341bac76a3",
+  "summary": {
+    "e5": {
+      "recall": 0.7837301587301587,
+      "mrr": 0.8472222222222222,
+      "ndcg": 0.7297171150888994
+    },
+    "bm25_e5_rrf": {
+      "recall": 0.8080357142857143,
+      "mrr": 0.8576388888888888,
+      "ndcg": 0.7533735404590356
+    }
+  }
+}

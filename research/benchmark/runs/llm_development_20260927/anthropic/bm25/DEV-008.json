@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "01d12c6d2d54e7b47485f3c38e021df7c6ea72256a0e7dba85d7f1a536046e47",
+  "request_bytes": 8857,
+  "input_tokens": 4358,
+  "output_tokens": 430,
+  "estimated_cost_usd": 0.013016,
+  "elapsed_seconds": 4.994179725646973,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-048",
+      "OSHA-PSM-051",
+      "OSHA-PSM-052"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "performance_evaluation",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes selection of a contractor to work in a covered PSM process area for the first time, facing fire, explosion, and toxic-release hazards. This directly triggers the PSM contractor provisions: the host employer must evaluate the contract employer's safety performance (h)(2)(i), inform the contractor of known process hazards (h)(2)(ii), maintain a contract employee injury/illness log (h)(2)(vi), and the contract employer must ensure employees are trained on hazards and emergency action plan provisions (h)(3)(ii). These are squarely supported by the facts given without needing additional information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "74937d5fa8eac0c1c8ec43f58dfd8c89725863c5b6f3f4b611f5849b895f3647",
+  "request_bytes": 46167,
+  "input_tokens": 18611,
+  "output_tokens": 534,
+  "estimated_cost_usd": 0.042561999999999996,
+  "elapsed_seconds": 7.290273427963257,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The regulation §1910.147(e)(3) requires that each lockout/tagout device be removed by the employee who applied it. Having another employee remove the lock deviates from this explicit requirement. OSHA does allow, under specific procedures (not detailed in the supplied excerpts), removal by another authorized employee when the original employee is unavailable, but this requires a documented procedure including verification of energy isolation and notification of the affected employee before resuming work — provisions not fully detailed here. Because the scenario presents a direct conflict between operational urgency and an explicit regulatory mandate, and the supplied excerpts do not include the specific alternate-removal procedure requirements (e.g., verification steps, notification protocol) that OSHA references elsewhere for such situations, this requires qualified safety/compliance judgment rather than a straightforward answer.",
+    "missing_information_or_escalation_reason": "The provided excerpts state the general rule that the applying employee must remove their own device, but do not include the specific procedural safeguards (verification of isolation, notification of employee, documented justification) that would apply when using an alternate removal procedure. Determining whether management's proposed action is compliant requires this additional procedural detail and/or qualified safety judgment, warranting escalation rather than a determinate answer."
+  }
+}

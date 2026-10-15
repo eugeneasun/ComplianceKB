@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "91c6406ac8a269253ca3bfb0201d4ae2d83897194fb9dcf17f731be7769e7dc7",
+  "request_bytes": 9154,
+  "input_tokens": 4473,
+  "output_tokens": 349,
+  "estimated_cost_usd": 0.012436000000000001,
+  "elapsed_seconds": 4.665126800537109,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a near-miss that could reasonably have resulted in a catastrophic release of a highly hazardous chemical at a PSM-covered process. This directly triggers the incident investigation requirement under 1910.119(m)(1), which mandates investigation of incidents that resulted in or could reasonably have resulted in a catastrophic release, regardless of whether an injury occurred. No fatality, hospitalization, amputation, or loss of eye is reported, so OSHA recordkeeping reporting thresholds (1904.39) are not triggered. Contractor-related PSM provisions are not clearly implicated since no contractor-specific hazard exposure or injury is described.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

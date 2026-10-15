@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "131429eda166b9e343223ce8ad32e7e9aaee1391b12f1113cc475519c4325840",
+  "request_bytes": 9725,
+  "input_tokens": 2533,
+  "output_tokens": 179,
+  "estimated_cost_usd": 0.007214,
+  "elapsed_seconds": 2.043219804763794,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-006",
+      "OSHA-HAZCOM-005"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(8)",
+      "§1910.1200(g)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The employer uses the hazardous chemical in the employee's work area, so it must have a safety data sheet in the workplace. It also must ensure that required safety data sheets are readily accessible during each work shift to employees in their work areas, without barriers to immediate access. The reported inability to immediately access the sheet on the night shift is inconsistent with that accessibility requirement.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-014",
+  "prompt_sha256": "4f23a31da35a4a8ea51a9581d6ba9fafd211aa74bb95fe0ee23c2fb17bfaac70",
+  "request_bytes": 8312,
+  "input_tokens": 4187,
+  "output_tokens": 328,
+  "estimated_cost_usd": 0.011654,
+  "elapsed_seconds": 3.847661256790161,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-035",
+      "OSHA-PSM-037"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review",
+      "audit_preparation"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "inspection_record",
+      "certification"
+    ],
+    "predicted_citations": [
+      "§1910.119(o)(1)",
+      "§1910.119(o)(4)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a PSM three-year compliance audit identifying deficiencies requiring correction. §1910.119(o)(1) mandates the triennial compliance audit certification, and §1910.119(o)(4) requires prompt determination and documentation of responses to audit findings and correction of deficiencies. These directly address the scenario; other requirements (equipment-specific deficiency correction, LOTO annual inspection, recordkeeping) are not indicated as applicable given no equipment or injury/illness context provided.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

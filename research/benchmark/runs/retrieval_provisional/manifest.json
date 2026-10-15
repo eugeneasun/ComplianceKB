@@ -1,0 +1,29 @@
+{
+  "status": "PROVISIONAL_DEVELOPMENT_RUN_NOT_FOR_CONFIRMATORY_CLAIMS",
+  "scenario_file": "research/benchmark/scenarios_PROVISIONAL.csv",
+  "scenario_sha256": "669c327b05f83f19c138e383d2ff7ca366a639f2b203ee3729a2c92340cb77f6",
+  "dataset_file": "data/releases/v1.2.0/all_requirements.json",
+  "dataset_sha256": "2f1ff5148219c23c843f69f99a3892b35634253cbaa6e9ccc16a37341bac76a3",
+  "release": "v1.2.0",
+  "document_fields": [
+    "requirement_text",
+    "source_text_excerpt"
+  ],
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "dense": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "similarity": "cosine_normalized_dot_product"
+  },
+  "hybrid": {
+    "fusion": "reciprocal_rank_fusion",
+    "rrf_k": 60.0
+  },
+  "component_k": 20,
+  "top_k": 10,
+  "python": "3.12.14",
+  "sentence_transformers": "6.1.0",
+  "torch": "2.14.0+cpu"
+}

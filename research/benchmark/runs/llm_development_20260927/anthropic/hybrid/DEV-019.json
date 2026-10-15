@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-019",
+  "prompt_sha256": "e3025bc4fd94554c9b8a31193ebb6bf3f693bdb49f95259ee9e7c14403c01a6c",
+  "request_bytes": 9269,
+  "input_tokens": 4490,
+  "output_tokens": 410,
+  "estimated_cost_usd": 0.01308,
+  "elapsed_seconds": 4.499446392059326,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-010",
+      "OSHA-HAZCOM-002",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-011"
+    ],
+    "predicted_trigger_labels": [
+      "facility_change",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(e)(2)",
+      "§1910.1200(e)(1)(i)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(e)(4)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a multi-employer worksite where one employer's hazardous chemicals may expose another employer's workers, which is directly addressed by the HazCom multi-employer provision requiring SDS access methods to be included in the written program, along with the underlying written program, chemical list, SDS availability, and access requirements. This is a determinate HazCom scenario not involving PSM-covered highly hazardous chemical processes, so PSM contractor provisions are not applicable absent evidence of a covered process.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

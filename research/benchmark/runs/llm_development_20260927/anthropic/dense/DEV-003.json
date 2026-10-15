@@ -1,0 +1,48 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "5d1b96d94f76353e699192c38d7e8e40a6c044abbe711f9b0b9b41581974014d",
+  "request_bytes": 8968,
+  "input_tokens": 4362,
+  "output_tokens": 542,
+  "estimated_cost_usd": 0.014144,
+  "elapsed_seconds": 6.1884894371032715,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-022",
+      "OSHA-PSM-004",
+      "OSHA-PSM-042",
+      "OSHA-PSM-002",
+      "OSHA-HAZCOM-007"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change",
+      "new_process_startup",
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(d)",
+      "§1910.119(l)(2)",
+      "§1910.119(c)(2)",
+      "§1910.1200(h)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a non-replacement-in-kind modification to a covered PSM process changing process safety information, followed by introduction of highly hazardous chemicals and restart. This directly triggers Management of Change (l)(1)/(l)(2) requiring documented procedures addressing technical basis, impacts, and authorization, and Pre-Startup Safety Review (i)(2) requiring confirmation of construction per design, procedures in place, MOC completion, and training before introducing highly hazardous chemicals. PSI must be updated per (d) since the modification changes process safety information. Employee consultation (c)(2) applies to PSM element development. HazCom training (h)(1) applies since new chemical hazards are introduced to the work area. Incident investigation, LOTO, and container labeling requirements are not triggered by the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

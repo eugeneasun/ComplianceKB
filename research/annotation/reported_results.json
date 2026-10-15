@@ -1,0 +1,236 @@
+{
+  "status": "FROZEN_UNADJUDICATED",
+  "computed_on": "2026-09-28",
+  "release": "v1.2.0",
+  "sample_size": 50,
+  "fields": [
+    "risk_level",
+    "audit_evidence_type",
+    "workflow_trigger"
+  ],
+  "micro_percent_agreement_across_150_field_assignments": 57.333333333333336,
+  "raw_completed_sha256": "4aa0590cdb50c6464c8096cf7a9fff5ad172b4aefe72ccffea16aebc6bddf5c7",
+  "original_blinded_sample_sha256": "e130a4aafb9c8d1a902735bf8f17cf07b8e20e5d323da531f51a605bfbc87323",
+  "annotator_1_key_sha256": "bc3a7657f68fb052495cd6c9879dfdd8a8615e0eb9aa1b9ce080445c9c2fc419",
+  "header_repair": {
+    "column_index_one_based": 8,
+    "observed_header": "always_on",
+    "interpreted_as": "ann2_workflow_trigger",
+    "method": "in-memory positional header repair; raw file left unchanged"
+  },
+  "results": {
+    "risk_level": {
+      "n": 50,
+      "agreements": 23,
+      "disagreements": 27,
+      "percent_agreement": 46.0,
+      "cohen_kappa": 0.23382519863791149,
+      "bootstrap_95ci": [
+        0.04815229563269875,
+        0.4175888177052999
+      ],
+      "bootstrap_iterations_requested": 10000,
+      "bootstrap_valid_samples": 10000,
+      "annotator_1_distribution": {
+        "critical": 9,
+        "high": 21,
+        "low": 4,
+        "medium": 16
+      },
+      "annotator_2_distribution": {
+        "critical": 21,
+        "high": 17,
+        "medium": 12
+      },
+      "confusion_matrix": {
+        "critical": {
+          "critical": 7,
+          "high": 1,
+          "medium": 1
+        },
+        "high": {
+          "critical": 12,
+          "high": 9
+        },
+        "low": {
+          "medium": 4
+        },
+        "medium": {
+          "critical": 2,
+          "high": 7,
+          "medium": 7
+        }
+      }
+    },
+    "audit_evidence_type": {
+      "n": 50,
+      "agreements": 34,
+      "disagreements": 16,
+      "percent_agreement": 68.0,
+      "cohen_kappa": 0.6420581655480985,
+      "bootstrap_95ci": [
+        0.4911460914113017,
+        0.7751823821841404
+      ],
+      "bootstrap_iterations_requested": 10000,
+      "bootstrap_valid_samples": 10000,
+      "annotator_1_distribution": {
+        "complaint_record": 1,
+        "incident_record": 9,
+        "inspection_record": 3,
+        "manifest_or_form": 3,
+        "permit": 2,
+        "physical_condition": 5,
+        "procedure": 4,
+        "retention_record": 1,
+        "safety_data_sheet": 1,
+        "training_record": 7,
+        "written_program": 14
+      },
+      "annotator_2_distribution": {
+        "certification": 1,
+        "incident_record": 6,
+        "inspection_record": 3,
+        "manifest_or_form": 7,
+        "performance_evaluation": 2,
+        "permit": 2,
+        "physical_condition": 5,
+        "procedure": 5,
+        "qualification_record": 1,
+        "retention_record": 3,
+        "safety_data_sheet": 3,
+        "training_record": 6,
+        "written_program": 6
+      },
+      "confusion_matrix": {
+        "complaint_record": {
+          "incident_record": 1
+        },
+        "incident_record": {
+          "incident_record": 5,
+          "manifest_or_form": 3,
+          "retention_record": 1
+        },
+        "inspection_record": {
+          "inspection_record": 3
+        },
+        "manifest_or_form": {
+          "manifest_or_form": 3
+        },
+        "permit": {
+          "permit": 2
+        },
+        "physical_condition": {
+          "physical_condition": 4,
+          "procedure": 1
+        },
+        "procedure": {
+          "physical_condition": 1,
+          "procedure": 3
+        },
+        "retention_record": {
+          "retention_record": 1
+        },
+        "safety_data_sheet": {
+          "safety_data_sheet": 1
+        },
+        "training_record": {
+          "qualification_record": 1,
+          "training_record": 6
+        },
+        "written_program": {
+          "certification": 1,
+          "manifest_or_form": 1,
+          "performance_evaluation": 2,
+          "procedure": 1,
+          "retention_record": 1,
+          "safety_data_sheet": 2,
+          "written_program": 6
+        }
+      }
+    },
+    "workflow_trigger": {
+      "n": 50,
+      "agreements": 29,
+      "disagreements": 21,
+      "percent_agreement": 57.99999999999999,
+      "cohen_kappa": 0.4432661717921526,
+      "bootstrap_95ci": [
+        0.26935917139041926,
+        0.6046284794597463
+      ],
+      "bootstrap_iterations_requested": 10000,
+      "bootstrap_valid_samples": 10000,
+      "annotator_1_distribution": {
+        "always_on": 22,
+        "annual_review": 3,
+        "audit_preparation": 1,
+        "chemical_procurement": 2,
+        "equipment_change": 4,
+        "facility_change": 2,
+        "incident_occurrence": 6,
+        "new_process_startup": 4,
+        "onboarding_new_employee": 5,
+        "regulatory_update": 1
+      },
+      "annotator_2_distribution": {
+        "always_on": 25,
+        "annual_review": 2,
+        "audit_preparation": 2,
+        "chemical_procurement": 3,
+        "equipment_change": 2,
+        "incident_occurrence": 5,
+        "job_reassignment": 1,
+        "new_process_startup": 3,
+        "procedure_change": 1,
+        "process_assignment": 4,
+        "scheduled_inspection": 1,
+        "training_refresh": 1
+      },
+      "confusion_matrix": {
+        "always_on": {
+          "always_on": 17,
+          "audit_preparation": 1,
+          "chemical_procurement": 2,
+          "equipment_change": 1,
+          "scheduled_inspection": 1
+        },
+        "annual_review": {
+          "annual_review": 2,
+          "audit_preparation": 1
+        },
+        "audit_preparation": {
+          "always_on": 1
+        },
+        "chemical_procurement": {
+          "always_on": 1,
+          "chemical_procurement": 1
+        },
+        "equipment_change": {
+          "always_on": 2,
+          "equipment_change": 1,
+          "job_reassignment": 1
+        },
+        "facility_change": {
+          "always_on": 1,
+          "procedure_change": 1
+        },
+        "incident_occurrence": {
+          "always_on": 1,
+          "incident_occurrence": 5
+        },
+        "new_process_startup": {
+          "always_on": 1,
+          "new_process_startup": 3
+        },
+        "onboarding_new_employee": {
+          "process_assignment": 4,
+          "training_refresh": 1
+        },
+        "regulatory_update": {
+          "always_on": 1
+        }
+      }
+    }
+  }
+}

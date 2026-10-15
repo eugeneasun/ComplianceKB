@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trusone.com/ns/compliance/requirement.schema.json",
+  "title": "TrusOne-ComplianceKB Requirement",
+  "type": "object",
+  "required": ["id", "requirement_text", "is_mandatory", "requirement_type",
+               "risk_level", "verification_method", "audit_evidence_type",
+               "workflow_trigger", "applicability", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Z]+-[A-Z]+-[0-9]{3}$" },
+    "requirement_text": { "type": "string", "minLength": 20 },
+    "is_mandatory": { "type": "boolean" },
+    "requirement_type": { "enum": ["obligation", "prohibition", "permission", "definition"] },
+    "risk_level": { "enum": ["critical", "high", "medium", "low"] },
+    "verification_method": { "enum": ["document_review", "physical_inspection",
+                                       "interview", "record_review", "observation"] },
+    "audit_evidence_type": { "enum": ["written_program", "training_record",
+      "inspection_record", "permit", "physical_condition", "incident_record",
+      "certification", "procedure", "manifest_or_form", "safety_data_sheet",
+      "qualification_record", "retention_record", "complaint_record",
+      "performance_evaluation"] },
+    "workflow_trigger": { "enum": ["onboarding_new_employee", "chemical_procurement",
+      "equipment_change", "annual_review", "incident_occurrence", "new_process_startup",
+      "facility_change", "regulatory_update", "audit_preparation", "permit_renewal",
+      "always_on", "job_reassignment", "process_assignment", "procedure_change",
+      "periodic_review", "training_refresh", "scheduled_inspection"] },
+    "workflow_trigger_details": {
+      "type": "object",
+      "properties": {
+        "additional_triggers": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["onboarding_new_employee", "chemical_procurement",
+            "equipment_change", "annual_review", "incident_occurrence", "new_process_startup",
+            "facility_change", "regulatory_update", "audit_preparation", "permit_renewal",
+            "always_on", "job_reassignment", "process_assignment", "procedure_change",
+            "periodic_review", "training_refresh", "scheduled_inspection"] }
+        },
+        "interval_years": { "type": "number", "exclusiveMinimum": 0 },
+        "condition": { "type": "string", "minLength": 5 }
+      },
+      "additionalProperties": false
+    },
+    "applicability": {
+      "type": "object",
+      "required": ["industry_scope", "industries_naics", "business_activities", "employee_size_band", "jurisdictions"],
+      "properties": {
+        "industry_scope": { "enum": ["all_covered_industries", "listed_naics_only"] },
+        "industries_naics": { "type": "array", "items": { "type": "integer", "minimum": 11, "maximum": 999999 }, "uniqueItems": true },
+        "industry_condition": { "type": "string", "minLength": 5 },
+        "business_activities": { "type": "array", "items": { "enum": ["chemical_handling",
+          "confined_space_entry", "electrical_work", "equipment_maintenance",
+          "hazmat_transport", "hot_work", "material_storage", "new_hire_onboarding",
+          "process_operation", "waste_disposal", "welding_cutting"] }, "minItems": 1 },
+        "employee_size_band": { "enum": ["1-10", "11-50", "20-249", "51-250", "250+", "251+", "100+", "any"] },
+        "jurisdictions": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_document_id", "source_framework", "source_version",
+                   "source_clause", "source_text_excerpt", "source_url",
+                   "source_retrieved_at", "source_text_hash", "curation_method",
+                   "curator", "review_date"],
+      "properties": {
+        "source_clause": { "type": "string", "pattern": "^§" },
+        "source_url": { "type": "string", "format": "uri", "pattern": "^https://www\\.ecfr\\.gov/" },
+        "source_text_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "curation_method": { "enum": ["ai_assisted_with_human_review", "ai_assisted_pending_human_review", "human_only", "human_reviewed"] },
+        "supporting_clauses": { "type": "array", "items": { "type": "string", "pattern": "^§" }, "uniqueItems": true }
+      }
+    },
+    "verification_status": { "enum": ["implemented_from_human_verification", "pending_human_verification"] }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "OSHA-PSM-018",
+  "requirement_text": "The employer shall ascertain and document that each employee involved in operating a process has received and understood the required training.",
+  "is_mandatory": true,
+  "requirement_type": "obligation",
+  "risk_level": "medium",
+  "verification_method": "record_review",
+  "audit_evidence_type": "training_record",
+  "workflow_trigger": "onboarding_new_employee",
+  "applicability": {
+    "industries_naics": [
+      32,
+      31
+    ],
+    "business_activities": [
+      "process_operation"
+    ],
+    "employee_size_band": "any",
+    "jurisdictions": [
+      "federal"
+    ],
+    "industry_scope": "listed_naics_only"
+  },
+  "provenance": {
+    "source_document_id": "CFR-29-1910-119",
+    "source_framework": "OSHA_PSM",
+    "source_version": "2024-07-01",
+    "source_clause": "§1910.119(g)(3)",
+    "source_text_excerpt": "The employer shall ascertain that each employee involved in operating a process has received and understood the training required by this paragraph. The employer shall prepare a record which contains the identity of the employee, the date of training, and the means used to verify that the employee understood the training.",
+    "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(g)(3)",
+    "source_retrieved_at": "2026-05-04T00:00:00Z",
+    "source_text_hash": "9d3264fe53abd1d430357a14213b8de3138a5d08fe551e98151028cf15cb2a61",
+    "curation_method": "ai_assisted_with_human_review",
+    "curator": "Eugene Sun",
+    "review_date": "2026-09-25"
+  },
+  "verification_status": "implemented_from_human_verification",
+  "workflow_trigger_details": {
+    "additional_triggers": [
+      "training_refresh"
+    ],
+    "condition": "Applies to both initial and refresher training required by §1910.119(g)."
+  }
+}

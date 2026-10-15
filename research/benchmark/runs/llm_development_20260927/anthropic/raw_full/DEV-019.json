@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-019",
+  "prompt_sha256": "88c3f3d33fad3bc4afce9b30bdae560225690eb160b58fe93cbfe439265e8e71",
+  "request_bytes": 46168,
+  "input_tokens": 18611,
+  "output_tokens": 446,
+  "estimated_cost_usd": 0.041682,
+  "elapsed_seconds": 4.769277334213257,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-002",
+      "OSHA-HAZCOM-010",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-006"
+    ],
+    "predicted_trigger_labels": [
+      "always_on",
+      "onboarding_new_employee",
+      "facility_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(e)(1)(i)",
+      "§1910.1200(e)(2)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(2)",
+      "§1910.1200(g)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a multi-employer worksite where one employer's hazardous chemicals may expose another employer's workers, which directly invokes the HazCom multi-employer workplace provision requiring the written program to include methods for providing on-site access to SDSs to other employers (§1910.1200(e)(2)), along with the underlying general HazCom program, hazardous chemical list, SDS accessibility, and employee information/training requirements that apply to any workplace with hazardous chemicals.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

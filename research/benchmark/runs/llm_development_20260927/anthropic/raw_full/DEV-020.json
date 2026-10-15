@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "5bdb07c0fde2cd25e78366c966cb4e75779b3d3b7c04ada94e3f7e01896fd93b",
+  "request_bytes": 46302,
+  "input_tokens": 18645,
+  "output_tokens": 613,
+  "estimated_cost_usd": 0.04342,
+  "elapsed_seconds": 7.034512758255005,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-042",
+      "OSHA-PSM-043",
+      "OSHA-PSM-030",
+      "OSHA-PSM-005"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "physical_condition",
+      "qualification_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(l)(2)",
+      "§1910.119(l)(3)",
+      "§1910.119(l)(4)",
+      "§1910.119(d)(3)(ii)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scenario presents a direct factual and technical conflict: engineering asserts the reactor component swap is a 'replacement in kind' (exempt from MOC under §1910.119(l)(1)), but maintenance records show a differing material specification and operating limit, contradicting that classification. Determining whether a change qualifies as replacement-in-kind requires qualified engineering judgment regarding equivalency of design, materials, and operating limits per recognized and generally accepted good engineering practice (§1910.119(d)(3)(ii)). Because the facts conflict and resolution requires specialized engineering/safety determination rather than a straightforward rule application, this cannot be resolved by rote citation lookup and must be escalated to a qualified engineering/safety authority to determine whether MOC procedures under §1910.119(l) apply.",
+    "missing_information_or_escalation_reason": "Conflicting technical determinations between engineering and maintenance regarding whether the component change meets 'replacement in kind' criteria (material spec, operating limits) require qualified engineering evaluation and documented technical justification under §1910.119(d)(3)(ii) and (l)(2) before a compliance determination can be made."
+  }
+}

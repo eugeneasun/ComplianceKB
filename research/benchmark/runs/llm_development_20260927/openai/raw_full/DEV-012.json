@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-012",
+  "prompt_sha256": "905bc9b640f653645eb4c9798698950fd0f12c9df4123e0bacd6aca27df47685",
+  "request_bytes": 46217,
+  "input_tokens": 12033,
+  "output_tokens": 513,
+  "estimated_cost_usd": 0.030222,
+  "elapsed_seconds": 5.423274517059326,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-003",
+      "OSHA-REC-007",
+      "OSHA-REC-008"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "incident_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)",
+      "§1904.29(b)(3)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The work-related incident resulted in both an employee amputation and in-patient hospitalization. Report the event to OSHA within 24 hours. Because the case is stipulated to be recordable and the employer learned of it today, enter it on the OSHA 300 Log and complete the OSHA 301 Incident Report within seven calendar days of receiving that information. Retain the OSHA 300 Log, OSHA 301 Incident Report, annual summary, and any privacy case list for five years after the end of the calendar year covered.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

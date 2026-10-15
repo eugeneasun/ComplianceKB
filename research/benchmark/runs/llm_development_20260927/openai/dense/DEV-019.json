@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-019",
+  "prompt_sha256": "6674f7b029cc45ad8fd2d04785e84ce3a7fd2000b901b81482733cab09cd2ece",
+  "request_bytes": 9385,
+  "input_tokens": 2468,
+  "output_tokens": 367,
+  "estimated_cost_usd": 0.009340000000000001,
+  "elapsed_seconds": 4.102107763290405,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-010"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(e)(2)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because one employer's hazardous chemicals may expose another employer's on-site workers, the employer must have a written hazard communication program and must include methods for providing the other employer on-site access to safety data sheets for each hazardous chemical.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

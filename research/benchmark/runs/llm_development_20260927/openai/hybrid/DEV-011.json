@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "5ecdf3de68b38a95eaa2e343df6d4558b886ee20028396eb908183e578b288d6",
+  "request_bytes": 8263,
+  "input_tokens": 2297,
+  "output_tokens": 165,
+  "estimated_cost_usd": 0.006574,
+  "elapsed_seconds": 2.404797315597534,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-001",
+      "OSHA-REC-002",
+      "OSHA-REC-006"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.4(a)",
+      "§1904.7(a)",
+      "§1904.39(a)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The establishment is recordkeeping-covered, and the case is stated to be work-related and new. Death satisfies the general recording criteria; therefore, the fatality must be recorded. The death also triggers a report to OSHA within eight hours after the death resulting from the work-related incident.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

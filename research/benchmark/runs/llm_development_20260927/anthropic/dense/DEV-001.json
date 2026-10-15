@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "cc3c3d68872e48024c89a1925025661931c6ca36d533f368c518db8186e04b86",
+  "request_bytes": 10022,
+  "input_tokens": 4717,
+  "output_tokens": 419,
+  "estimated_cost_usd": 0.013624,
+  "elapsed_seconds": 4.751036882400513,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-004",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario involves a hazardous chemical being introduced into a work area for the first time, with employees decanting into workplace containers (requiring labeling) and lacking prior training on this new hazard. This is a HazCom scenario, not a PSM (highly hazardous chemical process) scenario, since no indication of PSM-threshold quantities or covered processes is given. The employer must have a written hazard communication program, ensure workplace containers are labeled, and provide training on the new chemical hazard before/at the time of introduction per §1910.1200(h)(1) and (h)(3).",
+    "missing_information_or_escalation_reason": ""
+  }
+}

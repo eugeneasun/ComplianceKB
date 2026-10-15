@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "f110e6ce81a0ae0985f5cb38b3c0f03588d91ff165a021da84a345180d71aa4d",
+  "request_bytes": 9148,
+  "input_tokens": 2426,
+  "output_tokens": 216,
+  "estimated_cost_usd": 0.007444,
+  "elapsed_seconds": 4.3937318325042725,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The vendor is outside servicing personnel, but the coordination requirement applies only when the vendor is engaged in activities covered by the scope and application of the lockout/tagout standard. The supplied facts do not establish whether the maintenance involves a machine or equipment for which unexpected energization, startup, or release of stored energy could occur and cause injury. If that predicate is met, the on-site and outside employers must inform each other of their respective lockout or tagout procedures.",
+    "missing_information_or_escalation_reason": "Determine whether the planned maintenance could expose personnel to injury from unexpected energization, startup, or stored-energy release. If so, the work is within the described LOTO scope and outside-employer coordination is required."
+  }
+}

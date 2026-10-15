@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-017",
+  "prompt_sha256": "a46abba3abe1aefaf5645cce936126d475978745ae01f71541eb906d9ba231a8",
+  "request_bytes": 9496,
+  "input_tokens": 2495,
+  "output_tokens": 141,
+  "estimated_cost_usd": 0.006682,
+  "elapsed_seconds": 2.1810567378997803,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-013"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(f)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The portable container is filled from a labeled drum, is intended only for the immediate use of the employee performing the transfer, remains under that employee's control, and is not stored for later use. Therefore, the stated portable-container labeling exception applies and the employer is not required to label this portable container.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "provider": "openai",
+    "contrast": "rkm_agent_minus_hybrid",
+    "n": 24,
+    "requirements_f1_mean_delta": -0.012744200244200232,
+    "requirements_f1_paired_bootstrap_95ci": [
+      -0.08189033189033189,
+      0.04961756993006986
+    ],
+    "requirements_f1_wins_ties_losses": [
+      4,
+      17,
+      3
+    ],
+    "triggers_f1_mean_delta": 0.13055555555555556,
+    "triggers_f1_paired_bootstrap_95ci": [
+      0.023611111111111107,
+      0.2611111111111111
+    ],
+    "triggers_f1_wins_ties_losses": [
+      8,
+      15,
+      1
+    ],
+    "evidence_f1_mean_delta": 0.15694444444444444,
+    "evidence_f1_paired_bootstrap_95ci": [
+      0.07182539682539683,
+      0.24761904761904763
+    ],
+    "evidence_f1_wins_ties_losses": [
+      13,
+      10,
+      1
+    ],
+    "citations_f1_mean_delta": -0.016483516483516467,
+    "citations_f1_paired_bootstrap_95ci": [
+      -0.08546519452769454,
+      0.04658362470862469
+    ],
+    "citations_f1_wins_ties_losses": [
+      4,
+      16,
+      4
+    ],
+    "decision_accuracy_mean_delta": 0.0,
+    "decision_accuracy_paired_bootstrap_95ci": [
+      0.0,
+      0.0
+    ],
+    "decision_accuracy_wins_ties_losses": [
+      0,
+      24,
+      0
+    ]
+  },
+  {
+    "provider": "anthropic",
+    "contrast": "rkm_agent_minus_hybrid",
+    "n": 24,
+    "requirements_f1_mean_delta": 0.02628968253968254,
+    "requirements_f1_paired_bootstrap_95ci": [
+      -0.0054563492063492034,
+      0.06398809523809525
+    ],
+    "requirements_f1_wins_ties_losses": [
+      5,
+      18,
+      1
+    ],
+    "triggers_f1_mean_delta": 0.23055555555555554,
+    "triggers_f1_paired_bootstrap_95ci": [
+      0.10552083333333338,
+      0.36388888888888893
+    ],
+    "triggers_f1_wins_ties_losses": [
+      13,
+      10,
+      1
+    ],
+    "evidence_f1_mean_delta": 0.34391534391534395,
+    "evidence_f1_paired_bootstrap_95ci": [
+      0.226521164021164,
+      0.470907738095238
+    ],
+    "evidence_f1_wins_ties_losses": [
+      19,
+      4,
+      1
+    ],
+    "citations_f1_mean_delta": 0.05406746031746032,
+    "citations_f1_paired_bootstrap_95ci": [
+      -0.0054563492063492034,
+      0.1488095238095238
+    ],
+    "citations_f1_wins_ties_losses": [
+      5,
+      18,
+      1
+    ],
+    "decision_accuracy_mean_delta": 0.0,
+    "decision_accuracy_paired_bootstrap_95ci": [
+      0.0,
+      0.0
+    ],
+    "decision_accuracy_wins_ties_losses": [
+      0,
+      24,
+      0
+    ]
+  }
+]

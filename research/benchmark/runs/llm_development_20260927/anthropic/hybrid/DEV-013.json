@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "b2caa4e8f3d5ed890a88ec159e4c5ef38073fe93444f62b6b34015c49974f0b5",
+  "request_bytes": 8057,
+  "input_tokens": 4151,
+  "output_tokens": 344,
+  "estimated_cost_usd": 0.011742,
+  "elapsed_seconds": 3.866213083267212,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-022",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(ii)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario involves a new employee informed of injury reporting procedures per §1904.35(b)(1)(ii), and a supervisor threatening discipline after an injury report, which directly implicates the anti-retaliation provision §1904.35(b)(1)(iv) and the reasonable-procedure requirement §1904.35(b)(1)(i), since threats of discipline could deter reporting. These provisions are clearly applicable and supported by the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

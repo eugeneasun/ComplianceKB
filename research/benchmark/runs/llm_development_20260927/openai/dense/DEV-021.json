@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-021",
+  "prompt_sha256": "15a95855c7439c913df4c08d33e92916f1064b30859b6d8e04722d9c7fbbd284",
+  "request_bytes": 8918,
+  "input_tokens": 2419,
+  "output_tokens": 169,
+  "estimated_cost_usd": 0.006866000000000001,
+  "elapsed_seconds": 2.412503957748413,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "A 24-hour report is required only when an employee's in-patient hospitalization resulted from a work-related incident. The supplied facts establish a hospital admission after illness, but do not establish either work-relatedness or that the admission was in-patient hospitalization.",
+    "missing_information_or_escalation_reason": "Determine whether the illness resulted from a work-related incident and whether the employee was admitted for in-patient hospitalization. If both are true, report to OSHA within 24 hours after the hospitalization."
+  }
+}

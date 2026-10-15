@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "f377651d70b4e5a1cfcc2f16a8f8bafeef40ad7e0b88936355fa1edc3c9e7136",
+  "request_bytes": 18093,
+  "input_tokens": 4640,
+  "output_tokens": 316,
+  "estimated_cost_usd": 0.013072,
+  "elapsed_seconds": 3.702232837677002,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The technician's newly assigned role triggers Hazard Communication information and training at initial assignment for hazardous chemicals in the work area. The training must cover detection methods, relevant chemical hazards, protective measures, and the employer's hazard communication program details. The supplied facts do not establish an impending introduction of highly hazardous chemicals or a new/modified facility startup, so the pre-startup safety-review requirement is not selected.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

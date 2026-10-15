@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "5ecdf3de68b38a95eaa2e343df6d4558b886ee20028396eb908183e578b288d6",
+  "request_bytes": 8189,
+  "input_tokens": 4192,
+  "output_tokens": 254,
+  "estimated_cost_usd": 0.010924,
+  "elapsed_seconds": 3.3583242893218994,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-006",
+      "OSHA-REC-001",
+      "OSHA-REC-002"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(1)",
+      "§1904.4(a)",
+      "§1904.7(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "A work-related employee fatality triggers the 8-hour OSHA fatality reporting requirement under §1904.39(a)(1), and the case must also be recorded per the general recording criteria in §1904.4(a) and §1904.7(a), since death is an explicit recordability criterion.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

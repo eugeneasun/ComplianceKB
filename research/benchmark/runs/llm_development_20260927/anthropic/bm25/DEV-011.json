@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "867ec165eee7f320aa453ad37833978a06c86f2dc74b9f1a10d9ba5437251c2f",
+  "request_bytes": 8636,
+  "input_tokens": 4311,
+  "output_tokens": 240,
+  "estimated_cost_usd": 0.011022,
+  "elapsed_seconds": 3.34576416015625,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-006",
+      "OSHA-REC-001"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(1)",
+      "§1904.4(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "A work-related fatality triggers both the general recordkeeping requirement to record the case (1904.4(a)) and the specific severe-event reporting obligation requiring OSHA notification within 8 hours (1904.39(a)(1)). These requirements are directly applicable and determinate based on the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

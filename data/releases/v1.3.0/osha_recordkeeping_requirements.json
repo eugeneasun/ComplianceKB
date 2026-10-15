@@ -1,0 +1,956 @@
+{
+  "dataset": "TrusOne-ComplianceKB",
+  "version": "1.3.0",
+  "framework": "OSHA_RECORDKEEPING",
+  "license": "CC-BY-4.0",
+  "generated": "2026-09-27T12:00:00Z",
+  "record_count": 27,
+  "requirements": [
+    {
+      "id": "OSHA-REC-001",
+      "requirement_text": "Each employer required to keep records must record each fatality, injury, and illness that is work-related, is a new case, and meets one or more of the general recording criteria.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.4(a)",
+        "source_text_excerpt": "Each employer required by this part to keep records of fatalities, injuries, and illnesses must record each fatality, injury and illness that is work-related; is a new case; and meets one or more of the general recording criteria.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.4(a)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "e90b093f5bdfac90f6722a868c68bf75ce491be1c3fd3455f73efc60a60658cc",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-002",
+      "requirement_text": "The employer must consider an injury or illness to meet the general recording criteria if it results in death, days away from work, restricted work, transfer to another job, medical treatment beyond first aid, loss of consciousness, or diagnosis of a significant injury by a health care professional.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.7(a)",
+        "source_text_excerpt": "You must consider an injury or illness to meet the general recording criteria, and therefore to be recordable, if it results in any of the following: death, days away from work, restricted work or transfer to another job, medical treatment beyond first aid, or loss of consciousness.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.7(a)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "b33bff6f08d328571c45bbccbd758b9a2f11490c75ed05c6a7e8cbb40540ae2e",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-003",
+      "requirement_text": "The employer must enter each recordable injury or illness on the OSHA 300 Log and 301 Incident Report within seven calendar days of receiving information that a recordable injury or illness has occurred.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.29(b)(3)",
+        "source_text_excerpt": "You must enter each recordable injury or illness on the OSHA 300 Log and 301 Incident Report within seven (7) calendar days of receiving information that a recordable injury or illness has occurred.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.29(b)(3)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "5bbc409d9bd0ac324b7a4ffacde89ad311a4d80312ea43edd18fdadc9f03662f",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-004",
+      "requirement_text": "At the end of each calendar year, the employer must review the OSHA 300 Log for completeness and accuracy and correct identified deficiencies.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.32(a)(1)",
+        "source_text_excerpt": "(1) Review the OSHA 300 Log to verify that the entries are complete and accurate, and correct any deficiencies identified;",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.32(a)(1)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "ec72b3a8d0a071ac3a251b79afd13008833ef1b73962135dd3b708fad7acf191",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-005",
+      "requirement_text": "The employer must post the annual summary in a conspicuous place where notices to employees are customarily posted, and ensure it is not altered, defaced, or covered by other material.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "low",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.32(b)(5)",
+        "source_text_excerpt": "You must post a copy of the annual summary in each establishment in a conspicuous place or places where notices to employees are customarily posted. You must ensure that the posted annual summary is not altered, defaced or covered by other material.\n\n[CURRENT OSHA, accessed 2026-09-26, §1904.32(b)(6), for contrast]\nYou must post the summary no later than February 1 of the year following the year covered by the records and keep the posting in place until April 30.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.32(b)(5)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "9122566d610f77d49d22e3c52fc01d9af044ebe5d3663f89829169e5b9bff1e7",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-006",
+      "requirement_text": "Within eight hours after the death of any employee from a work-related incident, the employer must report the fatality to OSHA.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "record_review",
+      "audit_evidence_type": "manifest_or_form",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.39(a)(1)",
+        "source_text_excerpt": "Within eight (8) hours after the death of any employee as a result of a work-related incident, you must report the fatality to OSHA.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.39(a)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "3b05f2d8bdea1308e829827c77f2e529209874afb1bfeb8529ae4902276142f0",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-007",
+      "requirement_text": "Within twenty-four hours after an employee's work-related in-patient hospitalization, amputation, or loss of an eye, the employer must report the event to OSHA.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "manifest_or_form",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.39(a)(2)",
+        "source_text_excerpt": "Within twenty-four (24) hours after the in-patient hospitalization of one or more employees or an employee's amputation or an employee's loss of an eye, as a result of a work-related incident, you must report the event to OSHA.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.39(a)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "5a8ccad507b476e556012db1f8d4b7d4abe4c8bd8d92e98c6e635d225be26745",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-008",
+      "requirement_text": "The employer must retain the OSHA 300 Log, the privacy case list, the annual summary, and the 301 Incident Report forms for five years following the end of the calendar year that the records cover.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "low",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.33(a)",
+        "source_text_excerpt": "You must save the OSHA 300 Log, the privacy case list (if one exists), the annual summary, and the OSHA 301 Incident Report forms for five (5) years following the end of the calendar year that these records cover.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.33(a)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "0ca205ec63d8d5acbdb4eab45a85b64c1ce0853b826baa104095601e338bf6ce",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-009",
+      "requirement_text": "If a case is a privacy concern case, the employer may not enter the employee's name on the OSHA 300 Log and shall instead enter 'privacy case' in the space normally used for the name.",
+      "is_mandatory": true,
+      "requirement_type": "prohibition",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.29(b)(6)",
+        "source_text_excerpt": "If you have a \"privacy concern case,\" you may not enter the employee's name on the OSHA 300 Log. Instead, enter \"privacy case\" in the space normally used for the employee's name.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.29(b)(6)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "ef49bf095e92bbb41bdd641ec9bd9f5160e8d3b620c8d651288c9dd46af28e58",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-010",
+      "requirement_text": "The employer must keep a separate OSHA 300 Log for each establishment that is expected to be in operation for one year or longer.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.30(a)",
+        "source_text_excerpt": "You must keep a separate OSHA 300 Log for each establishment that is expected to be in operation for one year or longer.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.30(a)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "89ae649e50b77b270edd5f8fa1b31c18f5f3f95543dbab1b77de65953ed54c9d",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-011",
+      "requirement_text": "The employer must record the recordable injuries and illnesses of employees on its payroll and workers it supervises day to day; sole proprietors and partners are not considered employees for Part 1904 recordkeeping purposes.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.31(a)",
+        "source_text_excerpt": "You must record on the OSHA 300 Log the recordable injuries and illnesses of all employees on your payroll, whether they are labor, executive, hourly, salary, part-time, seasonal, or migrant workers. You also must record the recordable injuries and illnesses that occur to employees who are not on your payroll if you supervise these employees on a day-to-day basis. If your business is organized as a sole proprietorship or partnership, the owner or partners are not considered employees for recordkeeping purposes.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.31(a)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "11229654350ee3aec908c542d35865f46cf8cec107386c38aa855370bce2fea7",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-012",
+      "requirement_text": "During the five-year storage period, the employer must update stored OSHA 300 Logs for newly discovered recordable cases and classification changes; when a description or outcome changes, the original entry must be removed or lined out and replaced with the new information.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "low",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.33(b)(1)",
+        "source_text_excerpt": "Yes, during the storage period, you must update your stored OSHA 300 Logs to include newly discovered recordable injuries or illnesses and to show any changes that have occurred in the classification of previously recorded injuries and illnesses. If the description or outcome of a case changes, you must remove or line out the original entry and enter the new information.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.33(b)(1)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "ce587421d96ff6a57aa85070c90c6265d9fbdb9d297ebc019991f8e00030f3d0",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-013",
+      "requirement_text": "The employer must establish a reasonable procedure for employees to report work-related injuries and illnesses promptly and accurately; the procedure must not deter or discourage accurate reporting.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "interview",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.35(b)(1)(i)",
+        "source_text_excerpt": "(i) You must establish a reasonable procedure for employees to report work-related injuries and illnesses promptly and accurately. A procedure is not reasonable if it would deter or discourage a reasonable employee from accurately reporting a workplace injury or illness;",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.35(b)(1)(i)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "088e4d769fe227c2fc68b75875c6710f64e188669417e0f8bbb71915af5475a4",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-014",
+      "requirement_text": "The employer must not discharge or in any manner discriminate against any employee for reporting a work-related injury or illness.",
+      "is_mandatory": true,
+      "requirement_type": "prohibition",
+      "risk_level": "critical",
+      "verification_method": "interview",
+      "audit_evidence_type": "complaint_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.35(b)(1)(iv)",
+        "source_text_excerpt": "You must not discharge or in any manner discriminate against any employee for reporting a work-related injury or illness.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.35(b)(1)(iv)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "2fa85a9036ce7d995e288350e3d6207adcee29fd2cde6638cf4c070d3da86809",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-015",
+      "requirement_text": "When an employee, former employee, personal representative, or authorized employee representative requests relevant OSHA 300 Logs for an establishment where the employee worked, the employer must provide copies by the end of the next business day.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.35(b)(2)(iii)",
+        "source_text_excerpt": "(iii) If an employee or representative asks for access to the OSHA 300 Log, when do I have to provide it? When an employee, former employee, personal representative, or authorized employee representative asks for copies of your current or stored OSHA 300 Log(s) for an establishment the employee or former employee has worked in, you must give the requester a copy of the relevant OSHA 300 Log(s) by the end of the next business day.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.35(b)(2)(iii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "0f65e1edc1dc59b3ac5db390bb2d326cf8aa6f5ee8a22c6b1a53f87962daa739",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-016",
+      "requirement_text": "When an authorized government representative asks for the records kept under Part 1904, the employer must provide copies within four business hours.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "audit_preparation",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.40(a)",
+        "source_text_excerpt": "When an authorized government representative asks for the records you keep under part 1904, you must provide copies of the records within four (4) business hours.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.40(a)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "93c406a6849e0e0420c3d64dd119a1b2530871e8914325dac77f0306677310ae",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-017",
+      "requirement_text": "Establishments with 250 or more employees that are required to keep Part 1904 records must electronically submit information from the OSHA Form 300A annually.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "manifest_or_form",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "250+",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.41(a)(1)(ii)",
+        "source_text_excerpt": "If your establishment had 250 or more employees at any time during the previous calendar year, and this part requires your establishment to keep records, then you must electronically submit information from OSHA Form 300A Summary of Work-Related Injuries and Illnesses to OSHA or OSHA's designee.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.41(a)(1)(ii)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "46d094f88ef13d3a7d8bdc9ad1223890d509e2708201c0fa3003224fb82d40b5",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-23"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-REC-018",
+      "requirement_text": "At the end of each calendar year, the employer must create an annual summary of injuries and illnesses recorded on the OSHA 300 Log.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "manifest_or_form",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.32(a)(2)",
+        "source_text_excerpt": "(2) Create an annual summary of injuries and illnesses recorded on the OSHA 300 Log;",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.32(a)(2)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "e978900353e71a0bb1f5fdae483624c656efcb345fa22cbec512c063731cf47f",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-019",
+      "requirement_text": "At the end of each calendar year, the employer must certify the annual injury and illness summary.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "certification",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.32(a)(3)",
+        "source_text_excerpt": "(3) Certify the summary; and",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.32(a)(3)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "3c59c0165f27b3665dd38141d9bdfce733f080e6042e51cdd16474cfa7eb4807",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-020",
+      "requirement_text": "At the end of each calendar year, the employer must post the annual injury and illness summary.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "low",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.32(a)(4)",
+        "source_text_excerpt": "(4) Post the annual summary.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.32(a)(4)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "b0c8680d18f0bb018a24c727f89dbb65d511d2821370f1a8ee6ce9749420f616",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-021",
+      "requirement_text": "For privacy concern cases, the employer must maintain a separate confidential list of case numbers and employee names so cases can be updated and information supplied to the government on request.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.29(b)(6)",
+        "source_text_excerpt": "You must keep a separate, confidential list of the case numbers and employee names for your privacy concern cases so you can update the cases and provide the information to the government if asked to do so.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.29(b)(6)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "31db90fd6157de60461e7f56d0ea03f8eb8bbef9102043233e5ca79ac2b4c236",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-022",
+      "requirement_text": "The employer must inform each employee of its procedure for reporting work-related injuries and illnesses.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "interview",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.35(b)(1)(ii)",
+        "source_text_excerpt": "(ii) You must inform each employee of your procedure for reporting work-related injuries and illnesses;",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.35(b)(1)(ii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "309b564c08a29f423701d4ac862e243fce09ca107cfec91b1b48c32ba37db415",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-023",
+      "requirement_text": "When an employee, former employee, or personal representative requests the OSHA 301 Incident Report describing that employee's injury or illness, the employer must provide the report by the end of the next business day.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.35(b)(2)(v)(A)",
+        "source_text_excerpt": "(A) When an employee, former employee, or personal representative asks for a copy of the OSHA 301 Incident Report describing an injury or illness to that employee or former employee, you must give the requester a copy of the OSHA 301 Incident Report containing that information by the end of the next business day.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.35(b)(2)(v)(A)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "78b1ac8a2f1220f8ba202f2937f3acaa23a594d027a57d60059e3b6f4e8f40b7",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-024",
+      "requirement_text": "When an authorized employee representative requests OSHA 301 Incident Reports for a represented establishment, the employer must provide the permitted 'Tell us about the case' information within seven calendar days and remove all other information.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.35(b)(2)(v)(B)",
+        "source_text_excerpt": "(B) When an authorized employee representative asks for copies of the OSHA 301 Incident Reports for an establishment where the agent represents employees under a collective bargaining agreement, you must give copies of those forms to the authorized employee representative within 7 calendar days. You are only required to give the authorized employee representative information from the OSHA 301 Incident Report section titled \"Tell us about the case.\" You must remove all other information from the copy of the OSHA 301 Incident Report or the equivalent substitute form that you give to the authorized employee representative.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.35(b)(2)(v)(B)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "6f7dc71377cbfd9ca52d04aa299c7a6148911b25d32bce6254096eb68a5704ed",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-025",
+      "requirement_text": "The employer must post the annual summary no later than February 1 following the covered year and keep it posted through April 30.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "low",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.32(b)(6)",
+        "source_text_excerpt": "(6) When do I have to post the annual summary? You must post the summary no later than February 1 of the year following the year covered by the records and keep the posting in place until April 30.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.32(b)(6)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "0a591cc17bb3d4fd87bcb705fa8e58d5062044f54e91877303a9b213fbd3bfc2",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-026",
+      "requirement_text": "An establishment with 20 to 249 employees in an industry listed in Appendix A to Subpart E must electronically submit OSHA Form 300A information annually by the specified reporting date.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "manifest_or_form",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "20-249",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_condition": "Industry listed in Appendix A to Subpart E of 29 CFR Part 1904."
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.41(a)(1)(i)",
+        "source_text_excerpt": "(i) If your establishment had 20-249 employees at any time during the previous calendar year, and your establishment is classified in an industry listed in appendix A to subpart E of this part, then you must electronically submit information from OSHA Form 300A Summary of Work-Related Injuries and Illnesses to OSHA or OSHA's designee. You must submit the information once a year, no later than the date listed in paragraph (c) of this section of the year after the calendar year covered by the form.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.41(a)(1)(i)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "c8e12cf10347142f7b91033ed5f3791a60009dd6283d91266937d2c084d307ae",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-REC-027",
+      "requirement_text": "The employer must not discharge or in any manner discriminate against an employee for reporting a work-related fatality, injury, or illness; for filing a safety and health complaint; for requesting access to Part 1904 injury and illness records; or for otherwise exercising any right afforded by the OSH Act.",
+      "is_mandatory": true,
+      "requirement_type": "prohibition",
+      "risk_level": "high",
+      "verification_method": "interview",
+      "audit_evidence_type": "complaint_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1904",
+        "source_framework": "OSHA_RECORDKEEPING",
+        "source_version": "2024-07-01",
+        "source_clause": "§1904.36",
+        "source_text_excerpt": "In addition to Sec.1904.35, section 11(c) of the OSH Act also prohibits you from discriminating against an employee for reporting a work-related fatality, injury, or illness. That provision of the Act also protects the employee who files a safety and health complaint, asks for access to the part 1904 records, or otherwise exercises any rights afforded by the OSH Act.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1904#p-1904.36",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "62ad83c0ddc68797bb61a0cfdd6fc50d34eaea233b7de77063297ef916c2c0e5",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    }
+  ]
+}

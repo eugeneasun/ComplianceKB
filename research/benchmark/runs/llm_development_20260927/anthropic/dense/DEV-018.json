@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "99f4528d1988808c721fac8a3a1c1409faec93fa9006e960827906c0a4441412",
+  "request_bytes": 8544,
+  "input_tokens": 4312,
+  "output_tokens": 365,
+  "estimated_cost_usd": 0.012274,
+  "elapsed_seconds": 4.682186841964722,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The standard explicitly requires that the lockout device be removed by the employee who applied it. The scenario presents a conflict: that employee is unavailable, and management wants another employee to remove it, which is not permitted absent a specific documented exception procedure (not present in the supplied excerpts) for removal by another authorized employee when the original employee is unavailable. This requires qualified safety/legal judgment to apply the narrow exception process safely, which is not covered by the excerpts provided.",
+    "missing_information_or_escalation_reason": "The excerpts do not include the specific procedure/exception (§1910.147(e)(3) alternative provisions) governing device removal when the applying employee is unavailable, and applying such an exception requires qualified safety/compliance judgment beyond the literal rule stated."
+  }
+}

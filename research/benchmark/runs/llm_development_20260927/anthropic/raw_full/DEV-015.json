@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-015",
+  "prompt_sha256": "b1365cfa0bca40ce14212bc502d7e9003832fadd5d392d6f4ea177fcc596edfd",
+  "request_bytes": 46186,
+  "input_tokens": 18624,
+  "output_tokens": 304,
+  "estimated_cost_usd": 0.040288000000000004,
+  "elapsed_seconds": 3.9438021183013916,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-025",
+      "OSHA-PSM-026"
+    ],
+    "predicted_trigger_labels": [
+      "scheduled_inspection"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(j)(4)",
+      "§1910.119(j)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a mechanical integrity inspection under PSM finding process equipment (pressure vessel) outside acceptable limits defined by process safety information. §1910.119(j)(4) requires documented inspections/tests of process equipment, and §1910.119(j)(5) directly requires the employer to correct deficiencies in equipment outside acceptable limits before further use or in a safe and timely manner. These requirements are clearly triggered by the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "b23bccf66009bf8aec2ba7210458d45d492aed8989180d6fbaa5262ed9ada807",
+  "request_bytes": 9452,
+  "input_tokens": 2495,
+  "output_tokens": 299,
+  "estimated_cost_usd": 0.008577999999999999,
+  "elapsed_seconds": 4.198871374130249,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "Each lockout or tagout device shall be removed from each energy isolating device by the employee who applied the device."
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The supplied OSHA LOTO excerpt directly requires that the employee who applied the lockout or tagout device remove it. Because that employee has left and cannot be reached, the supplied context does not support management directing another employee to remove the device.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

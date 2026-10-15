@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-006",
+  "prompt_sha256": "47fdac6f610e7d66f37a53066c338d5f52960b60c20c113207a103ab80b4be33",
+  "request_bytes": 8580,
+  "input_tokens": 2328,
+  "output_tokens": 143,
+  "estimated_cost_usd": 0.006372000000000001,
+  "elapsed_seconds": 2.067779302597046,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-005"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(6)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The described equipment servicing falls within the supplied lockout/tagout context because unexpected energization or stored energy could cause injury. As the anniversary of the last machine-specific energy-control procedure review approaches, the employer must conduct the periodic inspection at least annually to ensure that the procedure and the standard's requirements are being followed.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

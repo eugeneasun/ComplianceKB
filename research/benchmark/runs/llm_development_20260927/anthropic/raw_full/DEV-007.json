@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-007",
+  "prompt_sha256": "5d4762e60eab116323f8bbb45e70d8e142430d8469e6c397cdeda6bacd8d5033",
+  "request_bytes": 46213,
+  "input_tokens": 18629,
+  "output_tokens": 630,
+  "estimated_cost_usd": 0.043558,
+  "elapsed_seconds": 6.399758338928223,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-003",
+      "OSHA-LOTO-004",
+      "OSHA-LOTO-005",
+      "OSHA-LOTO-006",
+      "OSHA-LOTO-007",
+      "OSHA-LOTO-008",
+      "OSHA-LOTO-009",
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "training_refresh",
+      "periodic_review",
+      "procedure_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(4)(ii)",
+      "§1910.147(c)(5)(i)",
+      "§1910.147(c)(6)(i)",
+      "§1910.147(c)(7)(i)",
+      "§1910.147(c)(7)(iii)(A)",
+      "§1910.147(d)(3)",
+      "§1910.147(d)(5)(i)",
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes maintenance servicing of a machine with unexpected startup/stored energy risk, which squarely falls under §1910.147's hazardous energy control (lockout/tagout) requirements: establishing an energy control program, developing documented procedures, providing isolating devices, relieving stored pneumatic energy, periodic inspection, training/retraining, and proper application/removal of lockout devices. PSM (§1910.119) and HazCom (§1910.1200) provisions are not applicable since no highly hazardous chemical process or chemical hazard communication issue is described, and Recordkeeping (Part 1904) requirements apply only if an injury occurs, which is not stated as having occurred.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

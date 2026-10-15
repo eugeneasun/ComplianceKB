@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "6a78472c5d38079bcfcb460c1998e7c33179a67c96056308da619a1a78965da1",
+  "request_bytes": 17576,
+  "input_tokens": 4562,
+  "output_tokens": 188,
+  "estimated_cost_usd": 0.01138,
+  "elapsed_seconds": 2.5135512351989746,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-026"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The establishment's 75 employees places it in the 20-249 employee range, and it keeps Part 1904 records. Electronic annual submission of Form 300A information applies to establishments in that size range only if they are classified in an industry listed in Appendix A to Subpart E of 29 CFR Part 1904. The industry classification is not supplied.",
+    "missing_information_or_escalation_reason": "Provide the establishment's industry classification (NAICS) or confirmation whether it is listed in Appendix A to Subpart E of 29 CFR Part 1904."
+  }
+}

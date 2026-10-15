@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-010",
+  "prompt_sha256": "7ef084706922552180b94bf140a7a9d79480e3dea503368eee41fc13cac9968b",
+  "request_bytes": 46205,
+  "input_tokens": 18620,
+  "output_tokens": 278,
+  "estimated_cost_usd": 0.04002,
+  "elapsed_seconds": 3.5954501628875732,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-024"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(B)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario directly matches §1904.35(b)(2)(v)(B), which governs requests by authorized employee representatives for OSHA 301 Incident Reports at an establishment where the representative represents employees under a collective bargaining agreement. The rule specifies a 7-calendar-day timeframe and requires that only the 'Tell us about the case' section be provided, with all other information redacted. This is a determinate answer supported directly by the cited regulation without need for further facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-010",
+  "prompt_sha256": "6d994c6ad663684518345a78f81918867bf38587e1d6149f41913032275fc91c",
+  "request_bytes": 17276,
+  "input_tokens": 7389,
+  "output_tokens": 295,
+  "estimated_cost_usd": 0.017728,
+  "elapsed_seconds": 3.548797607421875,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-024"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(B)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario matches OSHA-REC-024 directly: an authorized employee representative requesting OSHA 301 Incident Reports for a represented establishment. Per §1904.35(b)(2)(v)(B), the employer must provide only the 'Tell us about the case' section within 7 calendar days, redacting all other information. This is distinct from OSHA-REC-023 (individual employee requests, next business day) and OSHA-REC-015 (OSHA 300 Log requests), which do not apply to this specific request type.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

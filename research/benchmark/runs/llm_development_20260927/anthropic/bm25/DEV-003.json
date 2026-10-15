@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "47fef7f8d952ca2c97eb2b8fd528cacf1f86b7ee932da62aaeebaa82e3c3aadc",
+  "request_bytes": 9826,
+  "input_tokens": 4599,
+  "output_tokens": 506,
+  "estimated_cost_usd": 0.014258,
+  "elapsed_seconds": 5.336489915847778,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-021",
+      "OSHA-PSM-022",
+      "OSHA-PSM-047",
+      "OSHA-PSM-004",
+      "OSHA-PSM-043",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change",
+      "new_process_startup",
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "inspection_record",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(i)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(f)(3)",
+      "§1910.119(d)",
+      "§1910.119(l)(4)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a significant equipment/technology modification affecting process safety information, not a replacement in kind, requiring management of change (l)(1), updated process safety information (d) and (l)(4), operating procedure review (f)(3), and a pre-startup safety review (i)(1)-(2) prior to introducing highly hazardous chemicals. Because new chemical hazards are introduced, HazCom training requirements (h)(1) and (h)(3) also apply. These requirements are directly supported by the provided excerpts and the stated facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

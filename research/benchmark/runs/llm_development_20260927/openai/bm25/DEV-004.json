@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "67cbbed4590652275628f28cf69117cb43895036333bb638dd66ad835d76f686",
+  "request_bytes": 9274,
+  "input_tokens": 2471,
+  "output_tokens": 352,
+  "estimated_cost_usd": 0.009166,
+  "elapsed_seconds": 4.310204029083252,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The near miss occurred at a covered process and could reasonably have resulted in a catastrophic toxic release. Therefore, the employer must investigate the incident under §1910.119(m)(1). No employee injury, hospitalization, fatality, amputation, or loss of an eye is stated, so the supplied record does not support selecting an OSHA fatality/severe-injury reporting requirement.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

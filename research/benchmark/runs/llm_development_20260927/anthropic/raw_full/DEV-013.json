@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "2d924450ca32cea8c1b15aedd8edecd486d86264ba2eb461fc656170f68b0761",
+  "request_bytes": 46163,
+  "input_tokens": 18612,
+  "output_tokens": 404,
+  "estimated_cost_usd": 0.041264,
+  "elapsed_seconds": 4.673597812652588,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-014",
+      "OSHA-REC-022"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(iv)",
+      "§1904.35(b)(1)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes an employer's reporting procedure and a supervisor threatening discipline after an employee reports a work-related injury. This directly implicates 29 CFR 1904.35(b)(1), which requires employers to establish a reasonable reporting procedure that does not deter reporting, to inform employees of that procedure, and prohibits discharging or discriminating against employees for reporting injuries. The supervisor's threat of discipline following the injury report is a clear violation of the anti-retaliation/anti-deterrence provisions of the recordkeeping rule. No PSM, LOTO, or HazCom elements are implicated by these facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

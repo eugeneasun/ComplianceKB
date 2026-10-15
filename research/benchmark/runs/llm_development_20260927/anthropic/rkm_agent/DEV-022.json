@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "5e6a98f5a712bfba76a947e08320fa0bf5173a61ca84bde6036dbb74b3a29873",
+  "request_bytes": 17823,
+  "input_tokens": 7502,
+  "output_tokens": 438,
+  "estimated_cost_usd": 0.019384,
+  "elapsed_seconds": 4.725871324539185,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016",
+      "OSHA-HAZCOM-002",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-003"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "safety_data_sheet",
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)",
+      "§1910.1200(e)(1)(i)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(f)(1)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "HazCom training is triggered specifically when a new chemical hazard is introduced that employees have not previously been trained on. The scenario does not establish whether the new cleaning product is classified as hazardous or presents a hazard type distinct from prior training. Without the SDS/classification data, it cannot be determined whether §1910.1200(h)(1) training obligation is triggered.",
+    "missing_information_or_escalation_reason": "Need the product's safety data sheet/hazard classification to confirm whether it is a 'hazardous chemical' and whether it introduces a new hazard type not covered by employees' existing HazCom training."
+  }
+}

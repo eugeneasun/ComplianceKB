@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-019",
+  "prompt_sha256": "cd99307abd47654107b58a1df102c18bbf4828c190dbbd4a8f10e6dcb9040ef8",
+  "request_bytes": 17113,
+  "input_tokens": 4423,
+  "output_tokens": 350,
+  "estimated_cost_usd": 0.013045999999999999,
+  "elapsed_seconds": 4.184658765792847,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-010",
+      "OSHA-HAZCOM-001"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(2)",
+      "§1910.1200(e)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because hazardous chemicals of one employer may expose another employer's workers at a shared worksite, the employer's written hazard communication program must specify methods for providing the other employer on-site SDS access and for communicating precautionary measures and the labeling system. A written hazard communication program is also required at each workplace.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

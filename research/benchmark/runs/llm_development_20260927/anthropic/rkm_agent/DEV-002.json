@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "f377651d70b4e5a1cfcc2f16a8f8bafeef40ad7e0b88936355fa1edc3c9e7136",
+  "request_bytes": 18019,
+  "input_tokens": 7579,
+  "output_tokens": 358,
+  "estimated_cost_usd": 0.018737999999999998,
+  "elapsed_seconds": 4.852167844772339,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "job_reassignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a technician newly assigned to operate a PSM-covered process; this constitutes initial assignment to a work area with hazardous chemicals under HazCom, triggering the employer's obligation to provide effective information and training on hazardous chemicals before the employee begins work, including detection methods, hazards, protective measures, and the hazard communication program details. Process-specific PSM training (e.g., pre-startup review, procedures) would also apply but the scenario does not indicate a new process startup, modification, or hot work/contractor context, so those PSM requirements are not directly triggered by the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

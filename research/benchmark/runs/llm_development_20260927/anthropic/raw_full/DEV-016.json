@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "c420d7295cd9932eae62d9d8411c2e295867941e3d263bd9c8dc4a47448c658b",
+  "request_bytes": 46188,
+  "input_tokens": 18620,
+  "output_tokens": 342,
+  "estimated_cost_usd": 0.04066,
+  "elapsed_seconds": 4.50864577293396,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-006"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(1)",
+      "§1910.1200(g)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a failure of SDS accessibility during a work shift, which is directly and unambiguously addressed by 1910.1200(g)(1) requiring employers to maintain an SDS for each hazardous chemical in the workplace, and 1910.1200(g)(8) requiring that SDSs be readily accessible during each work shift to employees in their work area, including electronic access without barriers to immediate access. The facts given (night shift, chemical in employee's work area, inability to immediately access SDS) map squarely onto these requirements without need for additional facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

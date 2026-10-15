@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-019",
+  "prompt_sha256": "6674f7b029cc45ad8fd2d04785e84ce3a7fd2000b901b81482733cab09cd2ece",
+  "request_bytes": 9311,
+  "input_tokens": 4501,
+  "output_tokens": 501,
+  "estimated_cost_usd": 0.014012,
+  "elapsed_seconds": 5.201223850250244,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-010",
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-006",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016",
+      "OSHA-HAZCOM-004"
+    ],
+    "predicted_trigger_labels": [
+      "facility_change",
+      "always_on",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "safety_data_sheet",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(2)",
+      "§1910.1200(e)(1)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(g)(8)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a multi-employer worksite under HazCom where one employer's chemicals may expose another's employees. §1910.1200(e)(2) directly addresses this multi-employer exposure scenario, requiring the producing/using employer to ensure the other employer has on-site access to SDSs. This is supported by the general HazCom program, SDS maintenance, labeling, and training requirements which underpin the multi-employer obligation. PSM-specific contractor provisions are not clearly triggered absent evidence of a covered PSM process, so they are excluded.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "b247e22910f1146716c50bfa1fccce576c7e00dc61de15ebc636fc823071b8ab",
+  "request_bytes": 8354,
+  "input_tokens": 2293,
+  "output_tokens": 1062,
+  "estimated_cost_usd": 0.017329999999999998,
+  "elapsed_seconds": 12.50114130973816,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-048",
+      "OSHA-PSM-050",
+      "OSHA-PSM-051",
+      "OSHA-PSM-052"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "performance_evaluation",
+      "incident_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(iv)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The contractor is being selected for work in a covered process area, which triggers the host employer's duty to obtain and evaluate the contractor's safety performance and programs. Because contractor employees will enter the process area and face known fire, explosion, and toxic-release hazards, the host employer must communicate those hazards and implement safe work practices controlling contractor entry, presence, and exit. The contract employer must ensure each contract employee is instructed on relevant job/process hazards and applicable emergency-action-plan provisions. A contractor employee injury and illness log related to the contractor's process-area work must also be maintained.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

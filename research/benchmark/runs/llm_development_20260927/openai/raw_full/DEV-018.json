@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "74937d5fa8eac0c1c8ec43f58dfd8c89725863c5b6f3f4b611f5849b895f3647",
+  "request_bytes": 46241,
+  "input_tokens": 12038,
+  "output_tokens": 218,
+  "estimated_cost_usd": 0.026692,
+  "elapsed_seconds": 3.8882064819335938,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The applicable rule requires that each lockout or tagout device be removed by the employee who applied it. The supplied excerpt does not state any exception or the conditions and authorization required for an employer-directed removal when that employee is absent. Because management proposes removal by another employee, determining whether and how that may occur requires qualified safety/legal review of the employer's energy-control procedure and the relevant complete regulatory provisions.",
+    "missing_information_or_escalation_reason": "Escalate before removal. The supplied context lacks the employer’s documented energy-control procedure for absent-employee lock removal, including its authorization, verification, notification, and safe-removal requirements; it also lacks facts confirming the equipment’s energy-isolated and stored-energy-safe condition."
+  }
+}

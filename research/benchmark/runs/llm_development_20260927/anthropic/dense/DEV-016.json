@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "131429eda166b9e343223ce8ad32e7e9aaee1391b12f1113cc475519c4325840",
+  "request_bytes": 9651,
+  "input_tokens": 4596,
+  "output_tokens": 298,
+  "estimated_cost_usd": 0.012172,
+  "elapsed_seconds": 3.6685709953308105,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-006"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(1)",
+      "§1910.1200(g)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a failure of immediate SDS accessibility during a work shift for an employee in a work area using a hazardous chemical, which directly implicates the requirement that employers maintain SDSs in the workplace and ensure they are readily accessible during each work shift without barriers to immediate access. No conflicting facts or missing predicates are present; the facts as given are sufficient to determine noncompliance with these specific provisions.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

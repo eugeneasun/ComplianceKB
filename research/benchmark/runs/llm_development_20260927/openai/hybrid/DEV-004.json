@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "91c6406ac8a269253ca3bfb0201d4ae2d83897194fb9dcf17f731be7769e7dc7",
+  "request_bytes": 9228,
+  "input_tokens": 2462,
+  "output_tokens": 163,
+  "estimated_cost_usd": 0.006880000000000001,
+  "elapsed_seconds": 2.426873207092285,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Federal OSHA PSM applies, and the near miss at the covered process could reasonably have resulted in a catastrophic toxic release. Therefore, the employer must investigate the incident under §1910.119(m)(1). The absence of an employee injury does not negate this investigation trigger. The supplied facts do not establish an OSHA fatality, hospitalization, amputation, loss-of-eye, or recordable-injury reporting trigger.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

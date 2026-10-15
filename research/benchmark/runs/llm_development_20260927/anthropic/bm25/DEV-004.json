@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "67cbbed4590652275628f28cf69117cb43895036333bb638dd66ad835d76f686",
+  "request_bytes": 9200,
+  "input_tokens": 4470,
+  "output_tokens": 284,
+  "estimated_cost_usd": 0.01178,
+  "elapsed_seconds": 3.840153455734253,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a near-miss with catastrophic release potential but no injury. Under 1910.119(m)(1), PSM requires investigation of any incident that could reasonably have resulted in a catastrophic release, regardless of injury. Recordkeeping reporting triggers (1904.39) require death or hospitalization/amputation/eye loss, none of which occurred here, so those do not apply. The facts given are sufficient to determine the PSM incident investigation requirement applies.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

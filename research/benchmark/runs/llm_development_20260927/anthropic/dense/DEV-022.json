@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "56c5957b88a911a3460664d14d0f7069ce4cf0f06e96b71dc61e193381a11e3d",
+  "request_bytes": 10390,
+  "input_tokens": 4813,
+  "output_tokens": 463,
+  "estimated_cost_usd": 0.014255999999999998,
+  "elapsed_seconds": 6.2723448276519775,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-001"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "safety_data_sheet",
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)",
+      "§1910.1200(h)(2)",
+      "§1910.1200(e)(1)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "HazCom requires new training only when a new chemical hazard not previously trained on is introduced into the work area (§1910.1200(h)(1)). Whether training is required depends on (1) whether the cleaning product is classified as hazardous under the SDS/label and (2) whether it presents a hazard class employees have not already been trained on. The scenario explicitly states these facts are not established, so a determinate answer cannot be given.",
+    "missing_information_or_escalation_reason": "Need the product's safety data sheet/hazard classification to determine if it is a 'hazardous chemical' under 1910.1200, and whether the specific hazard(s) it presents are hazards employees have already received training on. Without this, applicability of the training trigger in §1910.1200(h)(1) cannot be confirmed."
+  }
+}

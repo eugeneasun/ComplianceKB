@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "81041c374717e6727e4e7681ac68099b13dbbf98124d365fbe40ba8992bf6995",
+  "request_bytes": 17340,
+  "input_tokens": 7303,
+  "output_tokens": 596,
+  "estimated_cost_usd": 0.020566,
+  "elapsed_seconds": 6.758545160293579,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-021",
+      "OSHA-PSM-022",
+      "OSHA-PSM-043",
+      "OSHA-PSM-030"
+    ],
+    "predicted_trigger_labels": [
+      "facility_change",
+      "equipment_change",
+      "new_process_startup"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "written_program",
+      "training_record",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(i)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(l)(4)",
+      "§1910.119(l)(3)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scenario presents a factual and technical dispute between engineering and operations over whether the reactor component swap qualifies as a 'replacement in kind' under §1910.119(l)(1). Maintenance records indicate a differing material specification and operating limit, which are material to whether the change is technically equivalent. This determination requires qualified engineering judgment and cannot be resolved by written policy interpretation alone; if not a replacement in kind, MOC procedures (§1910.119(l)), pre-startup safety review (§1910.119(i)), updated process safety information, and employee training obligations would be triggered. Because the classification itself is contested and determines applicability of multiple mandatory PSM obligations, this requires human/engineering escalation rather than an automated answer.",
+    "missing_information_or_escalation_reason": "Conflicting technical assessments between engineering and maintenance regarding whether the component swap is a true 'replacement in kind' (matching material specification and operating limits) versus a change requiring management-of-change review. Resolution requires qualified engineering evaluation of the technical equivalence, which is outside the scope of automated compliance reasoning."
+  }
+}

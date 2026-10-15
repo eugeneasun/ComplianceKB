@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "058eda05a83159fcc281258ad8482de7448e313fa2ef1cef02a158a50223345f",
+  "request_bytes": 9523,
+  "input_tokens": 2519,
+  "output_tokens": 184,
+  "estimated_cost_usd": 0.007246,
+  "elapsed_seconds": 2.3757476806640625,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-026"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The establishment's 75 employees fall within the 20-249 employee range in §1904.41(a)(1)(i), and it keeps Part 1904 records. However, electronic submission of Form 300A information is required for that size range only if the establishment is classified in an industry listed in appendix A to subpart E. The industry classification is not supplied.",
+    "missing_information_or_escalation_reason": "Provide the establishment's industry classification and whether that industry is listed in appendix A to subpart E of Part 1904."
+  }
+}

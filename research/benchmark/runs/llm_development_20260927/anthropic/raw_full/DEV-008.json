@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "9bf2d602e284f77c333de055aaf9ed4b4b6fa4f8ae7d4fc71705479df059c65b",
+  "request_bytes": 46201,
+  "input_tokens": 18623,
+  "output_tokens": 658,
+  "estimated_cost_usd": 0.043826000000000004,
+  "elapsed_seconds": 6.193688631057739,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-020",
+      "OSHA-PSM-040",
+      "OSHA-PSM-048",
+      "OSHA-PSM-049",
+      "OSHA-PSM-050",
+      "OSHA-PSM-051",
+      "OSHA-PSM-052",
+      "OSHA-PSM-053",
+      "OSHA-PSM-054",
+      "OSHA-PSM-055"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "performance_evaluation",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(3)(i)",
+      "§1910.119(h)(2)(v)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(iii)",
+      "§1910.119(h)(2)(iv)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(ii)",
+      "§1910.119(h)(3)(iii)",
+      "§1910.119(h)(3)(iv)",
+      "§1910.119(h)(3)(v)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a contractor entering a covered PSM process area for the first time, which directly triggers the PSM contractor requirements under §1910.119(h). These require the host employer to evaluate contractor safety performance, inform contractors of process hazards and emergency action plan provisions, establish safe work practices controlling contractor entry/exit, maintain injury logs, and periodically evaluate contractor performance. Correspondingly, the contract employer must train employees on hazards, document training, ensure adherence to facility safety rules, and advise the host of any unique hazards. These requirements are squarely supported by the scenario facts (first-time contractor entry into a covered process area with fire, explosion, and toxic-release hazards) without need for additional facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

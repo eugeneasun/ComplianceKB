@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-019",
+  "prompt_sha256": "cd99307abd47654107b58a1df102c18bbf4828c190dbbd4a8f10e6dcb9040ef8",
+  "request_bytes": 17039,
+  "input_tokens": 7236,
+  "output_tokens": 367,
+  "estimated_cost_usd": 0.018142,
+  "elapsed_seconds": 4.139963626861572,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-010",
+      "OSHA-HAZCOM-011"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(e)(2)",
+      "§1910.1200(e)(4)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a multi-employer worksite under HazCom where one employer's chemicals may expose another employer's workers. §1910.1200(e)(2) directly requires the hazard communication program to address methods for informing other employers on-site of SDS access and precautionary/labeling information. This builds on the baseline requirement to develop and maintain a written hazard communication program (e)(1), and the program must be made available upon request (e)(4). No PSM-specific facts (e.g., covered chemical process, NAICS industry) are given, so PSM contractor-related requirements are not applicable here.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

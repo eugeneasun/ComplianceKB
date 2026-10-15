@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "b23bccf66009bf8aec2ba7210458d45d492aed8989180d6fbaa5262ed9ada807",
+  "request_bytes": 9378,
+  "input_tokens": 4496,
+  "output_tokens": 364,
+  "estimated_cost_usd": 0.012632,
+  "elapsed_seconds": 6.369434118270874,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The scenario directly implicates the LOTO requirement that a lock be removed only by the employee who applied it. However, 1910.147(e)(3) contemplates a specific procedure for situations where the authorized employee is unavailable, which typically requires a documented specific procedure (verification of employee safety, notification, etc.) not described here. The scenario lacks facts about whether the employer has an established procedure under 1910.147(e)(3) for this contingency, so a determinate answer cannot be given without that information.",
+    "missing_information_or_escalation_reason": "Missing detail on whether the employer has a documented specific removal procedure (verification of employee whereabouts/safety, authorization steps) as contemplated by 1910.147(e)(3) for situations where the applying employee is unavailable."
+  }
+}

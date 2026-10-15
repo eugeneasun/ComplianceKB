@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "3644f4eff79326cdabc0bc96c233a29f4348207e933c5ec2ca3b3e23602c8f26",
+  "request_bytes": 8835,
+  "input_tokens": 2393,
+  "output_tokens": 540,
+  "estimated_cost_usd": 0.011266,
+  "elapsed_seconds": 5.027927398681641,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-017",
+      "OSHA-REC-018",
+      "OSHA-REC-020",
+      "OSHA-REC-005",
+      "OSHA-REC-008"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(ii)",
+      "§1904.32(a)(2)",
+      "§1904.32(a)(4)",
+      "§1904.32(b)(5)",
+      "§1904.32(b)(6)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the establishment is required to keep Part 1904 records and had 300 employees, it must create the annual summary, post it conspicuously without alteration, and electronically submit information from OSHA Form 300A. The supplied context states that the posting must begin no later than February 1 of the following year and remain through April 30. The OSHA 300 Log, any privacy case list, annual summary, and OSHA 301 Incident Reports must be retained for five years after the covered calendar year.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

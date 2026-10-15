@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "b3a588ff90e9628f93ed2fa1bd261110acd37d9a56251a918811e9f405028d23",
+  "request_bytes": 46183,
+  "input_tokens": 18612,
+  "output_tokens": 440,
+  "estimated_cost_usd": 0.041624,
+  "elapsed_seconds": 5.100586652755737,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-017",
+      "OSHA-REC-026"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review",
+      "regulatory_update"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(ii)",
+      "§1904.41(a)(1)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Electronic submission obligations under 1904.41 depend on establishment size thresholds (250+ employees under (a)(1)(ii), or 20-249 employees if classified in an industry listed in Appendix A under (a)(1)(i)). With 75 employees, the establishment falls below the 250-employee threshold but could be subject to the 20-249 employee requirement only if its industry classification is listed in Appendix A. The scenario explicitly states the industry classification is not provided, which is the determinative fact needed to answer whether electronic submission is required.",
+    "missing_information_or_escalation_reason": "The establishment's NAICS industry classification is required to determine whether it falls within Appendix A to subpart E of Part 1904, which governs whether a 20-249 employee establishment must electronically submit Form 300A data. Without this classification, the applicability of §1904.41(a)(1)(i) cannot be determined."
+  }
+}

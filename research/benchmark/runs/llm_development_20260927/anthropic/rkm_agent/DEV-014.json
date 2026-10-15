@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-014",
+  "prompt_sha256": "4f6e6da2f07c033ac76c10c9c931e8814c6bb66df59b37f9d7b199b54bbe5db6",
+  "request_bytes": 15590,
+  "input_tokens": 6860,
+  "output_tokens": 384,
+  "estimated_cost_usd": 0.01756,
+  "elapsed_seconds": 4.684833765029907,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-035",
+      "OSHA-PSM-036",
+      "OSHA-PSM-037",
+      "OSHA-PSM-038"
+    ],
+    "predicted_trigger_labels": [
+      "audit_preparation"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "certification",
+      "qualification_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(o)(1)",
+      "§1910.119(o)(2)",
+      "§1910.119(o)(4)",
+      "§1910.119(o)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a PSM facility's three-year compliance audit that identified deficiencies requiring corrective action. This directly maps to the PSM compliance audit provisions: certification of triennial audit (o)(1), audit conducted by knowledgeable person (o)(2), requirement to document response and correction of deficiencies (o)(4), and retention of the two most recent audit reports (o)(5). These requirements are squarely applicable and mandatory for PSM-covered processes; no conflicting facts or missing predicates prevent a determinate answer.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

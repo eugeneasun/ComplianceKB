@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-012",
+  "prompt_sha256": "7619bbaf1f9b517b00ceff4581d7c9f53730f1dac6e61807b2aee1ffa8fbe24c",
+  "request_bytes": 8509,
+  "input_tokens": 2312,
+  "output_tokens": 1261,
+  "estimated_cost_usd": 0.019756,
+  "elapsed_seconds": 15.143697261810303,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007",
+      "OSHA-REC-001"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "Within twenty-four (24) hours after the in-patient hospitalization of one or more employees or an employee's amputation or an employee's loss of an eye, as a result of a work-related incident, you must report the event to OSHA.",
+      "Each employer required by this part to keep records of fatalities, injuries, and illnesses must record each fatality, injury and illness that is work-related; is a new case; and meets one or more of the general recording criteria."
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The work-related incident involved both an in-patient hospitalization and an amputation, each of which triggers OSHA reporting within 24 hours under the supplied excerpt. The organization states that the case is recordable, supporting recording of the work-related injury.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

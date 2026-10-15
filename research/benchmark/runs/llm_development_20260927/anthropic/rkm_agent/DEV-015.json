@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-015",
+  "prompt_sha256": "ddd15619a51352964b09bfc2dd6967f12002b31581aef4bfecd1cea627fdc30d",
+  "request_bytes": 17572,
+  "input_tokens": 7448,
+  "output_tokens": 347,
+  "estimated_cost_usd": 0.018366,
+  "elapsed_seconds": 4.469634771347046,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-025",
+      "OSHA-PSM-026"
+    ],
+    "predicted_trigger_labels": [
+      "scheduled_inspection",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(j)(4)",
+      "§1910.119(j)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario involves a scheduled inspection of process equipment (pressure vessel) in a covered PSM process found outside acceptable limits. §1910.119(j)(4) requires documented inspection/testing of process equipment per good engineering practice, which the scheduled inspection satisfies. §1910.119(j)(5) directly obligates the employer to correct deficiencies in equipment outside acceptable limits before further use or in a safe and timely manner if interim safe-operation measures are taken. No other requirements (LOTO, hazcom, recordkeeping) are triggered by these facts alone.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

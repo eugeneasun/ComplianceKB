@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "fa7b77d5dc39289264438d5f05debcb7f6dc5c32eeec92f2f378a99432f05e1f",
+  "request_bytes": 9688,
+  "input_tokens": 4623,
+  "output_tokens": 356,
+  "estimated_cost_usd": 0.012806000000000001,
+  "elapsed_seconds": 4.024872303009033,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-017",
+      "OSHA-REC-026"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review",
+      "regulatory_update"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record",
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(ii)",
+      "§1904.41(a)(1)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The 250+ employee threshold does not apply since the establishment has 75 employees. However, the 20-249 employee threshold requires electronic submission only if the establishment is classified in an industry listed in appendix A to subpart E. The establishment's industry classification is not provided, so it cannot be determined whether the establishment falls under the 20-249 employee electronic submission requirement.",
+    "missing_information_or_escalation_reason": "The establishment's industry classification (NAICS code or equivalent) is needed to determine whether it is listed in appendix A to subpart E, which governs electronic submission obligations for establishments with 20-249 employees."
+  }
+}

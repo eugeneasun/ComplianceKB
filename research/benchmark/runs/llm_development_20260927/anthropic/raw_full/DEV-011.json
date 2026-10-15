@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "530e758b2c3e88f37988737cf8ef4b1af9d7c39bb0a2cf95623003ae3f92e553",
+  "request_bytes": 46132,
+  "input_tokens": 18606,
+  "output_tokens": 402,
+  "estimated_cost_usd": 0.041232000000000005,
+  "elapsed_seconds": 4.474296808242798,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-001",
+      "OSHA-REC-002",
+      "OSHA-REC-003",
+      "OSHA-REC-006",
+      "OSHA-REC-008"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.4(a)",
+      "§1904.7(a)",
+      "§1904.29(b)(3)",
+      "§1904.39(a)(1)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "A work-related fatality at a recordkeeping-covered establishment triggers the general recording criteria (1904.7(a)) and the requirement to record the case as work-related and new (1904.4(a)). It must be logged on the OSHA 300/301 within 7 calendar days (1904.29(b)(3)), reported to OSHA within 8 hours (1904.39(a)(1)), and records retained for 5 years (1904.33(a)). No PSM, LOTO, or HAZCOM triggers are indicated since no chemical process, energy control, or hazard communication facts are present in the scenario.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

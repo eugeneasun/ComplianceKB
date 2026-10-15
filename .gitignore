@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+*.key
+generated/
+tmp/
+model_cache/
+.DS_Store
+Thumbs.db

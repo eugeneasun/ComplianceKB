@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "bd2079c216ff5f2ff8c4a5a735dab94e5d9a58108d033e3845c27dcefdcc3393",
+  "request_bytes": 46274,
+  "input_tokens": 12045,
+  "output_tokens": 746,
+  "estimated_cost_usd": 0.033042,
+  "elapsed_seconds": 9.648775339126587,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-016",
+      "OSHA-PSM-018",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "qualification_record"
+    ],
+    "predicted_citations": [
+      "Each employee presently involved in operating a process, and each employee before being involved in operating a newly assigned process, shall be trained in an overview of the process and in the operating procedures as specified in paragraph (f) of this section.",
+      "The employer shall ascertain that each employee involved in operating a process has received and understood the training required by this paragraph. The employer shall prepare a record which contains the identity of the employee, the date of training, and the means used to verify that the employee understood the training.",
+      "Employers shall provide employees with effective information and training on hazardous chemicals in their work area at the time of their initial assignment, and whenever a new chemical hazard the employees have not previously been trained about is introduced into their work area.",
+      "Employees shall be informed of: The requirements of this section; Any operations in their work area where hazardous chemicals are present; and, The location and availability of the written hazard communication program.",
+      "Employee training shall include at least:\n(i) Methods and observations that may be used to detect the presence or release of a hazardous chemical in the work area (such as monitoring conducted by the employer, continuous monitoring devices, visual appearance or odor of hazardous chemicals when being released, etc.)\n(ii) The physical, health, simple asphyxiation, combustible dust, and pyrophoric gas hazards, as well as hazards not otherwise classified, of the chemicals in the work area\n(iii) The measures employees can take to protect themselves from these hazards, including specific procedures the employer has implemented to protect employees from exposure to hazardous chemicals, such as appropriate work practices, emergency procedures, and personal protective equipment to be used\n(iv) The details of the hazard communication program developed by the employer, including an explanation of the labels received on shipped containers and the workplace labeling system used by their employer; the safety data sheet, including the order of information and how employees can obtain and use the appropriate hazard information"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The technician is an employee newly assigned to operate a process covered by §1910.119. Before operating that newly assigned process next week, the employee must receive PSM training covering a process overview and applicable operating procedures. The employer must ascertain and document that the employee received and understood the training, including identity, training date, and verification method. Because the work area involves highly hazardous chemicals, initial-assignment hazard communication information and training is also triggered, including the specified hazard, protective-measure, program, label, and safety-data-sheet topics.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

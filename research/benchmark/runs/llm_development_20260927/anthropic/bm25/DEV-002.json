@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "636061e0bd0b2e2b2238e2c5f27755f2d07b638f18ebf6fe7476736e84bcd692",
+  "request_bytes": 9213,
+  "input_tokens": 4486,
+  "output_tokens": 311,
+  "estimated_cost_usd": 0.012082,
+  "elapsed_seconds": 3.5647144317626953,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-016",
+      "OSHA-PSM-022",
+      "OSHA-HAZCOM-007"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "job_reassignment",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "written_program",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.119(g)(1)",
+      "§1910.119(i)(2)",
+      "§1910.1200(h)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The technician is newly assigned to operate a covered PSM process; §1910.119(g)(1) requires training before operating a newly assigned process, §1910.119(i)(2)(iv) requires pre-startup review confirming training completion, and §1910.1200(h)(1) requires HazCom training at initial assignment. These directly apply given the stated facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

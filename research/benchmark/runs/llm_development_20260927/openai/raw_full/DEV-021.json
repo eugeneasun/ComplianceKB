@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-021",
+  "prompt_sha256": "bd47985829ce992450da372bce536d224541e6407cf248ed604a83301d4615b5",
+  "request_bytes": 46337,
+  "input_tokens": 12055,
+  "output_tokens": 239,
+  "estimated_cost_usd": 0.026978,
+  "elapsed_seconds": 3.0149567127227783,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "A 24-hour OSHA report is required only when an employee's in-patient hospitalization results from a work-related incident. The supplied facts establish neither work-relatedness nor that the hospital admission was in-patient treatment. The weekend timing alone does not resolve either predicate.",
+    "missing_information_or_escalation_reason": "Determine whether the illness resulted from a work-related incident and whether the employee was formally admitted for in-patient hospitalization."
+  }
+}

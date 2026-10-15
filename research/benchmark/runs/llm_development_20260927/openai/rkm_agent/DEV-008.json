@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "ef30145f11cb81f21164e45a33d5a68174760607b5e9b88b14413bafb05cf757",
+  "request_bytes": 16429,
+  "input_tokens": 4332,
+  "output_tokens": 320,
+  "estimated_cost_usd": 0.012504000000000001,
+  "elapsed_seconds": 3.353426218032837,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-048",
+      "OSHA-PSM-050",
+      "OSHA-PSM-052",
+      "OSHA-PSM-051"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "onboarding_new_employee",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(iv)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Federal OSHA PSM is stated to apply, and the contractor will enter a covered process area with known fire, explosion, and toxic-release hazards. Because the contractor is being selected, the employer must obtain and evaluate its safety performance and programs. The employer must inform the contract employer of the relevant known hazards and control contractor entrance, presence, and exit through safe work practices. The contract employer must ensure each contract employee is instructed in job- and process-related hazards and applicable emergency-action-plan provisions. The employer also must maintain the required contract-employee injury and illness log for contractor work in process areas. Hot-work, management-of-change, and HazCom requirements are not selected because the scenario does not establish their factual predicates.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

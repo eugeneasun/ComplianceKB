@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-014",
+  "prompt_sha256": "5011a67869cc7442f48382c371d425e9411acc485b74be94283088bf4bad45fb",
+  "request_bytes": 8026,
+  "input_tokens": 4092,
+  "output_tokens": 356,
+  "estimated_cost_usd": 0.011744000000000001,
+  "elapsed_seconds": 4.186483860015869,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-036",
+      "OSHA-PSM-037",
+      "OSHA-PSM-038"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review",
+      "audit_preparation"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(o)(2)",
+      "§1910.119(o)(4)",
+      "§1910.119(o)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a triennial PSM compliance audit that identified deficiencies requiring corrective action. This directly implicates the compliance audit requirements: the audit must be conducted by a knowledgeable person (o)(2), the employer must document responses to findings and correct deficiencies (o)(4), and retain the two most recent audit reports (o)(5). These requirements are clearly supported by the facts given without need for additional information.",
+    "missing_information_or_escalation_reason": "None; the facts sufficiently establish applicability of the compliance audit corrective action and recordkeeping requirements."
+  }
+}

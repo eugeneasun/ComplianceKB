@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "c36390f2ec4fd2a623acd3fbc3370919e6ec0c7d0eaa94e7f327d0ef76334385",
+  "request_bytes": 9163,
+  "input_tokens": 2411,
+  "output_tokens": 459,
+  "estimated_cost_usd": 0.010329999999999999,
+  "elapsed_seconds": 5.29870867729187,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-042"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(l)(2)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The proposed reactor-component swap is an equipment change in a PSM-covered process. Although replacements in kind are excepted from management of change, the maintenance records identify a different material specification and operating limit, and engineering and operations disagree about technical equivalence. If the component is not a replacement in kind, written management-of-change procedures apply and must address the technical basis, safety and health impact, operating-procedure modifications, change duration, and authorization before the change.",
+    "missing_information_or_escalation_reason": "Qualified engineering/process-safety judgment is required to determine whether the different material specification and operating limit remain technically equivalent to the existing component or make this a non-in-kind replacement subject to management of change. The record should be resolved against applicable design/process-safety information before installation or use."
+  }
+}

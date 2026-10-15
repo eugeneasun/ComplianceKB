@@ -1,0 +1,48 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "c36390f2ec4fd2a623acd3fbc3370919e6ec0c7d0eaa94e7f327d0ef76334385",
+  "request_bytes": 9089,
+  "input_tokens": 4381,
+  "output_tokens": 674,
+  "estimated_cost_usd": 0.015502000000000002,
+  "elapsed_seconds": 7.746775388717651,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-042",
+      "OSHA-PSM-043",
+      "OSHA-PSM-047",
+      "OSHA-PSM-022",
+      "OSHA-PSM-026",
+      "OSHA-LOTO-007"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "physical_condition",
+      "qualification_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(l)(2)",
+      "§1910.119(l)(4)",
+      "§1910.119(f)(3)",
+      "§1910.119(i)(2)",
+      "§1910.119(j)(5)",
+      "§1910.147(c)(7)(iii)(A)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scenario presents a direct factual conflict between engineering (claiming replacement in kind, which is exempt from MOC) and maintenance records showing a different material specification and operating limit, which would mean the change is NOT in kind and must go through full management of change procedures under §1910.119(l). Determining whether a change is truly a 'replacement in kind' requires qualified engineering judgment to assess whether the differing material spec and operating limit constitute a technically significant deviation. This determination cannot be resolved from the documents alone since it requires engineering/safety judgment to reconcile the conflicting claims, and the outcome (MOC required or not) changes which downstream PSM and LOTO obligations apply (PHA updates, PSI updates, operating procedure updates, retraining, pre-startup review).",
+    "missing_information_or_escalation_reason": "There is an unresolved conflict between engineering's classification of the change as 'replacement in kind' and maintenance records indicating differing material specification and operating limits. Resolving whether this is truly in-kind (exempting it from MOC) versus a substantive change requiring full MOC review under §1910.119(l) requires qualified engineering/safety judgment, not just the supplied regulatory text."
+  }
+}

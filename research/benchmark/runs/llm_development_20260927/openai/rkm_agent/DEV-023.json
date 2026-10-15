@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "0d25e170a5d0c9a922deb295e98c8c54e3be5d9df9d83a8da5c0da869b76b3bf",
+  "request_bytes": 17112,
+  "input_tokens": 4409,
+  "output_tokens": 562,
+  "estimated_cost_usd": 0.015562,
+  "elapsed_seconds": 6.703250408172607,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Outside vendor maintenance triggers the need to assess whether the work is covered by the lockout/tagout standard. If unexpected energization, startup, or release of stored energy could occur and cause injury, the equipment must be isolated under the energy-control program, and the site employer and outside employer must inform each other of their respective lockout/tagout procedures.",
+    "missing_information_or_escalation_reason": "Determine whether the vendor's maintenance exposes workers to potential injury from unexpected energization, startup, or release of stored or residual energy. Without that fact, it cannot be determined whether the maintenance is covered and therefore whether the outside-personnel coordination requirement applies."
+  }
+}

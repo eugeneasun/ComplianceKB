@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "7ba6a09feea09ed3c057cc7f45e7562ab7968860e5a16972f69a66ccead125fa",
+  "request_bytes": 8859,
+  "input_tokens": 2400,
+  "output_tokens": 590,
+  "estimated_cost_usd": 0.01188,
+  "elapsed_seconds": 7.181617736816406,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because PSM applies and the near miss could reasonably have resulted in a catastrophic toxic release at the covered process, the employer must investigate the incident. The supplied facts do not establish an employee fatality, in-patient hospitalization, amputation, loss of an eye, or a recordable injury or illness; therefore the cited OSHA reporting and recordkeeping provisions are not triggered on this record.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

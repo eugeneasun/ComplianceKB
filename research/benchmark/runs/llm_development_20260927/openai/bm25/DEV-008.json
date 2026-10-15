@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "01d12c6d2d54e7b47485f3c38e021df7c6ea72256a0e7dba85d7f1a536046e47",
+  "request_bytes": 8931,
+  "input_tokens": 2395,
+  "output_tokens": 457,
+  "estimated_cost_usd": 0.010274,
+  "elapsed_seconds": 4.792191982269287,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-048",
+      "OSHA-PSM-052"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "performance_evaluation",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(3)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the contractor is being selected to work in a covered PSM process area, the employer must obtain and evaluate the contract employer's safety performance and programs. Before the work, the employer must inform the contract employer of known potential fire, explosion, or toxic-release hazards related to the work and process. The contract employer must assure that each contract employee is instructed on those known hazards and applicable emergency action plan provisions. The stated facts support these contractor-management requirements without requiring a hot-work, incident-log, change-management, or OSHA-recordkeeping determination.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

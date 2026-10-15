@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "b2caa4e8f3d5ed890a88ec159e4c5ef38073fe93444f62b6b34015c49974f0b5",
+  "request_bytes": 8131,
+  "input_tokens": 2240,
+  "output_tokens": 242,
+  "estimated_cost_usd": 0.007384,
+  "elapsed_seconds": 2.726426839828491,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-022",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "incident_occurrence",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record",
+      "incident_record",
+      "complaint_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(ii)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The new-employee orientation supports application of the duty to inform each employee of the injury-and-illness reporting procedure. The supervisor's threatened discipline following a report of a work-related injury is conduct covered by the prohibition on discharging or otherwise discriminating against an employee for reporting. It also indicates that the reporting procedure must be assessed for whether it would deter or discourage a reasonable employee from accurate reporting. No supplied facts establish that the injury is recordable or triggers a fatality, hospitalization, amputation, or eye-loss report.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

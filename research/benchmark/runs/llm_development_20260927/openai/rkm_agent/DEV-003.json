@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "42482060a23aad42c26f1cad004a6af9cb9fce1ac78aa022d1264249023c122a",
+  "request_bytes": 17885,
+  "input_tokens": 4519,
+  "output_tokens": 467,
+  "estimated_cost_usd": 0.014641999999999999,
+  "elapsed_seconds": 5.443235397338867,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-022",
+      "OSHA-PSM-047",
+      "OSHA-PSM-043"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "new_process_startup"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(f)(3)",
+      "§1910.119(l)(4)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because federal OSHA PSM applies and the equipment and technology modification is not a replacement in kind, the employer must manage the change through written management-of-change procedures. The modification changes process safety information, so that information must be updated, and operating procedures must be reviewed and updated to reflect the changed equipment and technology. Before highly hazardous chemicals are introduced and production restarts, a pre-startup safety review must verify design conformance, adequate procedures, completed management of change for the modified facility, and completed operator training.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

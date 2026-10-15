@@ -1,0 +1,2214 @@
+{
+  "dataset": "TrusOne-ComplianceKB",
+  "version": "1.3.0",
+  "framework": "OSHA_PSM",
+  "license": "CC-BY-4.0",
+  "generated": "2026-09-27T12:00:00Z",
+  "record_count": 57,
+  "requirements": [
+    {
+      "id": "OSHA-PSM-001",
+      "requirement_text": "The employer shall develop a written plan of action regarding the implementation of employee participation.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(c)(1)",
+        "source_text_excerpt": "Employers shall develop a written plan of action regarding the implementation of the employee participation required by this paragraph.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(c)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "28d4b540429c0425a313300cab7ede87eccccbc64fdae33d8c79b994df964d67",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-002",
+      "requirement_text": "The employer shall consult with employees and their representatives on the conduct and development of process hazard analyses and on other PSM elements.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "interview",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(c)(2)",
+        "source_text_excerpt": "Employers shall consult with employees and their representatives on the conduct and development of process hazards analyses and on the development of the other elements of process safety management.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(c)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "70d08dff5c83c0a662d3bb797d8134371f76d1f901f4dfe339ec2f3f4d16390b",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-003",
+      "requirement_text": "The employer shall provide employees and their representatives access to process hazard analyses and all other information required under this standard.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(c)(3)",
+        "source_text_excerpt": "Employers shall provide to employees and their representatives access to process hazard analyses and to all other information required to be developed under this standard.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(c)(3)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "01ed189eb5675e46d2cbe0c0c7f6a486f6a4d404fa8f7d2dd235168ccd52498e",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-004",
+      "requirement_text": "The employer shall complete a compilation of written process safety information on the hazards of the highly hazardous chemicals in the process before conducting any process hazard analysis.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "chemical_handling",
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(d)",
+        "source_text_excerpt": "In accordance with the schedule set forth in paragraph (e)(1) of this section, the employer shall complete a compilation of written process safety information before conducting any process hazard analysis required by the standard. This process safety information shall include information pertaining to the hazards of the highly hazardous chemicals used or produced by the process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(d)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "6536b0965da91ca9f3cf08ae823c7585f2ce8a6817838ffb27c7e86479a1b963",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-005",
+      "requirement_text": "The employer shall document that equipment in the process complies with recognized and generally accepted good engineering practices.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "equipment_change",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "equipment_maintenance",
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(d)(3)(ii)",
+        "source_text_excerpt": "The employer shall document that equipment complies with recognized and generally accepted good engineering practices.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(d)(3)(ii)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "2a9c8e09ef444f31840cac1da5c2f59de1e12c37a5aa33fd00ac4fe1582f59f1",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-006",
+      "requirement_text": "For existing equipment designed and constructed to codes no longer in general use, the employer shall determine and document that the equipment is designed, maintained, inspected, tested, and operating in a safe manner.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "inspection_record",
+      "workflow_trigger": "equipment_change",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(d)(3)(iii)",
+        "source_text_excerpt": "For existing equipment designed and constructed in accordance with codes, standards, or practices that are no longer in general use, the employer shall determine and document that the equipment is designed, maintained, inspected, tested, and operating in a safe manner.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(d)(3)(iii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "0e1c7856cbdd6ff6d354695d4492ebd7c7421f34250ace5c8166f676648055fd",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-007",
+      "requirement_text": "The employer shall perform an initial process hazard analysis on processes covered by this standard.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(e)(1)",
+        "source_text_excerpt": "The employer shall perform an initial process hazard analysis (hazard evaluation) on processes covered by this standard.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(e)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "941d88c1fbe0b3647d87d872d8ab70fd4014c5e2661d789b48e0c399c53d417a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-008",
+      "requirement_text": "The process hazard analysis shall address the hazards of the process, identification of previous incidents with catastrophic potential, engineering and administrative controls, consequences of control failure, facility siting, human factors, and a qualitative evaluation of safety and health effects of control failure.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(e)(3)",
+        "source_text_excerpt": "The process hazard analysis shall address: (i) The hazards of the process; (ii) The identification of any previous incident which had a likely potential for catastrophic consequences in the workplace; (iii) Engineering and administrative controls applicable to the hazards and their interrelationships such as appropriate application of detection methodologies to provide early warning of releases; (iv) Consequences of failure of engineering and administrative controls; (v) Facility siting; (vi) Human factors; and (vii) A qualitative evaluation of a range of the possible safety and health effects of failure of controls on employees in the workplace.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(e)(3)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "2f318106a058b5adaef3b553ae111d5e7fb8cea1f972fe763193f4fa780b5c7e",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-009",
+      "requirement_text": "The process hazard analysis shall be performed by a team with expertise in engineering and process operations, including at least one employee experienced in the process.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(e)(4)",
+        "source_text_excerpt": "The process hazard analysis shall be performed by a team with expertise in engineering and process operations, and the team shall include at least one employee who has experience and knowledge specific to the process being evaluated.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(e)(4)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "17c1f99dde2196ec77820d088c512e888f90022f2d4d291176700ac909d423a4",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-010",
+      "requirement_text": "The employer shall establish a system to promptly address the process-hazard-analysis team's findings and recommendations, assure timely resolution, document the resolution and actions to be taken, complete actions as soon as possible, maintain a written completion schedule, and communicate the actions to affected personnel.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(e)(5)",
+        "source_text_excerpt": "The employer shall establish a system to promptly address the team's findings and recommendations; assure that the recommendations are resolved in a timely manner and that the resolution is documented; document what actions are to be taken; complete actions as soon as possible; develop a written schedule of when these actions are to be completed; communicate the actions to operating, maintenance and other employees whose work assignments are in the process and who may be affected by the recommendations or actions.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(e)(5)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "dd12192218660279e45fa964c17c742bb616c577ee00b58913f9d2be1db641e0",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-011",
+      "requirement_text": "At least every five years after the initial process hazard analysis, the employer shall update and revalidate the analysis.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "periodic_review",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(e)(6)",
+        "source_text_excerpt": "At least every five (5) years after the completion of the initial process hazard analysis, the process hazard analysis shall be updated and revalidated by a team meeting the requirements in paragraph (e)(4) of this section.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(e)(6)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "48d5851c4f2669e122962e64c7ae46ddf6da6d7e46a42a5bccdb002f0c698733",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "interval_years": 5
+      }
+    },
+    {
+      "id": "OSHA-PSM-012",
+      "requirement_text": "The employer shall retain process hazard analyses, updates, revalidations, and resolutions of recommendations for the life of the process.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(e)(7)",
+        "source_text_excerpt": "Employers shall retain process hazards analyses and updates or revalidations for each process covered by this section, as well as the documented resolution of recommendations described in paragraph (e)(5) of this section for the life of the process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(e)(7)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "8b7e3f9021108baf6eb37ffa4825e3e3d00c01e458ff22af28da0a3f036af0e8",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-013",
+      "requirement_text": "The employer shall develop and implement written operating procedures consistent with the process safety information that provide clear instructions for safely conducting activities.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(f)(1)",
+        "source_text_excerpt": "The employer shall develop and implement written operating procedures that provide clear instructions for safely conducting activities involved in each covered process consistent with the process safety information.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(f)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "4c9828fab3a857322b013135a1fa4a3b8815b0c231394f7e62860df3e256cead",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24",
+        "supporting_clauses": [
+          "§1910.119(f)(1)(i)",
+          "§1910.119(f)(1)(ii)",
+          "§1910.119(f)(1)(iii)",
+          "§1910.119(f)(1)(iv)"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-014",
+      "requirement_text": "Operating procedures shall be readily accessible to employees who work in or maintain a process.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation",
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(f)(2)",
+        "source_text_excerpt": "Operating procedures shall be readily accessible to employees who work in or maintain a process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(f)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "557177ef08f1a6638793cb41ec3c68f89015058dc5644cbf7ca5790bf4627314",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-015",
+      "requirement_text": "The employer shall certify annually that the operating procedures are current and accurate.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "certification",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(f)(3)",
+        "source_text_excerpt": "The employer shall certify annually that these operating procedures are current and accurate.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(f)(3)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "6b7fa238b14769d818f53437813a27b066ac620f460e5d1d2654085245f15452",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-24"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-016",
+      "requirement_text": "The employer shall train each employee presently involved in operating a process and each employee before operating a newly assigned process in an overview of the process and its operating procedures.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "process_assignment",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(g)(1)",
+        "source_text_excerpt": "Each employee presently involved in operating a process, and each employee before being involved in operating a newly assigned process, shall be trained in an overview of the process and in the operating procedures as specified in paragraph (f) of this section.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(g)(1)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "fb96ff72116a41078d5cc3c8809cbe50613fcb4d3427dd20dfe174784fae62f9",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "additional_triggers": [
+          "onboarding_new_employee"
+        ]
+      }
+    },
+    {
+      "id": "OSHA-PSM-017",
+      "requirement_text": "Refresher training shall be provided at least every three years, or more often if necessary, to each employee involved in operating a process.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "periodic_review",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(g)(2)",
+        "source_text_excerpt": "Refresher training shall be provided at least every three years, and more often if necessary, to each employee involved in operating a process to assure that the employee understands and adheres to the current operating procedures of the process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(g)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "b6c569263dcdf1f7ebe5a3f3a118a9e6b33c9df8aa9a953fd6f0834d3ed42638",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "interval_years": 3,
+        "condition": "Provide refresher training more often when necessary."
+      }
+    },
+    {
+      "id": "OSHA-PSM-018",
+      "requirement_text": "The employer shall ascertain and document that each employee involved in operating a process has received and understood the required training.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(g)(3)",
+        "source_text_excerpt": "The employer shall ascertain that each employee involved in operating a process has received and understood the training required by this paragraph. The employer shall prepare a record which contains the identity of the employee, the date of training, and the means used to verify that the employee understood the training.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(g)(3)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "9d3264fe53abd1d430357a14213b8de3138a5d08fe551e98151028cf15cb2a61",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "additional_triggers": [
+          "training_refresh"
+        ],
+        "condition": "Applies to both initial and refresher training required by §1910.119(g)."
+      }
+    },
+    {
+      "id": "OSHA-PSM-019",
+      "requirement_text": "When selecting a contractor, the employer shall obtain and evaluate information regarding the contract employer's safety performance and programs.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(2)(i)",
+        "source_text_excerpt": "The employer, when selecting a contractor, shall obtain and evaluate information regarding the contract employer's safety performance and programs.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(2)(i)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "c18d6fed00b19c9cb5a189ac622d18ed2c8fbd021f4d18dfde2dda00dfa94735",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-020",
+      "requirement_text": "The contract employer shall assure that each contract employee is trained in the work practices necessary to safely perform their job.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(3)(i)",
+        "source_text_excerpt": "The contract employer shall assure that each contract employee is trained in the work practices necessary to safely perform his/her job.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(3)(i)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "b9a307e0e52b609ed5eb54a84ec659b41a27219df4755f94770c0df46007528c",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-021",
+      "requirement_text": "The employer shall perform a pre-startup safety review for new facilities and for modified facilities when the modification is significant enough to require a change in the process safety information.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(i)(1)",
+        "source_text_excerpt": "The employer shall perform a pre-startup safety review for new facilities and for modified facilities when the modification is significant enough to require a change in the process safety information.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(i)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "4e21e7e9b27095f0584fe05b7a0751ec3f70939d528db00cb79c099c0e4f35d0",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-022",
+      "requirement_text": "Before introducing highly hazardous chemicals, the pre-startup safety review shall confirm that construction and equipment meet design specifications; procedures are adequate; for new facilities a process hazard analysis has been performed and recommendations resolved or implemented, or for modified facilities management-of-change requirements have been met; and employee training is complete.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "inspection_record",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation",
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(i)(2)",
+        "source_text_excerpt": "The pre-startup safety review shall confirm that prior to the introduction of highly hazardous chemicals to a process:\n(i) construction and equipment is in accordance with design specifications;\n(ii) safety, operating, maintenance, and emergency procedures are in place and are adequate;\n(iii) for new facilities, a process hazard analysis has been performed and recommendations have been resolved or implemented before startup; for modified facilities, the requirement in §1910.119(l) (management of change) has been met;\n(iv) training of each employee involved in operating the process has been completed.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(i)(2)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "55c30a2f8354b9562a497bd00c5aa36d5020823bb06f533d62679217a2957a82",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-023",
+      "requirement_text": "The employer shall establish and implement written procedures to maintain the ongoing integrity of process equipment.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(j)(2)",
+        "source_text_excerpt": "The employer shall establish and implement written procedures to maintain the on-going integrity of process equipment.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(j)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "cfbc7baa834389b4c1a0608a4451edfbf394a1e3b16eb75dff13b6e15e75ea52",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-024",
+      "requirement_text": "The employer shall train each employee involved in maintaining the ongoing integrity of process equipment in an overview of the process, its hazards, and the procedures applicable to the employee's job tasks.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(j)(3)",
+        "source_text_excerpt": "The employer shall train each employee involved in maintaining the on-going integrity of process equipment in an overview of that process and its hazards and in the procedures applicable to the employee's job tasks.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(j)(3)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "b889d840c3eaec5b9887f25f72f1239c0c37d8d1f4cd10eaede8bb0e35e47f11",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-025",
+      "requirement_text": "The employer shall inspect and test process equipment using recognized and generally accepted good engineering practices, at frequencies consistent with manufacturer recommendations and good engineering practices, and shall document each inspection and test performed.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "inspection_record",
+      "workflow_trigger": "scheduled_inspection",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(j)(4)",
+        "source_text_excerpt": "Inspections and tests shall be performed on process equipment. Inspection and testing procedures shall follow recognized and generally accepted good engineering practices. The frequency of inspections and tests of process equipment shall be consistent with applicable manufacturers' recommendations and good engineering practices, and more frequently if determined to be necessary by prior operating experience. The employer shall document each inspection and test that has been performed on process equipment.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(j)(4)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "7e346cdbfff19129ec2e37b6f37577c6778ea4e7c18a3074f1b46443171f0783",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-026",
+      "requirement_text": "The employer shall correct deficiencies in equipment that are outside acceptable limits before further use or in a safe and timely manner when necessary means are taken to assure safe operation.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "inspection_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(j)(5)",
+        "source_text_excerpt": "The employer shall correct deficiencies in equipment that are outside acceptable limits (defined by the process safety information in paragraph (d) of this section) before further use or in a safe and timely manner when necessary means are taken to assure safe operation.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(j)(5)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "c059a816fd7ddd64592582c0c4961c04dcd41239ff1f398a9f1ce1add67c0b34",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-027",
+      "requirement_text": "The employer shall issue a hot work permit for hot work operations conducted on or near a covered process.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "document_review",
+      "audit_evidence_type": "permit",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31,
+          23
+        ],
+        "business_activities": [
+          "hot_work",
+          "welding_cutting"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(k)(1)",
+        "source_text_excerpt": "The employer shall issue a hot work permit for hot work operations conducted on or near a covered process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(k)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "4ebc9361f2b480f8a9e4e2291b038f02f372d61c4c3f18f71a3180644a3961ea",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-028",
+      "requirement_text": "The hot work permit shall document compliance with fire prevention and protection requirements, indicate the authorized dates, and identify the object on which hot work is performed; it shall be kept on file until completion of the operation.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "permit",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31,
+          23
+        ],
+        "business_activities": [
+          "hot_work",
+          "welding_cutting"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(k)(2)",
+        "source_text_excerpt": "The permit shall document that the fire prevention and protection requirements in 29 CFR 1910.252(a) have been implemented prior to beginning the hot work operations; it shall indicate the date(s) authorized for hot work; and identify the object on which hot work is to be performed.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(k)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "37df772ddf8b6bfa9f53c20a30ebca3f66030365bc6207038d003adffc300884",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-029",
+      "requirement_text": "The employer shall establish and implement written procedures to manage changes to process chemicals, technology, equipment, procedures, and facilities affecting a covered process, except for replacements in kind.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "facility_change",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation",
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(l)(1)",
+        "source_text_excerpt": "The employer shall establish and implement written procedures to manage changes (except for \"replacements in kind\") to process chemicals, technology, equipment, and procedures; and, changes to facilities that affect a covered process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(l)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "5d2c0c5af01369e50e57b1d119de51a71748399a6b6fbcdd55914f6d304dd36a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-030",
+      "requirement_text": "Employees involved in operating a process and maintenance and contract employees whose job tasks will be affected by a change shall be informed of and trained in the change prior to start-up.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "facility_change",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(l)(3)",
+        "source_text_excerpt": "Employees involved in operating a process and maintenance and contract employees whose job tasks will be affected by a change in the process shall be informed of, and trained in, the change prior to start-up of the process or affected part of the process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(l)(3)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "71acb573fe23f13b2c8faf8fdf62afb3e9d562ec1e1f746af69b073b5ca4b180",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-25"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-031",
+      "requirement_text": "The employer shall investigate each incident which resulted in, or could reasonably have resulted in, a catastrophic release of a highly hazardous chemical in the workplace.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(m)(1)",
+        "source_text_excerpt": "The employer shall investigate each incident which resulted in, or could reasonably have resulted in a catastrophic release of highly hazardous chemical in the workplace.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(m)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "0434564e94241c14fe18837354151a6bca494ca40b28c212990178e59961600e",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-032",
+      "requirement_text": "An incident investigation shall be initiated as promptly as possible, but not later than 48 hours following the incident.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(m)(2)",
+        "source_text_excerpt": "An incident investigation shall be initiated as promptly as possible, but not later than 48 hours following the incident.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(m)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "f626aff7cbcd45fc765be7e82fff868bf3e058b161fa385e901cecdc162e133a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-033",
+      "requirement_text": "The employer shall retain incident investigation reports for five years.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(m)(7)",
+        "source_text_excerpt": "Incident investigation reports shall be retained for five years.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(m)(7)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "c96fcbba434dc1c414cfd79c192f0c8041619c0474e676592af7b29eaea4335b",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-034",
+      "requirement_text": "The employer shall establish and implement an emergency action plan for the entire plant in accordance with 29 CFR 1910.38.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(n)",
+        "source_text_excerpt": "The employer shall establish and implement an emergency action plan for the entire plant in accordance with the provisions of 29 CFR 1910.38.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(n)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "0315699ed0b9988486dba00fa2a42ffeb73ff5310c1d09bccf36e2704c3d5b04",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-035",
+      "requirement_text": "The employer shall certify that they have evaluated compliance with the provisions of this section at least every three years to verify that procedures and practices are adequate and are being followed.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "certification",
+      "workflow_trigger": "audit_preparation",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(o)(1)",
+        "source_text_excerpt": "Employers shall certify that they have evaluated compliance with the provisions of this section at least every three years to verify that the procedures and practices developed under the standard are adequate and are being followed.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(o)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "04b537bd82eaf76638d86fa003b2c2d07e2adb449b45a9f5a2a3d1222b812deb",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-036",
+      "requirement_text": "The compliance audit shall be conducted by at least one person knowledgeable in the process.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "qualification_record",
+      "workflow_trigger": "audit_preparation",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(o)(2)",
+        "source_text_excerpt": "The compliance audit shall be conducted by at least one person knowledgeable in the process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(o)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "3874bbcaa92292f45b7be725e6c79cf53fc85c1cfec8912d6463d47683b3ecac",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-037",
+      "requirement_text": "The employer shall promptly determine and document an appropriate response to each of the findings of the compliance audit and document that deficiencies have been corrected.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "audit_preparation",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(o)(4)",
+        "source_text_excerpt": "The employer shall promptly determine and document an appropriate response to each of the findings of the compliance audit, and document that deficiencies have been corrected.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(o)(4)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "dbdd72c0220d64f25277bc768699e29cfed7a213feafed1e33d129c8950a5c17",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-038",
+      "requirement_text": "The employer shall retain the two most recent compliance audit reports.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "low",
+      "verification_method": "record_review",
+      "audit_evidence_type": "retention_record",
+      "workflow_trigger": "audit_preparation",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(o)(5)",
+        "source_text_excerpt": "Employers shall retain the two (2) most recent compliance audit reports.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(o)(5)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "31efd777605f783fe4f42eb78c4b602a9991d8b63ec0cc5f7cfe2939df37586e",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-039",
+      "requirement_text": "The employer shall use one or more recognized methodologies (such as What-If, Checklist, HAZOP, FMEA, or Fault Tree Analysis) appropriate to determine and evaluate the hazards of the process being analyzed.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "new_process_startup",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(e)(2)",
+        "source_text_excerpt": "The employer shall use one or more of the following methodologies that are appropriate to determine and evaluate the hazards of the process being analyzed. What-If; Checklist; What-If/Checklist; Hazard and Operability Study (HAZOP); Failure Mode and Effects Analysis (FMEA); Fault Tree Analysis; or An appropriate equivalent methodology.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(e)(2)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "16269f40f589bf5724c6ea41c5cfec4120d5558e67c33b20e7ea36115fc23d42",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-040",
+      "requirement_text": "The employer shall periodically evaluate the performance of contract employers in fulfilling their safety obligations.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "performance_evaluation",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(2)(v)",
+        "source_text_excerpt": "The employer shall periodically evaluate the performance of contract employers in fulfilling their obligations as specified in paragraph (h)(3) of this section.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(2)(v)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "5e8a5d63810d93b29135de967770054fb088e8e2105167e6cf509248a7786bae",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-041",
+      "requirement_text": "In the construction of new plants and equipment, the employer shall assure that equipment as it is fabricated is suitable for the process application for which it will be used.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "inspection_record",
+      "workflow_trigger": "equipment_change",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(j)(6)(i)",
+        "source_text_excerpt": "In the construction of new plants and equipment, the employer shall assure that equipment as it is fabricated is suitable for the process application for which they will be used.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(j)(6)(i)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "a486673a4d5b4bb1bf6701167f41fd4febb2e7dd083f5152fb4b44ac01b95e68",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-042",
+      "requirement_text": "The management of change procedures shall assure that the technical basis, impact on safety and health, modifications to operating procedures, necessary time period, and authorization requirements are addressed prior to any change.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "facility_change",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(l)(2)",
+        "source_text_excerpt": "The procedures shall assure that the following considerations are addressed prior to any change: The technical basis for the proposed change; Impact of change on safety and health; Modifications to operating procedures; Necessary time period for the change; and, Authorization requirements for the proposed change.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(l)(2)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "12279da2f5768def1400885c9759c3db787cd3a9bc45fcef824d64951596aa64",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-043",
+      "requirement_text": "If a change results in a change in the process safety information, such information shall be updated accordingly.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "facility_change",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(l)(4)",
+        "source_text_excerpt": "If a change covered by this paragraph results in a change in the process safety information required by paragraph (d) of this section, such information shall be updated accordingly.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(l)(4)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "af3dd7a54d92b0718ba72df6d1d698d2346d44f3652f2efeb8e84b22d518b2f3",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-044",
+      "requirement_text": "The employer shall establish a system to promptly address and resolve the incident report findings and recommendations, and resolutions and corrective actions shall be documented.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(m)(5)",
+        "source_text_excerpt": "The employer shall establish a system to promptly address and resolve the incident report findings and recommendations. Resolutions and corrective actions shall be documented.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(m)(5)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "8e0a8b55b99f0cfaa03b1498f465c7f288e4129f6d8a47a28b4ca8015122a7bd",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-045",
+      "requirement_text": "The incident investigation report shall be reviewed with all affected personnel whose job tasks are relevant to the incident findings, including contract employees where applicable.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industries_naics": [
+          32,
+          31
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(m)(6)",
+        "source_text_excerpt": "The report shall be reviewed with all affected personnel whose job tasks are relevant to the incident findings including contract employees where applicable.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(m)(6)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "cf207823e4110a771a05676c110c6f33632fc2a13ec12288edd8d7f7be38fed6",
+        "curation_method": "human_reviewed",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-26"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-PSM-046",
+      "requirement_text": "The emergency action plan shall include procedures for handling small releases.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "chemical_handling",
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(n)",
+        "source_text_excerpt": "In addition, the emergency action plan shall include procedures for handling small releases.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(n)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "8ccff1a35f06a420c44c3cd3f37b2a605e66e452037c1f09d08da520900de471",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-047",
+      "requirement_text": "The employer shall review operating procedures as often as necessary and update them to reflect current operating practice and relevant changes to process chemicals, technology, equipment, and facilities.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "facility_change",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation",
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(f)(3)",
+        "source_text_excerpt": "(3) The operating procedures shall be reviewed as often as necessary to assure that they reflect current operating practice, including changes that result from changes in process chemicals, technology, and equipment, and changes to facilities.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(f)(3)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "106b9bfa3e836875d2de1dad12739218ff5f30e7e247c184b23973e99d325a65",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-048",
+      "requirement_text": "The employer shall inform contract employers of known potential fire, explosion, or toxic-release hazards related to the contractor's work and the covered process.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "interview",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(2)(ii)",
+        "source_text_excerpt": "(ii) The employer shall inform contract employers of the known potential fire, explosion, or toxic release hazards related to the contractor's work and the process.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(2)(ii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "bb82012b672e54d852e03705dcaf07cfd8316fba58f9805abbd68c0bfda779e6",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-049",
+      "requirement_text": "The employer shall explain to contract employers the applicable provisions of the emergency action plan required by §1910.119(n).",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "interview",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(2)(iii)",
+        "source_text_excerpt": "(iii) The employer shall explain to contract employers the applicable provisions of the emergency action plan required by paragraph (n) of this section.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(2)(iii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "97ecffd4f6509f8c10a57d5b00287b6dd8a04817b61d5ff3007b4aee6369d59a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-050",
+      "requirement_text": "The employer shall develop and implement safe work practices, consistent with §1910.119(f)(4), to control the entrance, presence, and exit of contract employers and contract employees in covered process areas.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(2)(iv)",
+        "source_text_excerpt": "(iv) The employer shall develop and implement safe work practices consistent with paragraph (f)(4) of this section, to control the entrance, presence and exit of contract employers and contract employees in covered process areas.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(2)(iv)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "46f0b23f784402e8c569529b1eef470e31b9a54a5b40bebdac6479cc5ec24d82",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27",
+        "supporting_clauses": [
+          "§1910.119(f)(4)"
+        ]
+      }
+    },
+    {
+      "id": "OSHA-PSM-051",
+      "requirement_text": "The employer shall maintain a contract-employee injury and illness log related to contractor work in process areas.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(2)(vi)",
+        "source_text_excerpt": "(vi) The employer shall maintain a contract employee injury and illness log related to the contractor's work in process areas.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(2)(vi)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "d1f3af8c050c238d58832c108cc6ff7011081a2b6b1ac46360a8f040e5845f39",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-052",
+      "requirement_text": "The contract employer shall ensure each contract employee is instructed in known potential fire, explosion, or toxic-release hazards related to the employee's job and the process, and in applicable emergency-action-plan provisions.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(3)(ii)",
+        "source_text_excerpt": "(ii) The contract employer shall assure that each contract employee is instructed in the known potential fire, explosion, or toxic release hazards related to his/her job and the process, and the applicable provisions of the emergency action plan.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(3)(ii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "1c13186987806ecae9dcc63d6e9623913a725cf84c557b5ecbba04967571f98c",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-053",
+      "requirement_text": "The contract employer shall document that each contract employee received and understood required training, including the employee's identity, training date, and the method used to verify understanding.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(3)(iii)",
+        "source_text_excerpt": "(iii) The contract employer shall document that each contract employee has received and understood the training required by this paragraph. The contract employer shall prepare a record which contains the identity of the contract employee, the date of training, and the means used to verify that the employee understood the training.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(3)(iii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "6055a9b24bfa2b160bbec958b8dd423b41d28fcd55f881872c82d591cc52f239",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-054",
+      "requirement_text": "The contract employer shall ensure each contract employee follows facility safety rules, including the safe work practices required by §1910.119(f)(4).",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "observation",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(3)(iv)",
+        "source_text_excerpt": "(iv) The contract employer shall assure that each contract employee follows the safety rules of the facility including the safe work practices required by paragraph (f)(4) of this section.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(3)(iv)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "81848d5aa3b67452ea2f32ac5c0c50e32410034224b6e763664942e881f3e593",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-055",
+      "requirement_text": "The contract employer shall advise the host employer of unique hazards presented by the contract work and hazards discovered during that work.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "interview",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(h)(3)(v)",
+        "source_text_excerpt": "(v) The contract employer shall advise the employer of any unique hazards presented by the contract employer's work, or of any hazards found by the contract employer's work.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(h)(3)(v)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "fc56e75bd3c9c285c067ac15c4de5b9e7ec925d3b5d118852b9579b8c2720992",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-056",
+      "requirement_text": "At the conclusion of an incident investigation, the employer shall prepare a report that includes, at a minimum, the date of the incident, the date the investigation began, a description of the incident, the factors that contributed to the incident, and any recommendations resulting from the investigation.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "incident_record",
+      "workflow_trigger": "incident_occurrence",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(m)(4)",
+        "source_text_excerpt": "A report shall be prepared at the conclusion of the investigation which includes at a minimum: (i) Date of incident; (ii) Date investigation began; (iii) A description of the incident; (iv) The factors that contributed to the incident; and, (v) Any recommendations resulting from the investigation.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(m)(4)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "cb973b0726a9e0ab44889487ec922dace241e1bf7503f72f0cdf6863fd2379fa",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-PSM-057",
+      "requirement_text": "The employer shall develop a report of the findings of the compliance audit conducted under this section.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "certification",
+      "workflow_trigger": "audit_preparation",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "process_operation"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-119",
+        "source_framework": "OSHA_PSM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.119(o)(3)",
+        "source_text_excerpt": "A report of the findings of the audit shall be developed.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.119#p-1910.119(o)(3)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "4c1062f09510bda2ae2292d5b33088ce4e7dae53f27f815486513f1941271d67",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    }
+  ]
+}

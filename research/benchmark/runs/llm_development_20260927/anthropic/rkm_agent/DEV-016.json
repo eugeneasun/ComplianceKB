@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "2020ad65b5cd60d6ee0898032cd82cda714998e93ef750b9e48b19f2d7695016",
+  "request_bytes": 17607,
+  "input_tokens": 7436,
+  "output_tokens": 319,
+  "estimated_cost_usd": 0.018062,
+  "elapsed_seconds": 3.9023663997650146,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-006",
+      "OSHA-HAZCOM-005"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(8)",
+      "§1910.1200(g)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a direct failure to provide ready access to an SDS during a work shift in the employee's work area, which is squarely governed by §1910.1200(g)(8) (accessibility during each shift) and presupposes the underlying obligation under §1910.1200(g)(1) to maintain an SDS for each hazardous chemical used. No conflicting facts or missing predicates exist; the scenario is a clear violation scenario under these two provisions, which can be answered directly from the supplied text.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

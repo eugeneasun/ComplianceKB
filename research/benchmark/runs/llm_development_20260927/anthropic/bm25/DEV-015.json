@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-015",
+  "prompt_sha256": "7e7bcce3dc51124ca8ff5c2a10d3aadc9cf5349ff5183732251a19e67d382c69",
+  "request_bytes": 9256,
+  "input_tokens": 4446,
+  "output_tokens": 254,
+  "estimated_cost_usd": 0.011432000000000001,
+  "elapsed_seconds": 3.268733263015747,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-025",
+      "OSHA-PSM-026"
+    ],
+    "predicted_trigger_labels": [
+      "scheduled_inspection"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(j)(4)",
+      "§1910.119(j)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes process equipment inspection findings showing deficiencies outside acceptable limits, directly matching the mechanical integrity inspection/testing documentation requirement (j)(4) and the deficiency-correction requirement (j)(5), which mandates correction before further use or timely safe interim measures.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "30cb363f9cec268536b5814bc2dcc70ad6b3070aa90c606b7c665165d9a1c433",
+  "request_bytes": 10301,
+  "input_tokens": 4789,
+  "output_tokens": 765,
+  "estimated_cost_usd": 0.017228,
+  "elapsed_seconds": 7.964536666870117,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-016",
+      "OSHA-PSM-022"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(2)",
+      "§1910.1200(h)(3)",
+      "§1910.119(i)(2)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The technician is newly assigned to a covered PSM process next week. HazCom requires training at initial assignment (h)(1), training content (h)(3), employee information (h)(2), and a written program (e)(1). PSM pre-startup review (i)(2) requires confirmation that training of each employee involved in operating the process has been completed before introduction of highly hazardous chemicals, which directly applies to this new assignment scenario. These requirements are directly supported by the excerpts provided and no conflicting or missing facts prevent a determinate answer.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-009",
+  "prompt_sha256": "f279be6dfea21c8b302de7aeabe097bbf509a1aca2c7ee0c717bc49f616f05de",
+  "request_bytes": 46151,
+  "input_tokens": 18609,
+  "output_tokens": 245,
+  "estimated_cost_usd": 0.039668,
+  "elapsed_seconds": 3.048034906387329,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-023"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(A)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario directly matches §1904.35(b)(2)(v)(A), which requires an employer to provide a former employee a copy of the OSHA 301 Incident Report describing their own injury by the end of the next business day upon request. This is a clear, determinate requirement supported by the facts given: the employer maintains the report and is subject to OSHA recordkeeping rules.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

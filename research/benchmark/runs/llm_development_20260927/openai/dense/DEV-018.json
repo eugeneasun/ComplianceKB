@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "99f4528d1988808c721fac8a3a1c1409faec93fa9006e960827906c0a4441412",
+  "request_bytes": 8618,
+  "input_tokens": 2364,
+  "output_tokens": 201,
+  "estimated_cost_usd": 0.0071400000000000005,
+  "elapsed_seconds": 3.1265509128570557,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "Each lockout or tagout device shall be removed from each energy isolating device by the employee who applied the device."
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The supplied OSHA excerpt establishes the default rule that the employee who applied the lockout or tagout device must remove it. The scenario proposes removal by another employee because the applying employee has left and cannot be reached, but the supplied context contains no exception, alternative-removal procedure, or conditions authorizing another employee to remove the device.",
+    "missing_information_or_escalation_reason": "Whether an employer-specific, OSHA-compliant alternative lock-removal procedure exists and what conditions it requires is not supplied. The provided excerpt alone does not support authorizing another employee to remove the lock."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "b247e22910f1146716c50bfa1fccce576c7e00dc61de15ebc636fc823071b8ab",
+  "request_bytes": 8280,
+  "input_tokens": 4203,
+  "output_tokens": 422,
+  "estimated_cost_usd": 0.012626,
+  "elapsed_seconds": 5.196174621582031,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-048",
+      "OSHA-PSM-050",
+      "OSHA-PSM-051",
+      "OSHA-PSM-052"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "performance_evaluation",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(iv)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes initial selection of a contractor to work in a covered PSM process area, which directly triggers the host employer's contractor evaluation, hazard communication, safe work practice, and injury log obligations under §1910.119(h)(2), as well as the contract employer's duty to instruct contract employees on hazards under §1910.119(h)(3)(ii). No pre-startup, hot work, MOC, or LOTO facts are indicated, so those requirements are not applicable based on the given facts alone.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

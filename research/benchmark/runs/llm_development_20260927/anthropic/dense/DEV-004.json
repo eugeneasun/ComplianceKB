@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "7ba6a09feea09ed3c057cc7f45e7562ab7968860e5a16972f69a66ccead125fa",
+  "request_bytes": 8785,
+  "input_tokens": 4362,
+  "output_tokens": 464,
+  "estimated_cost_usd": 0.013364000000000001,
+  "elapsed_seconds": 5.365231990814209,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031",
+      "OSHA-PSM-008",
+      "OSHA-PSM-048",
+      "OSHA-PSM-002"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "written_program",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)",
+      "§1910.119(e)(3)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(c)(2)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "A near miss with potential for catastrophic toxic release at a covered process, though no injury occurred, triggers the PSM incident investigation requirement under §1910.119(m)(1), which applies to incidents that 'could reasonably have resulted' in a catastrophic release, not just those causing injury. The PHA element (e)(3)(ii) requires documentation of such incidents for future hazard analyses. Because contractors are affected, the employer's duty to inform contract employers of hazards under (h)(2)(ii) is relevant, and consultation with employees under (c)(2) applies to the incident investigation process. No recordable injury occurred, so OSHA 300/301 and reporting requirements (Part 1904) are not triggered since there was no death, hospitalization, amputation, or loss of eye.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

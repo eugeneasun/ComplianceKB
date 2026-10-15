@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "286d2de24efcbe9a3f94b7d3c80b77f4f8f647770672e1f7d399f1da38604a46",
+  "request_bytes": 8092,
+  "input_tokens": 2266,
+  "output_tokens": 666,
+  "estimated_cost_usd": 0.012524,
+  "elapsed_seconds": 7.164307117462158,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-005",
+      "OSHA-REC-008",
+      "OSHA-REC-017",
+      "OSHA-REC-018",
+      "OSHA-REC-019",
+      "OSHA-REC-020",
+      "OSHA-REC-025"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "certification",
+      "physical_condition",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.32(a)(2)",
+      "§1904.32(a)(3)",
+      "§1904.32(a)(4)",
+      "§1904.32(b)(5)",
+      "§1904.32(b)(6)",
+      "§1904.33(a)",
+      "§1904.41(a)(1)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the recordkeeping-covered establishment had 300 employees during the year covered, it must create and certify the OSHA 300A annual summary, post it conspicuously by February 1 through April 30 without alteration or coverage, electronically submit Form 300A information to OSHA or its designee, and retain the required records for five years following the covered calendar year. The supplied §1904.41(a)(1)(ii) excerpt establishes the electronic-submission duty but does not provide a submission date.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

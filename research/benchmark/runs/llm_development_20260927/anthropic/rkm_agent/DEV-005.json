@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "20477b37bfdcebd1053eab1cd3a1a3a8e6c211324c9dd8ae9e8e028b4c8951f5",
+  "request_bytes": 15849,
+  "input_tokens": 6967,
+  "output_tokens": 429,
+  "estimated_cost_usd": 0.018224,
+  "elapsed_seconds": 4.753846883773804,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-017",
+      "OSHA-REC-018",
+      "OSHA-REC-019",
+      "OSHA-REC-020",
+      "OSHA-REC-005",
+      "OSHA-REC-008"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "physical_condition",
+      "certification",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(ii)",
+      "§1904.32(a)(2)",
+      "§1904.32(a)(3)",
+      "§1904.32(a)(4)",
+      "§1904.32(b)(5)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The establishment has 300 employees (250+), triggering electronic submission of Form 300A under §1904.41(a)(1)(ii); the 20-249 employee/listed-industry requirement (OSHA-REC-026) does not apply due to employee count exceeding 249. Annual summary creation, certification, and posting obligations under §1904.32 apply regardless of size. Retention obligations under §1904.33(a) apply on an always-on basis. Incident recording requirements are not directly implicated by this year-end scenario absent a specific incident.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

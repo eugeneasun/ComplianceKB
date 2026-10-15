@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "cc3c3d68872e48024c89a1925025661931c6ca36d533f368c518db8186e04b86",
+  "request_bytes": 10096,
+  "input_tokens": 2592,
+  "output_tokens": 490,
+  "estimated_cost_usd": 0.011064000000000001,
+  "elapsed_seconds": 5.690880298614502,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-004",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The employer uses a hazardous solvent and introduces it into employees' work area, where employees have not previously been trained on its hazards. It must provide effective information and training when the new chemical hazard is introduced, with the specified training topics. Because employees will decant the solvent into workplace containers, those containers must be labeled, tagged, or marked. The employer must also maintain a written hazard communication program addressing labels, safety data sheets, and employee information and training.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

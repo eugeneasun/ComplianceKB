@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-017",
+  "prompt_sha256": "263fd652e81094530bf71b35b68dc48102ae390ea3e5b1f9a9c60fda14764773",
+  "request_bytes": 9377,
+  "input_tokens": 4509,
+  "output_tokens": 257,
+  "estimated_cost_usd": 0.011588000000000001,
+  "elapsed_seconds": 3.565051794052124,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-013"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(f)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a portable container used solely for immediate use by the employee who transferred the chemical, which squarely falls under the labeling exemption in §1910.1200(f)(8). No storage for later use occurs, so no labeling requirement applies. Other HazCom provisions (SDS access, training) are not triggered by this specific scenario since no new chemical or hazard is introduced beyond what is already covered.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

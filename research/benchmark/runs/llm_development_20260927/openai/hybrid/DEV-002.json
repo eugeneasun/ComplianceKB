@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "795fb1575f238130bd3f5b2bb78526969274d5e8894a730650890b1ff042f0fb",
+  "request_bytes": 10006,
+  "input_tokens": 2602,
+  "output_tokens": 304,
+  "estimated_cost_usd": 0.008852,
+  "elapsed_seconds": 3.4104349613189697,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the technician is the employer's employee and is newly assigned to work in the covered process area, the employer must provide effective hazardous-chemical information and training at the time of the initial assignment. The training must address the listed hazard detection methods, chemical hazards, protective measures, and hazard communication program/SDS and labeling information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

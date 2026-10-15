@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "12facdccf3b5bcf3a46cb5e8e3b353b16f1fa42b05987ad6ba67896108c577a7",
+  "request_bytes": 15686,
+  "input_tokens": 6910,
+  "output_tokens": 281,
+  "estimated_cost_usd": 0.01663,
+  "elapsed_seconds": 3.2337870597839355,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-006",
+      "OSHA-REC-001",
+      "OSHA-REC-002"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(1)",
+      "§1904.4(a)",
+      "§1904.7(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "A work-related fatality is a new case meeting general recording criteria (death) under §1904.4(a)/§1904.7(a), requiring it to be recorded, and separately triggers the 8-hour OSHA fatality reporting obligation under §1904.39(a)(1). These requirements are directly and unambiguously applicable given the stated facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

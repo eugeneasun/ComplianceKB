@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-007",
+  "prompt_sha256": "5d4762e60eab116323f8bbb45e70d8e142430d8469e6c397cdeda6bacd8d5033",
+  "request_bytes": 46287,
+  "input_tokens": 12042,
+  "output_tokens": 546,
+  "estimated_cost_usd": 0.030636000000000004,
+  "elapsed_seconds": 5.557032823562622,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-003",
+      "OSHA-LOTO-004",
+      "OSHA-LOTO-005",
+      "OSHA-LOTO-006",
+      "OSHA-LOTO-008",
+      "OSHA-LOTO-009"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "scheduled_inspection",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(4)(ii)",
+      "§1910.147(c)(5)(i)",
+      "§1910.147(c)(6)(i)",
+      "§1910.147(c)(7)(i)",
+      "§1910.147(d)(3)",
+      "§1910.147(d)(5)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The stated activity is covered servicing, and the stated hazards are unexpected startup and release of stored pneumatic energy capable of causing injury. The employer must maintain an energy-control program; develop, document, and use machine-specific hazardous-energy-control procedures; provide isolating hardware and employee training; inspect the procedure at least annually; isolate all required energy sources; and relieve, disconnect, restrain, or otherwise render stored pneumatic energy safe after lockout/tagout devices are applied.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

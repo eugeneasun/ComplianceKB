@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "ab228e670e9366c7f7842f0be8f6bd3ba803fecb837d76c93ddead114cf5516b",
+  "request_bytes": 16914,
+  "input_tokens": 4406,
+  "output_tokens": 503,
+  "estimated_cost_usd": 0.014848,
+  "elapsed_seconds": 5.6830174922943115,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because Federal OSHA PSM applies and this incident at a covered process could reasonably have resulted in a catastrophic toxic release, the employer must investigate the incident. No employee injury occurred, so the supplied injury, fatality, and hospitalization reporting or recordkeeping requirements are not triggered by the stated facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

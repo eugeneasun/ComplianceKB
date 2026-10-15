@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "14660e3f6d97a197f30133672ea5889ee70c04abd968c110f13db6eab81f3c19",
+  "request_bytes": 8568,
+  "input_tokens": 4299,
+  "output_tokens": 343,
+  "estimated_cost_usd": 0.012028,
+  "elapsed_seconds": 3.850149393081665,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-006",
+      "OSHA-REC-001",
+      "OSHA-REC-002",
+      "OSHA-REC-003",
+      "OSHA-REC-011"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(1)",
+      "§1904.4(a)",
+      "§1904.7(a)",
+      "§1904.29(b)(3)",
+      "§1904.31(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "A work-related fatality is a new recordable case that must be recorded per general recording criteria (1904.4(a), 1904.7(a)), entered on the OSHA 300 Log/301 within 7 days (1904.29(b)(3)), for all covered employees (1904.31(a)), and reported to OSHA within 8 hours (1904.39(a)(1)). These requirements are directly supported by the scenario facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

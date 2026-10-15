@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "fa7b77d5dc39289264438d5f05debcb7f6dc5c32eeec92f2f378a99432f05e1f",
+  "request_bytes": 9762,
+  "input_tokens": 2574,
+  "output_tokens": 432,
+  "estimated_cost_usd": 0.010332,
+  "elapsed_seconds": 5.678034782409668,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-026"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Electronic submission of OSHA Form 300A information applies to an establishment that had 20-249 employees at any time during the previous calendar year and is classified in an industry listed in Appendix A. The stated 75-employee count does not establish the required industry classification, and it is not expressly tied to the previous-calendar-year period.",
+    "missing_information_or_escalation_reason": "Provide the establishment's industry classification and confirm whether it had 20-249 employees at any time during the previous calendar year."
+  }
+}

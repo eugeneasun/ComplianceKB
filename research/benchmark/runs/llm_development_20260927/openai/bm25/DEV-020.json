@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "8979d81ff85f8070e38546bda875e064ccd8dcd62e07a803032eb03dc1bdb8e2",
+  "request_bytes": 9781,
+  "input_tokens": 2552,
+  "output_tokens": 569,
+  "estimated_cost_usd": 0.011931999999999998,
+  "elapsed_seconds": 7.5223729610443115,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The reactor is part of a PSM-covered process and the proposed component has different material specifications and operating limits. These facts create a substantive dispute over whether it is a replacement in kind or an equipment change subject to the employer's written management-of-change procedures. The supplied excerpt expressly excludes only replacements in kind, but does not define technical equivalence or resolve the engineering disagreement.",
+    "missing_information_or_escalation_reason": "Qualified engineering and process-safety review is needed to determine whether the changed material specification and operating limit are technically equivalent to the existing component, or instead constitute an equipment change requiring management of change. The record should establish the applicable design specifications, process safety information, operating envelope, and basis for the replacement-in-kind determination."
+  }
+}

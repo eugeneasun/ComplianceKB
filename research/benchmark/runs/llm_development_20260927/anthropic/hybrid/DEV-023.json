@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "f110e6ce81a0ae0985f5cb38b3c0f03588d91ff165a021da84a345180d71aa4d",
+  "request_bytes": 9074,
+  "input_tokens": 4429,
+  "output_tokens": 347,
+  "estimated_cost_usd": 0.012327999999999999,
+  "elapsed_seconds": 4.531614065170288,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "LOTO coordination duties under §1910.147(f)(2)(i) only apply when the servicing activity falls within the scope of §1910.147(c)(1), i.e., where unexpected energization, startup, or release of stored energy could occur and cause injury. The scenario explicitly states this predicate fact is unknown, so a determinate applicability decision cannot be made without it.",
+    "missing_information_or_escalation_reason": "It is not established whether the maintenance task involves potential unexpected energization, startup, or stored-energy release capable of causing injury, which is the threshold fact needed to determine whether LOTO coordination requirements apply."
+  }
+}

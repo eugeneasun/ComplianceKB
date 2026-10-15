@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-008",
+  "prompt_sha256": "0f4961a64e2ea591e70aee9f11556d50541c107168a51212b694313c1711de7b",
+  "request_bytes": 8957,
+  "input_tokens": 2400,
+  "output_tokens": 815,
+  "estimated_cost_usd": 0.01458,
+  "elapsed_seconds": 9.57336711883545,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-019",
+      "OSHA-PSM-048",
+      "OSHA-PSM-050",
+      "OSHA-PSM-052",
+      "OSHA-PSM-051"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "performance_evaluation",
+      "incident_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(h)(2)(i)",
+      "§1910.119(h)(2)(ii)",
+      "§1910.119(h)(2)(iv)",
+      "§1910.119(h)(2)(vi)",
+      "§1910.119(h)(3)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the contractor is being selected to perform work in a covered PSM process area, the host employer must obtain and evaluate the contract employer's safety-performance and program information before selection. The host employer must inform the contract employer of known potential fire, explosion, and toxic-release hazards and must implement safe work practices controlling contractor entrance, presence, and exit. The contract employer must assure each contract employee is instructed on known job- and process-related hazards and applicable emergency-action-plan provisions. The host employer also must maintain the contract-employee injury and illness log related to contractor work in process areas.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

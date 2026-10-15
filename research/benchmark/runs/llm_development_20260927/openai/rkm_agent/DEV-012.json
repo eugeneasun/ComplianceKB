@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-012",
+  "prompt_sha256": "19d5a99c8556e8224891b41279a96237c082150aa45a96b4671ba6403b64251b",
+  "request_bytes": 16572,
+  "input_tokens": 4343,
+  "output_tokens": 571,
+  "estimated_cost_usd": 0.015538,
+  "elapsed_seconds": 6.641006708145142,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007",
+      "OSHA-REC-003"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)",
+      "§1904.29(b)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The work-related amputation and in-patient hospitalization trigger OSHA reporting within 24 hours. The case is stated to be recordable, so it must be entered on the OSHA 300 Log and OSHA 301 Incident Report within seven calendar days after the employer received the information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

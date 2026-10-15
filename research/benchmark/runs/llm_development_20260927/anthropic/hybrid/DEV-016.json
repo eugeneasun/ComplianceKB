@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "297ce7479ae8be2a04fc2ec4854abf5f8c241372e03282a979078af9f1fe6706",
+  "request_bytes": 9638,
+  "input_tokens": 4614,
+  "output_tokens": 273,
+  "estimated_cost_usd": 0.011958,
+  "elapsed_seconds": 3.443960666656494,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-006"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(1)",
+      "§1910.1200(g)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a failure of immediate SDS accessibility during a work shift, which is directly addressed by 1910.1200(g)(1) requiring SDS maintenance and (g)(8) requiring ready accessibility during each work shift including electronic access without barriers. These provisions are sufficient to determine the compliance gap without additional facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

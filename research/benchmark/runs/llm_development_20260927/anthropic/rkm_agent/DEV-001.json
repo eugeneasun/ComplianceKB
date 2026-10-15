@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "93268e3ded8f1bea6d32250ed9dea8b5bcefb32a9f6ab12c57dc17ecab728e83",
+  "request_bytes": 17976,
+  "input_tokens": 7540,
+  "output_tokens": 564,
+  "estimated_cost_usd": 0.020720000000000002,
+  "elapsed_seconds": 5.9471235275268555,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-004",
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-013"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement",
+      "onboarding_new_employee",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "safety_data_sheet",
+      "written_program",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(e)(1)",
+      "§1910.1200(f)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario involves introducing a new hazardous solvent into a work area where employees will decant it into workplace containers and have not been trained on its hazards. This triggers HazCom training requirements (h)(1) and (h)(3) since a new chemical hazard is introduced, requires an SDS be maintained (g)(1), requires the written HazCom program be updated (e)(1), and requires workplace container labeling (f)(6) unless the decanting qualifies for the immediate-use exception under (f)(8), which is included for completeness since the scenario describes decanting into workplace containers. PSM requirements are not applicable as there is no indication the solvent is a highly hazardous chemical under Appendix A or that this is a covered process industry (NAICS 31/32) with a PSM-covered process; the facts given only support HazCom obligations.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

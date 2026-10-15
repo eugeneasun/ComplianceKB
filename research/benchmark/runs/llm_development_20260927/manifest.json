@@ -1,0 +1,31 @@
+{
+  "status": "HUMAN_CONFIRMED_AI_ASSISTED_DEVELOPMENT_RUN_NOT_INDEPENDENT_CONFIRMATORY",
+  "scenario_file": "research/benchmark/scenarios_HUMAN_CONFIRMED_DEVELOPMENT.csv",
+  "scenario_sha256": "9389349046910feb113fe1773101f2f098d348f2bfc37b3ecca00a03af68dba1",
+  "dataset_sha256": "2f1ff5148219c23c843f69f99a3892b35634253cbaa6e9ccc16a37341bac76a3",
+  "providers": {
+    "openai": {
+      "model": "gpt-5.6-terra",
+      "input_per_million": 2.0,
+      "output_per_million": 12.0
+    },
+    "anthropic": {
+      "model": "claude-sonnet-5",
+      "input_per_million": 2.0,
+      "output_per_million": 10.0
+    }
+  },
+  "systems": [
+    "raw_full",
+    "bm25",
+    "dense",
+    "hybrid",
+    "rkm_agent"
+  ],
+  "reasoning_effort": "low",
+  "temperature": "not set; unsupported/non-comparable on selected current reasoning models",
+  "max_output_tokens": 2000,
+  "workers": 4,
+  "budget_per_provider_usd": 9.5,
+  "prompting": "zero-shot, identical decision policy and output schema; context varies by system condition"
+}

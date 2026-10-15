@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "5e6a98f5a712bfba76a947e08320fa0bf5173a61ca84bde6036dbb74b3a29873",
+  "request_bytes": 17897,
+  "input_tokens": 4553,
+  "output_tokens": 330,
+  "estimated_cost_usd": 0.013066,
+  "elapsed_seconds": 4.469651937484741,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Federal OSHA hazard communication training is required when a new chemical hazard about which employees have not previously been trained is introduced into their work area. The supplied facts establish procurement of a new cleaning product, but do not establish that it is hazardous or that it presents a hazard not already covered by employees' prior training.",
+    "missing_information_or_escalation_reason": "Obtain the product safety data sheet or other hazard classification information and compare its identified hazards with the hazards covered by affected employees' existing training records."
+  }
+}

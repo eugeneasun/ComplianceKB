@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-009",
+  "prompt_sha256": "5599e618322f7aca4dd1868aebca0551604f7e3f3a22bb335b7c6d6b10e73913",
+  "request_bytes": 16652,
+  "input_tokens": 7222,
+  "output_tokens": 210,
+  "estimated_cost_usd": 0.016544,
+  "elapsed_seconds": 3.068814992904663,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-023"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(A)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario matches OSHA-REC-023 precisely: a former employee requesting their own OSHA 301 Incident Report. The employer must provide it by the end of the next business day. No conflicting facts or missing predicates exist to prevent a determinate answer.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

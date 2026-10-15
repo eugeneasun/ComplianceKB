@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "8009da2cc1e27f1768b656982a2862a40d7f547f9249d3e92ac4f2d3984e1ba2",
+  "request_bytes": 9230,
+  "input_tokens": 2466,
+  "output_tokens": 276,
+  "estimated_cost_usd": 0.008244,
+  "elapsed_seconds": 3.09541916847229,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Federal OSHA requires effective information and training when a new chemical hazard that employees have not previously been trained about is introduced into their work area. Ordering a cleaning product can trigger this evaluation, but the supplied facts do not establish that the product is hazardous or that it introduces a hazard not already covered by employee training.",
+    "missing_information_or_escalation_reason": "Obtain the product safety data sheet or other hazard classification information and determine whether the product will be introduced into employees' work area. Also compare its hazards with the hazards addressed in applicable employee training records."
+  }
+}

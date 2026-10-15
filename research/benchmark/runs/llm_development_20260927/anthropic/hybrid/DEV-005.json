@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "63f1df3cc0ef895453192fb479fca9ba463de2d705ee87f8384215b7279d840b",
+  "request_bytes": 8417,
+  "input_tokens": 4263,
+  "output_tokens": 567,
+  "estimated_cost_usd": 0.014196,
+  "elapsed_seconds": 5.722212314605713,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-017",
+      "OSHA-REC-008",
+      "OSHA-REC-001",
+      "OSHA-REC-005",
+      "OSHA-REC-018",
+      "OSHA-REC-011",
+      "OSHA-REC-020",
+      "OSHA-REC-019",
+      "OSHA-REC-003"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review",
+      "periodic_review"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "retention_record",
+      "certification"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(ii)",
+      "§1904.33(a)",
+      "§1904.4(a)",
+      "§1904.32(b)(5)",
+      "§1904.32(a)(2)",
+      "§1904.31(a)",
+      "§1904.32(a)(4)",
+      "§1904.32(a)(3)",
+      "§1904.29(b)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "With 300 employees, the establishment exceeds the 250-employee threshold under §1904.41(a)(1)(ii), triggering mandatory electronic submission of Form 300A. The establishment must also complete the standard year-end recordkeeping cycle: recording work-related injuries/illnesses (§1904.4(a), §1904.31(a)), entering them within 7 days (§1904.29(b)(3)), creating and certifying the annual summary (§1904.32(a)(2)-(3)), posting it (§1904.32(a)(4), §1904.32(b)(5)), and retaining records for five years (§1904.33(a)). The 20-249 employee electronic submission rule (REC-026) does not apply since the establishment exceeds 249 employees and falls under the 250+ threshold instead.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

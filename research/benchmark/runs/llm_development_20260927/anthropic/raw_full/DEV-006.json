@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-006",
+  "prompt_sha256": "35ac85cc46ab51337d4b30ff59266029c26ddd33693b3177ca8da6425a12d0b2",
+  "request_bytes": 46185,
+  "input_tokens": 18614,
+  "output_tokens": 425,
+  "estimated_cost_usd": 0.041477999999999994,
+  "elapsed_seconds": 5.2881410121917725,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-005",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-003"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review",
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(6)(i)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(4)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes the approaching anniversary of the last review of a machine-specific energy-control procedure, which directly triggers the LOTO annual periodic inspection requirement under §1910.147(c)(6)(i), which mandates that the employer conduct a periodic inspection of the energy control procedure at least annually to ensure the procedure and standard requirements are being followed. The underlying procedure requirements (c)(4)(i) and (ii) establish what must be reviewed/verified during that inspection. No conflicting facts or missing predicates are present; the facts given (equipment with hazardous energy, approaching annual review anniversary, federal OSHA jurisdiction) are sufficient to determine the applicable requirement.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

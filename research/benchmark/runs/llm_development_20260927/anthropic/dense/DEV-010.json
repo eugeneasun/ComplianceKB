@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-010",
+  "prompt_sha256": "c8ff4eb882ef36b7c642248ca1fd23aaa3ee0bb41fada48cacb5f8e78594ebd3",
+  "request_bytes": 8872,
+  "input_tokens": 4404,
+  "output_tokens": 221,
+  "estimated_cost_usd": 0.011018,
+  "elapsed_seconds": 3.0313212871551514,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-024"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(B)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The request is squarely addressed by 1904.35(b)(2)(v)(B): an authorized employee representative requesting OSHA 301 reports for represented employees at an establishment must receive copies within 7 calendar days, limited to the 'Tell us about the case' section, with all other information redacted.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

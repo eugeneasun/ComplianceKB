@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-017",
+  "prompt_sha256": "4cd83d3d84cccf466e7a17bc0f4ac04a0bd30b640400bf6d94b09e5e2240671c",
+  "request_bytes": 46215,
+  "input_tokens": 18610,
+  "output_tokens": 273,
+  "estimated_cost_usd": 0.039950000000000006,
+  "elapsed_seconds": 4.285945177078247,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-013"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(f)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a portable container filled from a labeled drum and used entirely and immediately by the employee who performed the transfer, with no storage for later use. This precisely matches the exemption in 1910.1200(f)(8), which exempts portable containers intended only for immediate use by the transferring employee from labeling requirements. No other HazCom, PSM, LOTO, or recordkeeping requirements are triggered by this narrow fact pattern.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

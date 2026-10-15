@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-015",
+  "prompt_sha256": "2fc5f64fa61a6f90e7f831fa333e430ad8cff80ee698507356438efc211bd5a6",
+  "request_bytes": 9502,
+  "input_tokens": 4540,
+  "output_tokens": 299,
+  "estimated_cost_usd": 0.012069999999999999,
+  "elapsed_seconds": 4.03824782371521,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-025",
+      "OSHA-PSM-026"
+    ],
+    "predicted_trigger_labels": [
+      "scheduled_inspection"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(j)(4)",
+      "§1910.119(j)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario directly involves process equipment inspection under PSM finding a deficiency (pressure vessel outside acceptable limits). §1910.119(j)(4) requires documented inspection/testing of process equipment, and §1910.119(j)(5) requires correction of deficiencies outside acceptable limits before further use or in a safe and timely manner. These two requirements are squarely applicable and sufficient to answer the scenario without additional facts.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "63f1df3cc0ef895453192fb479fca9ba463de2d705ee87f8384215b7279d840b",
+  "request_bytes": 8491,
+  "input_tokens": 2335,
+  "output_tokens": 797,
+  "estimated_cost_usd": 0.014234,
+  "elapsed_seconds": 8.641043901443481,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-005",
+      "OSHA-REC-008",
+      "OSHA-REC-017",
+      "OSHA-REC-018",
+      "OSHA-REC-019",
+      "OSHA-REC-020"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "certification",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(ii)",
+      "§1904.32(a)(2)",
+      "§1904.32(a)(3)",
+      "§1904.32(a)(4)",
+      "§1904.32(b)(5)",
+      "§1904.32(b)(6)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the recordkeeping-covered establishment had 300 employees during the calendar year covered by the annual summary, it must create and certify the OSHA 300A annual summary, post it conspicuously without alteration or obstruction no later than February 1 through April 30, electronically submit OSHA Form 300A information to OSHA or its designee, and retain the OSHA 300 Log, any privacy case list, annual summary, and OSHA 301 forms for five years after the covered calendar year.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

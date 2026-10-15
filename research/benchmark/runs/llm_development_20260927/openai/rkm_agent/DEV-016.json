@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-016",
+  "prompt_sha256": "2020ad65b5cd60d6ee0898032cd82cda714998e93ef750b9e48b19f2d7695016",
+  "request_bytes": 17681,
+  "input_tokens": 4523,
+  "output_tokens": 303,
+  "estimated_cost_usd": 0.012682,
+  "elapsed_seconds": 3.35784912109375,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-006"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.1200(g)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Federal OSHA Hazard Communication applies, the employer uses the hazardous chemical in the employee's work area, and the employee could not immediately access its safety data sheet during a work shift. The employer must ensure safety data sheets are readily accessible during each work shift to employees in their work areas; electronic or alternative access may not create barriers to immediate access.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

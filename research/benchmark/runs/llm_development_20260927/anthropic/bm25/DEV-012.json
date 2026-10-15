@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-012",
+  "prompt_sha256": "7619bbaf1f9b517b00ceff4581d7c9f53730f1dac6e61807b2aee1ffa8fbe24c",
+  "request_bytes": 8435,
+  "input_tokens": 4233,
+  "output_tokens": 321,
+  "estimated_cost_usd": 0.011675999999999999,
+  "elapsed_seconds": 3.713168144226074,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007",
+      "OSHA-REC-001",
+      "OSHA-REC-002",
+      "OSHA-REC-011"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)",
+      "§1904.4(a)",
+      "§1904.7(a)",
+      "§1904.31(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a work-related amputation with in-patient hospitalization, which is explicitly recordable under §1904.4(a)/§1904.7(a) and triggers a 24-hour reporting obligation to OSHA under §1904.39(a)(2). The employee is on payroll, so §1904.31(a) applies for recording on the OSHA 300 Log. All facts needed to determine the reporting and recording obligation are present.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

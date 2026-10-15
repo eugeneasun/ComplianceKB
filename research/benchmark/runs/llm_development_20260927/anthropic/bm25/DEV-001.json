@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "e67f20b231809701937d8530d44355057426b4bce440a30589a99727f765e538",
+  "request_bytes": 9612,
+  "input_tokens": 4593,
+  "output_tokens": 453,
+  "estimated_cost_usd": 0.013715999999999999,
+  "elapsed_seconds": 5.036622524261475,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-013"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement",
+      "onboarding_new_employee",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "safety_data_sheet",
+      "written_program",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(f)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes introduction of a new hazardous chemical (solvent) into a work area where employees have not been previously trained, triggering HazCom training requirements under §1910.1200(h)(1) and (h)(3). The employer must maintain an SDS for the chemical per §1910.1200(g)(1). Because employees decant it into workplace containers for their own immediate use, the portable container labeling exemption in §1910.1200(f)(8) applies, though this depends on the containers being for immediate use only by the person performing the transfer. PSM requirements are not applicable absent indication the solvent is a listed highly hazardous chemical in a covered process.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

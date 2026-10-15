@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "754216bb0844b0425b9b6da78de83df4df3531f705c657f9c7a9d5105c95d394",
+  "request_bytes": 8783,
+  "input_tokens": 4341,
+  "output_tokens": 390,
+  "estimated_cost_usd": 0.012582,
+  "elapsed_seconds": 5.204883337020874,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "LOTO applicability under §1910.147(c)(1) depends on whether unexpected energization, startup, or stored energy release could cause injury during the maintenance work. The scenario explicitly states this fact is unknown. If applicable, §1910.147(f)(2)(i) would require the on-site and outside employer to exchange lockout/tagout procedures, but this is contingent on the threshold applicability determination, which cannot be made on the facts given.",
+    "missing_information_or_escalation_reason": "The facts do not state whether the maintenance task exposes employees to unexpected energization, startup, or stored energy release capable of causing injury, which is the threshold factual predicate for determining whether §1910.147 lockout/tagout procedures and vendor coordination requirements apply."
+  }
+}

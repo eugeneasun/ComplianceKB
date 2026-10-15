@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "0f2379df0d5ee96dad556350f1137070221e8b89b914191a81fa168711288eca",
+  "request_bytes": 8680,
+  "input_tokens": 2370,
+  "output_tokens": 193,
+  "estimated_cost_usd": 0.007056,
+  "elapsed_seconds": 2.299783229827881,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-026"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The establishment's 75 employees place it within the 20-249 employee range in §1904.41(a)(1)(i), and it keeps Part 1904 records. Electronic submission of Form 300A information is required only if the establishment is classified in an industry listed in appendix A to subpart E. The industry classification is not supplied.",
+    "missing_information_or_escalation_reason": "The establishment's industry classification, and whether that classification is listed in appendix A to subpart E of Part 1904, is required to determine whether electronic Form 300A submission is mandatory."
+  }
+}

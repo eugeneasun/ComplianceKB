@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-010",
+  "prompt_sha256": "84a740570f1b5a3bda15d37640ed4af5796cb066459b384d5b230e8199399466",
+  "request_bytes": 9585,
+  "input_tokens": 2539,
+  "output_tokens": 139,
+  "estimated_cost_usd": 0.006746,
+  "elapsed_seconds": 1.8017871379852295,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-024"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(2)(v)(B)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "An authorized employee representative has requested OSHA 301 Incident Reports for an establishment where the representative represents employees under a collective bargaining agreement. The employer must provide copies within 7 calendar days, limited to the OSHA 301 section titled \"Tell us about the case,\" with all other information removed.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

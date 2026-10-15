@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "1c3031c5d69e2bac25b7e4bd33652ed261ac4bc246ba3de90cae93f86299d270",
+  "request_bytes": 15496,
+  "input_tokens": 4122,
+  "output_tokens": 224,
+  "estimated_cost_usd": 0.010931999999999999,
+  "elapsed_seconds": 2.719567060470581,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-022",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record",
+      "complaint_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(ii)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The employee orientation supports applicability of the duty to inform each employee of the injury/illness reporting procedure. The supervisor's threat of discipline following the employee's report is conduct that may deter or discourage accurate reporting and is inconsistent with the prohibition on discharging or otherwise discriminating against an employee for reporting a work-related injury or illness. No facts establish that the injury is recordable or reportable to OSHA, so incident-recording and severe-incident reporting requirements are not selected.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

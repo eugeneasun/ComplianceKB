@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "4be6133235943fcd993de11393bbe4107261872967c7a4542d0c6924ae9f79f6",
+  "request_bytes": 16410,
+  "input_tokens": 7096,
+  "output_tokens": 351,
+  "estimated_cost_usd": 0.017702,
+  "elapsed_seconds": 4.938977956771851,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition",
+      "procedure",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "OSHA-LOTO-010 directly governs this scenario: removal of a lock by someone other than the employee who applied it is permitted only if the employer has documented specific procedures and training that ensure equivalent safety (e.g., verification the original employee is not exposed, notification before resuming work). The scenario does not state whether such a documented procedure exists or whether it was followed (verification of employee safety, notification protocol), so a determinate compliance answer cannot be given without confirming these facts.",
+    "missing_information_or_escalation_reason": "Need confirmation whether the employer has a documented specific procedure and trained personnel for removing another employee's lock, including verification that the original employee is not endangered and notification requirements were met before removal."
+  }
+}

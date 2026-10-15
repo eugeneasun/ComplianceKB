@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "90abccfd35353180edf81f62f6bef23b72c76d7ca4ad9b86fd33b1bc2b8b1a2b",
+  "request_bytes": 8690,
+  "input_tokens": 2368,
+  "output_tokens": 212,
+  "estimated_cost_usd": 0.00728,
+  "elapsed_seconds": 3.262066602706909,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The supplied OSHA excerpt establishes the default rule: each lockout or tagout device must be removed by the employee who applied it. Because management proposes removal by another employee, the supplied context does not establish that the proposed action is authorized or compliant. Determining whether any permissible exception procedure applies requires safety and procedural judgment not supplied in the excerpts.",
+    "missing_information_or_escalation_reason": "Escalate to qualified safety management. Needed information includes whether the employer has an established, authorized procedure governing removal of a device when the applying employee is unavailable, and whether its required safeguards and verification steps can be met. The supplied excerpt states only the default removal rule and does not supply an exception process."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-014",
+  "prompt_sha256": "8b6319d025232eb7ae41b711e24aa962924c1b4d0258f09e1ea0d808b7372abf",
+  "request_bytes": 46213,
+  "input_tokens": 12029,
+  "output_tokens": 456,
+  "estimated_cost_usd": 0.02953,
+  "elapsed_seconds": 5.385434865951538,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-035",
+      "OSHA-PSM-037",
+      "OSHA-PSM-038"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(o)(1)",
+      "§1910.119(o)(4)",
+      "§1910.119(o)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the covered process is undergoing its required three-year PSM compliance audit and deficiencies were identified, the employer must promptly determine and document an appropriate response to every audit finding and document correction of deficiencies. The employer must retain the two most recent compliance-audit reports.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

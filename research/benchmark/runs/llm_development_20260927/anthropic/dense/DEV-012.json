@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-012",
+  "prompt_sha256": "9859b38f3bb288d11bb24375cbb9a988c56bab52ebed5575f2ee2ce225ded2c8",
+  "request_bytes": 8412,
+  "input_tokens": 4248,
+  "output_tokens": 433,
+  "estimated_cost_usd": 0.012826,
+  "elapsed_seconds": 4.831524133682251,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007",
+      "OSHA-REC-002",
+      "OSHA-REC-011",
+      "OSHA-REC-001",
+      "OSHA-REC-003"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)",
+      "§1904.7(a)",
+      "§1904.31(a)",
+      "§1904.4(a)",
+      "§1904.29(b)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario is a clear-cut recordable work-related amputation with in-patient hospitalization, both of which trigger explicit, unambiguous OSHA recordkeeping obligations: the 24-hour reporting requirement for amputations/hospitalizations (§1904.39(a)(2)), the general recording criteria met by medical treatment/hospitalization (§1904.7(a)), the duty to record on the OSHA 300 log for covered employees (§1904.31(a), §1904.4(a)), and the 7-day entry requirement (§1904.29(b)(3)). No conflicting facts or missing predicates prevent a determinate answer given federal jurisdiction and same-day employer knowledge.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

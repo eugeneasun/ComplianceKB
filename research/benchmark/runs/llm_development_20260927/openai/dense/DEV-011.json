@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "14660e3f6d97a197f30133672ea5889ee70c04abd968c110f13db6eab81f3c19",
+  "request_bytes": 8642,
+  "input_tokens": 2358,
+  "output_tokens": 487,
+  "estimated_cost_usd": 0.01056,
+  "elapsed_seconds": 5.819004058837891,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-006",
+      "OSHA-REC-001",
+      "OSHA-REC-002",
+      "OSHA-REC-003",
+      "OSHA-REC-011"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(1)",
+      "§1904.4(a)",
+      "§1904.7(a)",
+      "§1904.29(b)(3)",
+      "§1904.31(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The employee death resulted from a work-related incident. The fatality must be reported to OSHA within eight hours. Because it is a new, work-related case at a recordkeeping-covered establishment and death meets the general recording criteria, it must be recorded on the OSHA 300 Log and OSHA 301 Incident Report within seven calendar days of receiving information that the recordable injury occurred.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

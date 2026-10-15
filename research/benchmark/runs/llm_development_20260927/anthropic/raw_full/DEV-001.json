@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "737b0bd7e72a003e2a4554c1a043649ac69730fa02b49b99d83499e7ee2cc969",
+  "request_bytes": 46267,
+  "input_tokens": 18643,
+  "output_tokens": 683,
+  "estimated_cost_usd": 0.044116,
+  "elapsed_seconds": 7.830236911773682,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-002",
+      "OSHA-HAZCOM-004",
+      "OSHA-HAZCOM-005",
+      "OSHA-HAZCOM-006",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-013",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement",
+      "process_assignment",
+      "onboarding_new_employee"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "safety_data_sheet",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(e)(1)(i)",
+      "§1910.1200(f)(6)",
+      "§1910.1200(g)(1)",
+      "§1910.1200(g)(8)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(2)",
+      "§1910.1200(f)(8)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "This scenario involves the introduction of a new hazardous chemical (solvent) into a workplace where employees will decant it into portable containers and have not been trained on its hazards. This squarely triggers HazCom requirements: the employer must maintain a written hazard communication program including a chemical inventory list (e), ensure workplace container labeling (f) — noting the portable-container exception for immediate-use transfers by the employee performing the transfer (f)(8), maintain SDS access (g), and provide effective information and training at the time a new chemical hazard is introduced into the work area, covering the specified training content elements (h). There is no indication this is a covered PSM process (no highly hazardous chemical process threshold information given), no LOTO-triggering task described (decanting is not machine servicing/energy control), and no indication of a recordable injury/illness, so PSM, LOTO, and Recordkeeping requirements are not applicable based on the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

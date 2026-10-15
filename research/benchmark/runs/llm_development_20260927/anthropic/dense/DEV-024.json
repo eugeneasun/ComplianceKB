@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-024",
+  "prompt_sha256": "0f2379df0d5ee96dad556350f1137070221e8b89b914191a81fa168711288eca",
+  "request_bytes": 8606,
+  "input_tokens": 4325,
+  "output_tokens": 387,
+  "estimated_cost_usd": 0.01252,
+  "elapsed_seconds": 4.587135314941406,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-026",
+      "OSHA-REC-017"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review",
+      "regulatory_update"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.41(a)(1)(i)",
+      "§1904.41(a)(1)(ii)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Electronic submission of Form 300A depends on employee count thresholds combined with industry classification. The establishment has 75 employees, which falls within the 20-249 range that triggers submission only if the establishment's industry is listed in Appendix A to Subpart E. The establishment's industry classification is not provided, so applicability of §1904.41(a)(1)(i) cannot be determined. The 250+ threshold under (a)(1)(ii) does not apply since the establishment has only 75 employees.",
+    "missing_information_or_escalation_reason": "The establishment's NAICS industry classification is required to determine whether it falls under the list in Appendix A to Subpart E, which governs whether establishments with 20-249 employees must electronically submit Form 300A data."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-006",
+  "prompt_sha256": "9d8c006d6a8aa2d46a470ed264f40690a10ce39435103c0cd853fc3191091c70",
+  "request_bytes": 8779,
+  "input_tokens": 4339,
+  "output_tokens": 328,
+  "estimated_cost_usd": 0.011958,
+  "elapsed_seconds": 4.148399353027344,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-005",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-003"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review",
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(6)(i)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(4)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario concerns the approaching anniversary of the periodic review of a machine-specific energy control procedure, which is directly governed by §1910.147(c)(6)(i)'s requirement for at least annual inspection of the energy control procedure, supported by the underlying procedure documentation requirements in (c)(4)(i) and (c)(4)(ii). No conflicting facts or need for external judgment are present.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,787 @@
+{
+  "dataset": "TrusOne-ComplianceKB",
+  "version": "1.5.0",
+  "framework": "OSHA_HAZCOM",
+  "license": "CC-BY-4.0",
+  "generated": "2026-09-27T16:00:00Z",
+  "record_count": 21,
+  "requirements": [
+    {
+      "id": "OSHA-HAZCOM-001",
+      "requirement_text": "The employer shall develop, implement, and maintain at each workplace a written hazard communication program describing how labels, safety data sheets, and employee training requirements will be met, including a list of hazardous chemicals present.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(e)(1)",
+        "source_text_excerpt": "Employers shall develop, implement, and maintain at each workplace, a written hazard communication program which at least describes how the criteria specified in paragraphs (f), (g), and (h) of this section for labels and other forms of warning, safety data sheets, and employee information and training will be met.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(e)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "1cf8e95ee0d69e828ada2ea0697fd2852cdcf180f29853be5a74e950725ddaf4",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-002",
+      "requirement_text": "The written hazard communication program shall include a list of the hazardous chemicals known to be present using a product identifier referenced on the appropriate safety data sheet.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "chemical_procurement",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling",
+          "material_storage"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(e)(1)(i)",
+        "source_text_excerpt": "A list of the hazardous chemicals known to be present using a product identifier that is referenced on the appropriate safety data sheet (the list may be compiled for the workplace as a whole or for individual work areas).",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(e)(1)(i)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "f97a33e68b4e035fb58d88b33c7fb8a1eaae24171596681f808417b28f6c1b03",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-003",
+      "requirement_text": "The chemical manufacturer, importer, or distributor shall ensure that each container of hazardous chemicals leaving the workplace is labeled with the product identifier, signal word, hazard statement, pictogram, precautionary statement, and supplier information.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "chemical_procurement",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling",
+          "material_storage"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(f)(1)",
+        "source_text_excerpt": "The chemical manufacturer, importer, or distributor shall ensure that each container of hazardous chemicals leaving the workplace is labeled, tagged, or marked.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(f)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "3401046d0a18e395c4555e7a39f60fb2956281fd50acf1e53b15cc4d2ab2e8bb",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21",
+        "supporting_clauses": [
+          "§1910.1200(f)(1)(i)",
+          "§1910.1200(f)(1)(ii)",
+          "§1910.1200(f)(1)(iii)",
+          "§1910.1200(f)(1)(iv)",
+          "§1910.1200(f)(1)(v)",
+          "§1910.1200(f)(1)(vi)"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-004",
+      "requirement_text": "Except as provided for alternative written materials under §1910.1200(f)(7) and portable containers for immediate use under §1910.1200(f)(8), the employer shall ensure that each workplace container of hazardous chemicals is labeled with either the information required for shipped-container labels or a product identifier and words, pictures, symbols, or a combination providing general hazard information.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling",
+          "material_storage"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(f)(6)",
+        "source_text_excerpt": "the employer shall ensure that each container of hazardous chemicals in the workplace is labeled, tagged, or marked.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(f)(6)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "641db551088c108652c447277596cf23889b92fdc56e444f76c316f0d64787dd",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21",
+        "supporting_clauses": [
+          "§1910.1200(f)(6)(i)",
+          "§1910.1200(f)(6)(ii)",
+          "§1910.1200(f)(7)",
+          "§1910.1200(f)(8)"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-005",
+      "requirement_text": "The employer shall have a safety data sheet in the workplace for each hazardous chemical which they use.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "safety_data_sheet",
+      "workflow_trigger": "chemical_procurement",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(g)(1)",
+        "source_text_excerpt": "Employers shall have a safety data sheet in the workplace for each hazardous chemical which they use.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(g)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "db89d7dda471607e9c2b5d924a560dfe52c0de3d82e0b591acee3dbbc42282f9",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-006",
+      "requirement_text": "The employer shall maintain safety data sheets and ensure they are readily accessible during each work shift to employees when they are in their work areas.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(g)(8)",
+        "source_text_excerpt": "The employer shall maintain in the workplace copies of the required safety data sheets for each hazardous chemical, and shall ensure that they are readily accessible during each work shift to employees when they are in their work area(s). (Electronic access and other alternatives to maintaining paper copies of the safety data sheets are permitted as long as no barriers to immediate employee access in each workplace are created by such options.)",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(g)(8)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "722a82de382c6c8b10691c6068dcc3a5231afacc25f5e89f9b5ae17d138b01b4",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-007",
+      "requirement_text": "The employer shall provide employees with effective information and training on hazardous chemicals in their work area at initial assignment and whenever a new chemical hazard about which the employees have not previously been trained is introduced into their work area.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(h)(1)",
+        "source_text_excerpt": "Employers shall provide employees with effective information and training on hazardous chemicals in their work area at the time of their initial assignment, and whenever a new chemical hazard the employees have not previously been trained about is introduced into their work area.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(h)(1)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "fd7d0bd20664d417cb87072f7aa9a560043f9fbf5e2aa8a810b2a127b962af87",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-008",
+      "requirement_text": "Employees shall be informed of the requirements of the hazard communication standard, operations where hazardous chemicals are present, and the location and availability of the written hazard communication program, including the required hazardous-chemical lists and safety data sheets.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "interview",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(h)(2)",
+        "source_text_excerpt": "Employees shall be informed of: The requirements of this section; Any operations in their work area where hazardous chemicals are present; and, The location and availability of the written hazard communication program.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(h)(2)",
+        "source_retrieved_at": "2026-05-04T00:00:00Z",
+        "source_text_hash": "4b15da4e8fe9a67b4b3c310d2ea7768dcbb5176246620918a758e4675386f1bd",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "additional_triggers": [
+          "chemical_procurement"
+        ],
+        "condition": "A new chemical hazard is introduced into the work area."
+      }
+    },
+    {
+      "id": "OSHA-HAZCOM-009",
+      "requirement_text": "Chemical manufacturers and importers shall evaluate chemicals produced in their workplaces or imported by them to classify the chemicals in accordance with this section.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "chemical_procurement",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(d)(1)",
+        "source_text_excerpt": "Chemical manufacturers and importers shall evaluate chemicals produced in their workplaces or imported by them to classify the chemicals in accordance with this section. For each chemical, the chemical manufacturer or importer shall determine the hazard classes, and where appropriate, the category of each class that apply to the chemical being classified.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(d)(1)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "5eb2834d570eb87c81106782591a87aebc9104c76c1a8ff7d39a9aa60446a4e7",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-010",
+      "requirement_text": "Employers at multi-employer workplaces shall include in their hazard communication program the methods for providing other employers with on-site access to safety data sheets and informing them of precautionary measures and the labeling system used.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(e)(2)",
+        "source_text_excerpt": "Employers who produce, use, or store hazardous chemicals at a workplace in such a way that the employees of other employer(s) may be exposed shall additionally ensure that the hazard communication programs developed and implemented under this paragraph (e) include the methods the employer will use to provide the other employer(s) on-site access to safety data sheets for each hazardous chemical.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(e)(2)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "05bc20e7b993d8edaa9d73773af4f3c67655cf5bb92008343b0ba3b370ec8c22",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21",
+        "supporting_clauses": [
+          "§1910.1200(e)(2)(i)",
+          "§1910.1200(e)(2)(ii)",
+          "§1910.1200(e)(2)(iii)"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-011",
+      "requirement_text": "The employer shall make the written hazard communication program available, upon request, to employees, their designated representatives, and OSHA officials.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "low",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(e)(4)",
+        "source_text_excerpt": "The employer shall make the written hazard communication program available, upon request, to employees, their designated representatives, the Assistant Secretary and the Director, in accordance with the requirements of 29 CFR 1910.1020(e).",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(e)(4)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "c49da858bb15f082646fbe4f7e8e9281a81251243fd2f2eea50bb143bc882b5f",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-012",
+      "requirement_text": "The employer may use signs, placards, process sheets, batch tickets, or other written materials in lieu of affixing labels to individual stationary process containers, provided the alternative method identifies the containers and conveys the required label information.",
+      "is_mandatory": false,
+      "requirement_type": "permission",
+      "risk_level": "low",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling",
+          "material_storage"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(f)(7)",
+        "source_text_excerpt": "The employer may use signs, placards, process sheets, batch tickets, operating procedures, or other such written materials in lieu of affixing labels to individual stationary process containers, as long as the alternative method identifies the containers to which it is applicable and conveys the information required by paragraph (f)(6) of this section.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(f)(7)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "e78982d2e81cf8c6f6cf023c72a1c3519b20c82f560026d0fad066b27db4a488",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-013",
+      "requirement_text": "The employer is not required to label portable containers into which hazardous chemicals are transferred from labeled containers and which are intended only for the immediate use of the employee who performs the transfer.",
+      "is_mandatory": false,
+      "requirement_type": "permission",
+      "risk_level": "low",
+      "verification_method": "observation",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(f)(8)",
+        "source_text_excerpt": "The employer is not required to label portable containers into which hazardous chemicals are transferred from labeled containers, and which are intended only for the immediate use of the employee who performs the transfer.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(f)(8)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "acf8515622a31099c2f69ceae6a421fa5ecf4e321f11e11df9901de37f3d127a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-014",
+      "requirement_text": "The employer shall not remove or deface existing labels on incoming containers of hazardous chemicals unless the container is immediately marked with the required information.",
+      "is_mandatory": true,
+      "requirement_type": "prohibition",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling",
+          "material_storage"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(f)(9)",
+        "source_text_excerpt": "The employer shall not remove or deface existing labels on incoming containers of hazardous chemicals, unless the container is immediately marked with the required information.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(f)(9)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "7e3c26d44c29a4a43fe4c02a34f29b9f684c0b0f706ed7e101df1581cb8ab3e1",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-015",
+      "requirement_text": "The chemical manufacturer, importer, or employer preparing the safety data sheet shall ensure that significant new hazard or protective-measure information is added to the safety data sheet within three months.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "regulatory_update",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(g)(5)",
+        "source_text_excerpt": "Requires updating: if the chemical manufacturer, importer or employer preparing the safety data sheet becomes newly aware of any significant information regarding the hazards of a chemical, or ways to protect against the hazards, this new information shall be added to the safety data sheet within three months.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(g)(5)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "5d72c0f49ad7fb806a37b6af80badc98af6e740b5adcb55eaccde6db59b350d1",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-HAZCOM-016",
+      "requirement_text": "Employee training shall include methods to detect the presence or release of a hazardous chemical, the physical and health hazards of chemicals in the work area, protective measures, and the details of the employer's hazard communication program.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "interview",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "all_covered_industries"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(h)(3)",
+        "source_text_excerpt": "Employee training shall include at least:\n(i) Methods and observations that may be used to detect the presence or release of a hazardous chemical in the work area (such as monitoring conducted by the employer, continuous monitoring devices, visual appearance or odor of hazardous chemicals when being released, etc.)\n(ii) The physical, health, simple asphyxiation, combustible dust, and pyrophoric gas hazards, as well as hazards not otherwise classified, of the chemicals in the work area\n(iii) The measures employees can take to protect themselves from these hazards, including specific procedures the employer has implemented to protect employees from exposure to hazardous chemicals, such as appropriate work practices, emergency procedures, and personal protective equipment to be used\n(iv) The details of the hazard communication program developed by the employer, including an explanation of the labels received on shipped containers and the workplace labeling system used by their employer; the safety data sheet, including the order of information and how employees can obtain and use the appropriate hazard information",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(h)(3)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "c424fe8ceb53b2b70598f95eee10af028542d1cabe5fb0c3e76cdcf9139a9661",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-21"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "additional_triggers": [
+          "chemical_procurement"
+        ],
+        "condition": "A new chemical hazard is introduced into the work area."
+      }
+    },
+    {
+      "id": "OSHA-HAZCOM-017",
+      "requirement_text": "Where employees travel between workplaces during a workshift and their work is carried out at more than one geographical location, the employer may keep the written hazard communication program at the primary workplace facility.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(e)(5)",
+        "source_text_excerpt": "Where employees must travel between workplaces during a workshift, i.e., their work is carried out at more than one geographical location, the written hazard communication program may be kept at the primary workplace facility.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(e)(5)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "0179b2fef373f1c317ba8a07f4b0ffe7e9ec164828c639979860366d814d505e",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-HAZCOM-018",
+      "requirement_text": "The employer shall ensure that workplace labels or other forms of warning are legible, in English, and prominently displayed on the container or readily available in the work area throughout each work shift; other languages may be added as long as the required information is also presented in English.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(f)(10)",
+        "source_text_excerpt": "The employer shall ensure that workplace labels or other forms of warning are legible, in English, and prominently displayed on the container, or readily available in the work area throughout each work shift. Employers having employees who speak other languages may add the information in their language to the material presented, as long as the information is presented in English as well.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(f)(10)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "70fdf2088f2841407d57081b8568dda76e072cb25ae688082a625ab129372ba0",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-HAZCOM-019",
+      "requirement_text": "Where employees travel between workplaces during a workshift and their work is carried out at more than one geographical location, the employer may keep safety data sheets at the primary workplace facility, provided employees can immediately obtain the required information in an emergency.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "document_review",
+      "audit_evidence_type": "safety_data_sheet",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(g)(9)",
+        "source_text_excerpt": "Where employees must travel between workplaces during a workshift, i.e., their work is carried out at more than one geographical location, the safety data sheets may be kept at the primary workplace facility. In this situation, the employer shall ensure that employees can immediately obtain the required information in an emergency.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(g)(9)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "a93ec88c65b1c3126b43d2c28096d10ac03f9e0bd6242431dc3bacc6700768d6",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-HAZCOM-020",
+      "requirement_text": "Chemical manufacturers or importers shall ensure that distributors and employers are provided an appropriate safety data sheet with their initial shipment and with the first shipment after a safety data sheet is updated, by providing the safety data sheet with the shipped containers or sending it to the distributor or employer prior to or at the time of shipment. If a safety data sheet is not provided with a shipment that has been labeled as a hazardous chemical, the distributor or employer shall obtain one from the chemical manufacturer or importer as soon as possible, and the chemical manufacturer or importer shall also provide distributors or employers with a safety data sheet upon request.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "safety_data_sheet",
+      "workflow_trigger": "chemical_procurement",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(g)(6)",
+        "source_text_excerpt": "(i) Chemical manufacturers or importers shall ensure that distributors and employers are provided an appropriate safety data sheet with their initial shipment, and with the first shipment after a safety data sheet is updated; (ii) The chemical manufacturer or importer shall either provide safety data sheets with the shipped containers or send them to the distributor or employer prior to or at the time of the shipment; (iii) If the safety data sheet is not provided with a shipment that has been labeled as a hazardous chemical, the distributor or employer shall obtain one from the chemical manufacturer or importer as soon as possible; and, (iv) The chemical manufacturer or importer shall also provide distributors or employers with a safety data sheet upon request.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(g)(6)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "7200e013f96777567efed6f11c33c7ad07b693add4855b3f6899953e8c81eb33",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-HAZCOM-021",
+      "requirement_text": "Where it is not feasible to use pull-out labels, fold-back labels, or tags with the full label information, a container of 100 mL or less must bear at minimum the product identifier, pictogram(s), signal word, chemical manufacturer's name and phone number, and a statement directing users to the immediate outer package for full label information; a container of 3 mL or less where any label would interfere with its normal use need bear only the product identifier. In either case the immediate outer package must carry the full label information otherwise required and a statement that the small container(s) inside must be stored in that outer package when not in use.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "all_covered_industries",
+        "industries_naics": [],
+        "business_activities": [
+          "chemical_handling"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-1200",
+        "source_framework": "OSHA_HAZCOM",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.1200(f)(12)",
+        "source_text_excerpt": "(i) This paragraph applies where the chemical manufacturer, importer, or distributor can demonstrate that it is not feasible to use pull-out labels, fold-back labels, or tags containing the full label information required by paragraph (f)(1) of this section. (ii) For a container less than or equal to 100 ml capacity, the chemical manufacturer, importer, or distributor must include, at a minimum, the following information on the label of the container: (A) Product identifier; (B) Pictogram(s); (C) Signal word; (D) Chemical manufacturer's name and phone number; and (E) A statement that the full label information for the hazardous chemical is provided on the immediate outer package. (iii) For a container less than or equal to 3 ml capacity, where the chemical manufacturer, importer, or distributor can demonstrate that any label interferes with the normal use of the container, no label is required, but the container must bear, at a minimum, the product identifier. (iv) For all small containers covered by paragraph (f)(12)(ii) or (iii) of this section, the immediate outer package must include: (A) The full label information required by paragraph (f)(1) of this section for each hazardous chemical in the immediate outer package. The label must not be removed or defaced, as required by paragraph (f)(9) of this section. (B) A statement that the small container(s) inside must be stored in the immediate outer package bearing the complete label when not in use.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.1200#p-1910.1200(f)(12)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "89dfb68c0fc45ea5c1b69789368e8948b52dbebf283c421268aeaa0a086e3e18",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27",
+        "supporting_clauses": [
+          "§1910.1200(f)(12)(i)",
+          "§1910.1200(f)(12)(ii)",
+          "§1910.1200(f)(12)(iii)",
+          "§1910.1200(f)(12)(iv)"
+        ]
+      }
+    }
+  ]
+}

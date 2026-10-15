@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "aeb59a4f23af9370269a62cf4575dd10b61db3a2e8db3f31783d22db5dae8527",
+  "request_bytes": 46356,
+  "input_tokens": 12053,
+  "output_tokens": 196,
+  "estimated_cost_usd": 0.026458,
+  "elapsed_seconds": 2.5361099243164062,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "New hazard training is required whenever a new chemical hazard that employees have not previously been trained about is introduced into their work area. Ordering a product alone does not establish that it is hazardous, that it will be introduced into employees' work area, or that it presents an untrained hazard.",
+    "missing_information_or_escalation_reason": "Determine from the product's hazard information (such as its safety data sheet) whether it is a hazardous chemical and will introduce a chemical hazard in the employees' work area that they have not previously been trained about; confirm the employees' existing hazard-training coverage."
+  }
+}

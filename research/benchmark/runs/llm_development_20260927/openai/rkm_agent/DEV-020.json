@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "81041c374717e6727e4e7681ac68099b13dbbf98124d365fbe40ba8992bf6995",
+  "request_bytes": 17414,
+  "input_tokens": 4477,
+  "output_tokens": 418,
+  "estimated_cost_usd": 0.01397,
+  "elapsed_seconds": 5.17792272567749,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The reactor is in a federal OSHA PSM-covered process, and the proposed component swap is an equipment change. The replacement-in-kind exception applies only if the component is technically equivalent. The maintenance records identify a different material specification and operating limit, while engineering and operations disagree about equivalence. This conflict requires qualified engineering and process-safety judgment to determine whether the exception applies or whether management-of-change procedures are required.",
+    "missing_information_or_escalation_reason": "Obtain and resolve a documented technical equivalency determination comparing the existing and proposed component design/material specifications, operating limits, and impacts on the covered process. If it is not a replacement in kind, apply the written management-of-change procedure before implementation."
+  }
+}

@@ -1,0 +1,522 @@
+{
+  "dataset": "TrusOne-ComplianceKB",
+  "version": "1.3.0",
+  "framework": "OSHA_LOTO",
+  "license": "CC-BY-4.0",
+  "generated": "2026-09-27T12:00:00Z",
+  "record_count": 13,
+  "requirements": [
+    {
+      "id": "OSHA-LOTO-001",
+      "requirement_text": "The employer shall establish an energy control program consisting of procedures, employee training, and periodic inspections to ensure isolation before servicing or maintenance where unexpected energization, start-up, or release of stored energy could occur and cause injury.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "document_review",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(1)",
+        "source_text_excerpt": "The employer shall establish a program consisting of energy control procedures, employee training and periodic inspections to ensure that before any employee performs any servicing or maintenance on a machine or equipment where the unexpected energizing, startup or release of stored energy could occur and cause injury, the machine or equipment shall be isolated from the energy source and rendered inoperative.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(1)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "b8830682901a389e56c3bd70b601f4e9b68a3c18f459521ec0c26a799df4bf43",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-002",
+      "requirement_text": "Procedures shall be developed, documented, and utilized for the control of potentially hazardous energy when employees are engaged in covered servicing or maintenance activities.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "equipment_change",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(4)(i)",
+        "source_text_excerpt": "Procedures shall be developed, documented and utilized for the control of potentially hazardous energy when employees are engaged in the activities covered by this section.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(4)(i)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "a467cb6f8ba32a190103cb624ee5b9e77f61ca1c116044abaa326317f04ead7a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-003",
+      "requirement_text": "The energy control procedures shall clearly and specifically outline the scope, purpose, authorization, rules, and techniques to be utilized for the control of hazardous energy, and the means to enforce compliance.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "procedure",
+      "workflow_trigger": "equipment_change",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(4)(ii)",
+        "source_text_excerpt": "The procedures shall clearly and specifically outline the scope, purpose, authorization, rules, and techniques to be utilized for the control of hazardous energy, and the means to enforce compliance.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(4)(ii)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "1da9cbe125f7fb933c6b257fc21a1e65255d8030e9d8be7138b8b2dcc7f2c9a8",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22",
+        "supporting_clauses": [
+          "§1910.147(c)(4)(ii)(A)",
+          "§1910.147(c)(4)(ii)(B)",
+          "§1910.147(c)(4)(ii)(C)",
+          "§1910.147(c)(4)(ii)(D)",
+          "§1910.147(c)(4)(ii)(E)",
+          "§1910.147(c)(4)(ii)(F)"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-004",
+      "requirement_text": "The employer shall provide locks, tags, chains, wedges, key blocks, adapter pins, self-locking fasteners, or other hardware for isolating, securing, or blocking machines from energy sources.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "physical_inspection",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(5)(i)",
+        "source_text_excerpt": "Locks, tags, chains, wedges, key blocks, adapter pins, self-locking fasteners, or other hardware shall be provided by the employer for isolating, securing or blocking of machines or equipment from energy sources.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(5)(i)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "9077e671cd89e2781bf1a97ed20d2105f6900fa2fd92a6291eb0603961cc9119",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-005",
+      "requirement_text": "The employer shall conduct a periodic inspection of the energy control procedure at least annually to ensure that the procedure and the requirements of this standard are being followed.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "inspection_record",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(6)(i)",
+        "source_text_excerpt": "The employer shall conduct a periodic inspection of the energy control procedure at least annually to ensure that the procedure and the requirements of this standard are being followed.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(6)(i)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "6beaa0d404d1d95f102d5cbc8fd86cfd8a533da77072d1a0c1fe0b0f6cf93504",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-006",
+      "requirement_text": "The employer shall provide training to ensure that the purpose and function of the energy control program are understood by employees and that employees acquire the knowledge and skills required for safe application, usage, and removal of energy controls.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "onboarding_new_employee",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(7)(i)",
+        "source_text_excerpt": "The employer shall provide training to ensure that the purpose and function of the energy control program are understood by employees and that the knowledge and skills required for the safe application, usage, and removal of the energy controls are acquired by employees.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(7)(i)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "9872e5c16b68275cb1dbf08eebdcce28a2c425d9b915ab924b1efca2b16f625c",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-007",
+      "requirement_text": "Retraining shall be provided for all authorized and affected employees whenever there is a change in job assignments, machines, equipment, or processes that present a new hazard, or a change in energy control procedures.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "record_review",
+      "audit_evidence_type": "training_record",
+      "workflow_trigger": "equipment_change",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(7)(iii)(A)",
+        "source_text_excerpt": "Retraining shall be provided for all authorized and affected employees whenever there is a change in their job assignments, a change in machines, equipment or processes that present a new hazard, or when there is a change in the energy control procedures.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(7)(iii)(A)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "01f71c2dcbafdf480f9cfefb9a8768d3e3df7b7c2b70a1cb3d8bd836bb6f84f8",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "additional_triggers": [
+          "job_reassignment",
+          "procedure_change"
+        ],
+        "condition": "Retraining is required after job reassignment, a machine/equipment/process change presenting a new hazard, or a change in energy-control procedures."
+      }
+    },
+    {
+      "id": "OSHA-LOTO-008",
+      "requirement_text": "All energy isolating devices needed to control the energy to the machine or equipment shall be physically located and operated in such a manner as to isolate the machine or equipment from energy sources.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "observation",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(d)(3)",
+        "source_text_excerpt": "All energy isolating devices that are needed to control the energy to the machine or equipment shall be physically located and operated in such a manner as to isolate the machine or equipment from the energy source(s).",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(d)(3)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "7f42deb76105bf89e305074d1db1b2d20912f640a8a81b61a8e0964930b0aea4",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-009",
+      "requirement_text": "Following the application of lockout or tagout devices to energy isolating devices, all potentially hazardous stored or residual energy shall be relieved, disconnected, restrained, and otherwise rendered safe.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "critical",
+      "verification_method": "observation",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(d)(5)(i)",
+        "source_text_excerpt": "Following the application of lockout or tagout devices to energy isolating devices, all potentially hazardous stored or residual energy shall be relieved, disconnected, restrained, and otherwise rendered safe.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(d)(5)(i)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "75b590786439d79aa418a345ac2331d01971b926ef337b6e7a8634e086b7d96a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-010",
+      "requirement_text": "Each lockout or tagout device shall be removed by the employee who applied it, except that when that employee is unavailable, removal may occur under employer direction using documented specific procedures and training that provide equivalent safety.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "observation",
+      "audit_evidence_type": "physical_condition",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(e)(3)",
+        "source_text_excerpt": "Each lockout or tagout device shall be removed from each energy isolating device by the employee who applied the device.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(e)(3)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "879a3c7c50a28e35bf4875b1ab2ce011bda20cf35e4fa93b561ac854059061f8",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification",
+      "workflow_trigger_details": {
+        "condition": "Removal by another person is permitted only when the applying employee is unavailable and the documented exception procedure is followed."
+      }
+    },
+    {
+      "id": "OSHA-LOTO-011",
+      "requirement_text": "Whenever outside servicing personnel are engaged in covered activities, the on-site employer and the outside employer shall inform each other of their respective lockout or tagout procedures.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "medium",
+      "verification_method": "interview",
+      "audit_evidence_type": "written_program",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ],
+        "industry_scope": "listed_naics_only"
+      },
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(f)(2)(i)",
+        "source_text_excerpt": "Whenever outside servicing personnel are to be engaged in activities covered by the scope and application of this standard, the on-site employer and the outside employer shall inform each other of their respective lockout or tagout procedures.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(f)(2)(i)",
+        "source_retrieved_at": "2026-06-13T00:00:00Z",
+        "source_text_hash": "98eb5a957632e41275d220dc1f0c8a133b4a1cc72b1064b67b92c516e96d8480",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-22"
+      },
+      "verification_status": "implemented_from_human_verification"
+    },
+    {
+      "id": "OSHA-LOTO-012",
+      "requirement_text": "The employer shall certify that the periodic inspection of the energy control procedure has been performed. The certification shall identify the machine or equipment on which the energy control procedure was being utilized, the date of the inspection, the employees included in the inspection, and the person performing the inspection.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "certification",
+      "workflow_trigger": "annual_review",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(6)(ii)",
+        "source_text_excerpt": "The employer shall certify that the periodic inspections have been performed. The certification shall identify the machine or equipment on which the energy control procedure was being utilized, the date of the inspection, the employees included in the inspection, and the person performing the inspection.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(6)(ii)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "eb285f5b1a8a3c8eac47739b0cb27c504401e245f455279a379f5d9179aad79a",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "OSHA-LOTO-013",
+      "requirement_text": "The employer shall certify that employee training on the energy control program has been accomplished and is being kept up to date. The certification shall contain each employee's name and the dates of training.",
+      "is_mandatory": true,
+      "requirement_type": "obligation",
+      "risk_level": "high",
+      "verification_method": "document_review",
+      "audit_evidence_type": "certification",
+      "workflow_trigger": "always_on",
+      "applicability": {
+        "industry_scope": "listed_naics_only",
+        "industries_naics": [
+          31,
+          32
+        ],
+        "business_activities": [
+          "equipment_maintenance"
+        ],
+        "employee_size_band": "any",
+        "jurisdictions": [
+          "federal"
+        ]
+      },
+      "verification_status": "implemented_from_human_verification",
+      "provenance": {
+        "source_document_id": "CFR-29-1910-147",
+        "source_framework": "OSHA_LOTO",
+        "source_version": "2024-07-01",
+        "source_clause": "§1910.147(c)(7)(iv)",
+        "source_text_excerpt": "The employer shall certify that employee training has been accomplished and is being kept up to date. The certification shall contain each employee's name and dates of training.",
+        "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(7)(iv)",
+        "source_retrieved_at": "2026-09-26T00:00:00Z",
+        "source_text_hash": "ba83422e6b7cea89833d3f42f908ab7544bc8da7c4f52340091bada92af71d3c",
+        "curation_method": "ai_assisted_with_human_review",
+        "curator": "Eugene Sun",
+        "review_date": "2026-09-27"
+      }
+    }
+  ]
+}

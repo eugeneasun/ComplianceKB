@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "b89200a105d8808a964a8ea8273b4d3e767776a83133cfe2b97db00091445d83",
+  "request_bytes": 8747,
+  "input_tokens": 2355,
+  "output_tokens": 268,
+  "estimated_cost_usd": 0.007925999999999999,
+  "elapsed_seconds": 3.187183380126953,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The vendor is outside servicing personnel, but coordination under §1910.147(f)(2)(i) applies only when those personnel will engage in activities covered by the lockout/tagout standard. Coverage depends on whether the maintenance involves a machine or equipment for which unexpected energizing, startup, or release of stored energy could occur and cause injury. If that predicate is met, the on-site and outside employers must inform each other of their respective lockout/tagout procedures, and applicable energy-control procedures must be developed, documented, and used.",
+    "missing_information_or_escalation_reason": "Determine whether the planned routine maintenance exposes workers to potentially hazardous unexpected energization, startup, or stored/residual-energy release that could cause injury. The supplied facts do not establish that coverage predicate."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "006519959a89da6f455360d83be5eb55deaa3368666458645089110108a05437",
+  "request_bytes": 8656,
+  "input_tokens": 2348,
+  "output_tokens": 555,
+  "estimated_cost_usd": 0.011356000000000002,
+  "elapsed_seconds": 7.216838598251343,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "incident_record",
+      "complaint_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The employer must maintain a reasonable injury-reporting procedure that does not deter or discourage accurate reporting. It also must not discharge or discriminate against an employee for reporting a work-related injury or illness. The supervisor's threatened discipline following a report is relevant evidence that the reporting process may be deterrent and that prohibited discrimination may have occurred. The supplied facts do not establish that the injury is recordable or reportable to OSHA.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

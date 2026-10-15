@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-017",
+  "prompt_sha256": "97b0e7a2554d981087f2c374e74ee13a7de7e6c67933c42abaaf68be13c88a45",
+  "request_bytes": 17508,
+  "input_tokens": 7381,
+  "output_tokens": 302,
+  "estimated_cost_usd": 0.017782,
+  "elapsed_seconds": 3.7265024185180664,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-013"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.1200(f)(8)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes an employee transferring a hazardous chemical from a labeled drum into a portable container for immediate use during the same task, with the container remaining under the transferring employee's control and not stored for later use. This matches precisely the exemption at §1910.1200(f)(8), which relieves the employer of the labeling obligation for portable containers intended only for immediate use by the employee performing the transfer. No other HazCom labeling obligations (e.g., §1910.1200(f)(6)) apply because the exemption explicitly carves out this scenario.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

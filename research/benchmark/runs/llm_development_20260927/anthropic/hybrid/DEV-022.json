@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "5f6e4dfdc43b6684f99ccbb6936d89477e3d414661c3aa8a4a2829bc8a309333",
+  "request_bytes": 9564,
+  "input_tokens": 4602,
+  "output_tokens": 422,
+  "estimated_cost_usd": 0.013424,
+  "elapsed_seconds": 4.810116529464722,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016",
+      "OSHA-HAZCOM-005"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "safety_data_sheet",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)",
+      "§1910.1200(g)(1)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Training is only required under §1910.1200(h)(1) when a new chemical hazard is introduced that employees have not already been trained on. The scenario does not establish whether the new cleaning product presents a hazard, or whether it presents a hazard class employees have already been trained on. Without knowing the SDS classification of the product and whether it differs from previously trained hazard categories, it cannot be determined whether new training is legally required.",
+    "missing_information_or_escalation_reason": "Missing facts: (1) whether the new cleaning product is classified as hazardous per its SDS, and (2) whether the specific hazard(s) it presents are ones employees have already received training on. Without these facts, applicability of the §1910.1200(h)(1) training trigger cannot be determined."
+  }
+}

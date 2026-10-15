@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "859a74e8a459dc1f285669ea4e9eddf8a5b18710584d714f0341772a41073d03",
+  "request_bytes": 46335,
+  "input_tokens": 12050,
+  "output_tokens": 291,
+  "estimated_cost_usd": 0.027592,
+  "elapsed_seconds": 4.687240839004517,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Outside servicing personnel must exchange their respective lockout/tagout procedures with the on-site employer only when they will perform activities covered by the lockout/tagout standard. Coverage for maintenance depends on whether unexpected energization, startup, or release of stored energy could occur and cause injury. That material predicate is not supplied.",
+    "missing_information_or_escalation_reason": "Determine for the planned maintenance whether the equipment has energy sources or stored/residual energy and whether unexpected energization, startup, or energy release could cause injury. If yes, the work is covered and the site and vendor must inform each other of their respective lockout/tagout procedures."
+  }
+}

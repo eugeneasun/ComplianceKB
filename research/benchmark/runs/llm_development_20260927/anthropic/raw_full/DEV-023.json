@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "raw_full",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "859a74e8a459dc1f285669ea4e9eddf8a5b18710584d714f0341772a41073d03",
+  "request_bytes": 46261,
+  "input_tokens": 18632,
+  "output_tokens": 408,
+  "estimated_cost_usd": 0.041344,
+  "elapsed_seconds": 5.097333192825317,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "LOTO applies only where unexpected energization, startup, or release of stored energy could occur and cause injury during servicing/maintenance (§1910.147(c)(1)). If that predicate is met, the on-site employer and outside employer must coordinate lockout/tagout procedures under §1910.147(f)(2)(i). The scenario explicitly states the facts do not establish whether such hazardous energy conditions exist, so applicability cannot be determined without that missing factual predicate.",
+    "missing_information_or_escalation_reason": "It is unknown whether the equipment servicing involves unexpected energization, startup, or release of stored energy that could cause injury, which is the threshold fact required to trigger LOTO coverage and the outside-contractor coordination duty under §1910.147(c)(1) and (f)(2)(i)."
+  }
+}

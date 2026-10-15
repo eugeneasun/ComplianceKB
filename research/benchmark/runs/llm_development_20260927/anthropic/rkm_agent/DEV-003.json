@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-003",
+  "prompt_sha256": "42482060a23aad42c26f1cad004a6af9cb9fce1ac78aa022d1264249023c122a",
+  "request_bytes": 17811,
+  "input_tokens": 7422,
+  "output_tokens": 472,
+  "estimated_cost_usd": 0.019563999999999998,
+  "elapsed_seconds": 5.70257306098938,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-022",
+      "OSHA-PSM-043",
+      "OSHA-PSM-047",
+      "OSHA-PSM-004"
+    ],
+    "predicted_trigger_labels": [
+      "facility_change",
+      "new_process_startup",
+      "equipment_change",
+      "procedure_change"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "inspection_record",
+      "written_program"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(l)(4)",
+      "§1910.119(f)(3)",
+      "§1910.119(d)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a non-replacement-in-kind modification affecting process safety information, triggering management of change (MOC) requirements under §1910.119(l)(1), which mandates updating process safety information (l)(4) and reviewing operating procedures (f)(3). Because highly hazardous chemicals are being introduced and production restarted, pre-startup safety review (i)(2) applies to confirm PSI, procedures, MOC completion, and training before startup. PSM-004 applies since PSI must be current before any hazard analysis tied to the change. These requirements are directly supported by the stated facts: covered process, equipment/technology modification, PSI changes, and planned introduction/restart of highly hazardous chemicals.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

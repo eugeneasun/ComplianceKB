@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-013",
+  "prompt_sha256": "1c3031c5d69e2bac25b7e4bd33652ed261ac4bc246ba3de90cae93f86299d270",
+  "request_bytes": 15422,
+  "input_tokens": 6808,
+  "output_tokens": 333,
+  "estimated_cost_usd": 0.016946,
+  "elapsed_seconds": 4.011393785476685,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-013",
+      "OSHA-REC-022",
+      "OSHA-REC-014"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "always_on",
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "procedure",
+      "training_record",
+      "complaint_record"
+    ],
+    "predicted_citations": [
+      "§1904.35(b)(1)(i)",
+      "§1904.35(b)(1)(ii)",
+      "§1904.35(b)(1)(iv)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The employer established a reporting procedure and informed the new employee per §1904.35(b)(1)(i)/(ii), satisfying onboarding requirements. However, the supervisor's threat of discipline after an injury report constitutes discrimination for reporting, which is expressly prohibited under §1904.35(b)(1)(iv). This is a clear anti-retaliation violation supported directly by the facts given.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

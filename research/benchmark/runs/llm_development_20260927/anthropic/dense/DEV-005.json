@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-005",
+  "prompt_sha256": "3644f4eff79326cdabc0bc96c233a29f4348207e933c5ec2ca3b3e23602c8f26",
+  "request_bytes": 8761,
+  "input_tokens": 4355,
+  "output_tokens": 513,
+  "estimated_cost_usd": 0.013840000000000002,
+  "elapsed_seconds": 7.417818069458008,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-001",
+      "OSHA-REC-011",
+      "OSHA-REC-003",
+      "OSHA-REC-018",
+      "OSHA-REC-020",
+      "OSHA-REC-005",
+      "OSHA-REC-008",
+      "OSHA-REC-012",
+      "OSHA-REC-017"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review",
+      "periodic_review"
+    ],
+    "predicted_evidence_labels": [
+      "manifest_or_form",
+      "retention_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1904.4(a)",
+      "§1904.31(a)",
+      "§1904.29(b)(3)",
+      "§1904.32(a)(2)",
+      "§1904.32(a)(4)",
+      "§1904.32(b)(5)",
+      "§1904.33(a)",
+      "§1904.33(b)(1)",
+      "§1904.41(a)(1)(ii)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The establishment has 300 employees, exceeding the 250-employee threshold under §1904.41(a)(1)(ii), triggering electronic submission of Form 300A regardless of industry classification (the 20-249 employee/industry-specific provision at §1904.41(a)(1)(i) does not apply). The scenario clearly involves year-end annual summary preparation and posting, invoking the core recordkeeping requirements: recording criteria, maintaining the log for all payroll and supervised employees, timely entry of cases, creating and posting the annual summary, retention of records for five years, and updating stored logs during the retention period.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

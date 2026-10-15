@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-014",
+  "prompt_sha256": "ff834118df8e200a71b8694ee6c12930cfb58632882285d83c8f2b9c21c296f0",
+  "request_bytes": 8274,
+  "input_tokens": 2279,
+  "output_tokens": 425,
+  "estimated_cost_usd": 0.009658,
+  "elapsed_seconds": 5.07589864730835,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-035",
+      "OSHA-PSM-037",
+      "OSHA-PSM-038"
+    ],
+    "predicted_trigger_labels": [
+      "periodic_review"
+    ],
+    "predicted_evidence_labels": [
+      "certification",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(o)(1)",
+      "§1910.119(o)(4)",
+      "§1910.119(o)(5)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the covered process is undergoing its required three-year PSM compliance audit and deficiencies were identified, the employer must certify the triennial compliance evaluation, promptly determine and document an appropriate response to every audit finding, document correction of deficiencies, and retain the two most recent compliance-audit reports.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

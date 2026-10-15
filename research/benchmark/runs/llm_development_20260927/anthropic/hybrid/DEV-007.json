@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-007",
+  "prompt_sha256": "94a4aebd7f9e701c7daca0b6dadfe0c10387a126dfe3f4bc84aca78a12afc8ab",
+  "request_bytes": 8921,
+  "input_tokens": 4377,
+  "output_tokens": 462,
+  "estimated_cost_usd": 0.013374,
+  "elapsed_seconds": 5.93968939781189,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-002",
+      "OSHA-LOTO-006",
+      "OSHA-LOTO-008",
+      "OSHA-LOTO-009"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment",
+      "training_refresh",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(c)(4)(i)",
+      "§1910.147(c)(7)(i)",
+      "§1910.147(d)(3)",
+      "§1910.147(d)(5)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Maintenance employees entering a machine to clear a jam constitutes servicing/maintenance where unexpected startup or release of stored pneumatic energy could occur, squarely triggering the LOTO standard. This requires an established energy control program with documented procedures (c)(4)(i), isolation and rendering inoperative (c)(1), physical isolation of energy sources (d)(3), relief of stored/residual pneumatic energy (d)(5)(i), and training on the program (c)(7)(i). No facts indicate outside contractors, job/process changes, or PSM-covered highly hazardous chemicals, so those provisions are not applicable here.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-002",
+  "prompt_sha256": "30cb363f9cec268536b5814bc2dcc70ad6b3070aa90c606b7c665165d9a1c433",
+  "request_bytes": 10375,
+  "input_tokens": 2674,
+  "output_tokens": 451,
+  "estimated_cost_usd": 0.01076,
+  "elapsed_seconds": 5.2377331256866455,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-001",
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-008",
+      "OSHA-HAZCOM-016"
+    ],
+    "predicted_trigger_labels": [
+      "onboarding_new_employee",
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "training_record",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(e)(1)",
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(2)",
+      "§1910.1200(h)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The technician is an employee newly assigned to work in an area involving hazardous chemicals. The employer must provide effective hazardous-chemical information and training at initial assignment, including required hazard, protective-measure, program, label, and safety-data-sheet content. The employee must also be informed of applicable requirements, hazardous-chemical operations in the work area, and the location and availability of the written hazard communication program.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

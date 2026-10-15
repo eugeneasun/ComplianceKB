@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-015",
+  "prompt_sha256": "b1365cfa0bca40ce14212bc502d7e9003832fadd5d392d6f4ea177fcc596edfd",
+  "request_bytes": 46260,
+  "input_tokens": 12037,
+  "output_tokens": 543,
+  "estimated_cost_usd": 0.03059,
+  "elapsed_seconds": 6.782347202301025,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-025",
+      "OSHA-PSM-026"
+    ],
+    "predicted_trigger_labels": [
+      "scheduled_inspection"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(j)(4)",
+      "§1910.119(j)(5)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The scheduled inspection of covered-process equipment triggers the PSM mechanical-integrity inspection and documentation requirement. Because the vessel is outside acceptable limits, it must be corrected before further use, unless it can be corrected safely and timely while necessary means assure safe operation. Determining whether continued operation is safely assured requires qualified engineering and process-safety judgment.",
+    "missing_information_or_escalation_reason": "A qualified determination is needed regarding the deficiency, whether the vessel will be used before correction, the applicable process-safety-information limits, and what necessary measures—if any—would assure safe operation pending correction."
+  }
+}

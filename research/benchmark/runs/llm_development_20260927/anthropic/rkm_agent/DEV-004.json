@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-004",
+  "prompt_sha256": "ab228e670e9366c7f7842f0be8f6bd3ba803fecb837d76c93ddead114cf5516b",
+  "request_bytes": 16840,
+  "input_tokens": 7250,
+  "output_tokens": 369,
+  "estimated_cost_usd": 0.01819,
+  "elapsed_seconds": 4.8693788051605225,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-031"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(m)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The scenario describes a near miss that could reasonably have resulted in a catastrophic release of a highly hazardous chemical at a covered process, which directly triggers the PSM incident investigation requirement under §1910.119(m)(1). No employee was injured, hospitalized, or killed, so the OSHA recordkeeping/reporting requirements (§1904.39(a)(1)/(a)(2), §1904.29(b)(3)) do not apply since those are contingent on employee injury, hospitalization, amputation, or death, none of which occurred here. The contractor-related PSM provisions (h)(2), (h)(3)) are not triggered by this incident scenario absent facts about contractor involvement in the incident itself or a change in process/contractor status.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

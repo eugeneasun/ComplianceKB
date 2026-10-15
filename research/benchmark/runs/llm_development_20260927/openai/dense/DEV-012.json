@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-012",
+  "prompt_sha256": "9859b38f3bb288d11bb24375cbb9a988c56bab52ebed5575f2ee2ce225ded2c8",
+  "request_bytes": 8486,
+  "input_tokens": 2331,
+  "output_tokens": 172,
+  "estimated_cost_usd": 0.006726,
+  "elapsed_seconds": 2.029869318008423,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007",
+      "OSHA-REC-003"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)",
+      "§1904.29(b)(3)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The work-related incident resulted in both an employee amputation and in-patient hospitalization. The employer must report the event to OSHA within 24 hours. Because the case is stated to be recordable and the employer learned of it today, it must be entered on the OSHA 300 Log and OSHA 301 Incident Report within seven calendar days of receiving that information.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

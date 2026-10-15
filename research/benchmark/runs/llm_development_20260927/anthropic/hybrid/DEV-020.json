@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "hybrid",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "4d83eeb58575637d27ad539a611f3dd65a31031da96df87a29ca17144a911ffc",
+  "request_bytes": 9360,
+  "input_tokens": 4464,
+  "output_tokens": 602,
+  "estimated_cost_usd": 0.014948,
+  "elapsed_seconds": 6.753974914550781,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029",
+      "OSHA-PSM-021",
+      "OSHA-PSM-022",
+      "OSHA-PSM-030",
+      "OSHA-PSM-043",
+      "OSHA-LOTO-007"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change",
+      "procedure_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "training_record",
+      "physical_condition"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)",
+      "§1910.119(i)(1)",
+      "§1910.119(i)(2)",
+      "§1910.119(l)(3)",
+      "§1910.119(l)(4)",
+      "§1910.147(c)(7)(iii)(A)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "Whether the reactor component swap qualifies as a 'replacement in kind' is disputed between engineering and operations, with maintenance records indicating a differing material specification and operating limit. This is exactly the type of technical equivalency judgment that determines whether MOC, PSSR, and related training/documentation obligations under §1910.119(l), (i), and LOTO retraining requirements are triggered. Because the facts conflict (engineering's characterization vs. maintenance records) and resolving this requires qualified engineering/safety judgment about technical equivalence, this cannot be resolved by rule application alone.",
+    "missing_information_or_escalation_reason": "The scenario presents a factual/technical conflict: engineering claims 'replacement in kind' status while maintenance records show a different material specification and operating limit. Determining whether this is truly a replacement in kind (exempt from MOC) or a change requiring full MOC/PSSR/training procedures requires qualified engineering evaluation of technical equivalency, which is not resolvable from the excerpts alone and requires human/expert escalation."
+  }
+}

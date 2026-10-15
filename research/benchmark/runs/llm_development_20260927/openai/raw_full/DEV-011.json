@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "raw_full",
+  "scenario_id": "DEV-011",
+  "prompt_sha256": "530e758b2c3e88f37988737cf8ef4b1af9d7c39bb0a2cf95623003ae3f92e553",
+  "request_bytes": 46206,
+  "input_tokens": 12029,
+  "output_tokens": 420,
+  "estimated_cost_usd": 0.029098,
+  "elapsed_seconds": 4.318697690963745,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-001",
+      "OSHA-REC-002",
+      "OSHA-REC-003",
+      "OSHA-REC-006",
+      "OSHA-REC-008"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "manifest_or_form",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1904.4(a)",
+      "§1904.7(a)",
+      "§1904.29(b)(3)",
+      "§1904.39(a)(1)",
+      "§1904.33(a)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The establishment is recordkeeping-covered, and the case is stated to be a new, work-related fatality. Death satisfies the general recording criteria. The employer must report the fatality to OSHA within 8 hours, enter the recordable case on the OSHA 300 Log and OSHA 301 Incident Report within 7 calendar days of receiving information of the case, and retain the specified records for 5 years following the end of the covered calendar year.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-014",
+  "prompt_sha256": "5011a67869cc7442f48382c371d425e9411acc485b74be94283088bf4bad45fb",
+  "request_bytes": 8100,
+  "input_tokens": 2238,
+  "output_tokens": 115,
+  "estimated_cost_usd": 0.005856,
+  "elapsed_seconds": 1.9657843112945557,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-037"
+    ],
+    "predicted_trigger_labels": [
+      "audit_preparation"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(o)(4)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the covered PSM process's compliance audit identified deficiencies, the employer must promptly determine and document an appropriate response to each audit finding and document that the deficiencies have been corrected.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

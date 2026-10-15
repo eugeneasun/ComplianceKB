@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-021",
+  "prompt_sha256": "506cb1031d08a4e0446b1b072289fb3edec2134eac60a5f7cc45131b12cff590",
+  "request_bytes": 17048,
+  "input_tokens": 4449,
+  "output_tokens": 174,
+  "estimated_cost_usd": 0.010986,
+  "elapsed_seconds": 2.2145113945007324,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-007"
+    ],
+    "predicted_trigger_labels": [
+      "incident_occurrence"
+    ],
+    "predicted_evidence_labels": [
+      "incident_record",
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "§1904.39(a)(2)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "For a federal-OSHA-covered establishment, OSHA notification within 24 hours is required only when the employee's in-patient hospitalization resulted from a work-related incident. The supplied facts establish neither work-relatedness nor that the hospital admission was an in-patient hospitalization.",
+    "missing_information_or_escalation_reason": "Determine whether the illness resulted from a work-related incident and whether the hospital admission was for in-patient treatment. If both are true, report the event to OSHA within 24 hours."
+  }
+}

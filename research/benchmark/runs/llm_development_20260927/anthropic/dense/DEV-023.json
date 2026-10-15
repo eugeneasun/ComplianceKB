@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "dense",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "b89200a105d8808a964a8ea8273b4d3e767776a83133cfe2b97db00091445d83",
+  "request_bytes": 8673,
+  "input_tokens": 4318,
+  "output_tokens": 365,
+  "estimated_cost_usd": 0.012285999999999998,
+  "elapsed_seconds": 5.071985960006714,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "LOTO coordination with outside servicing personnel is required under 1910.147(f)(2)(i) whenever activities are covered by the scope of the standard, which applies under 1910.147(c)(1) only where unexpected energization, startup, or release of stored energy could cause injury during servicing. The scenario explicitly states this predicate fact is unknown, so applicability cannot be determined.",
+    "missing_information_or_escalation_reason": "It is not stated whether the maintenance activity could involve unexpected energization, startup, or release of stored energy that could cause injury, which is the threshold fact needed to determine whether the LOTO standard (and thus the outside-employer coordination requirement) applies."
+  }
+}

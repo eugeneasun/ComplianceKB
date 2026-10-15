@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-022",
+  "prompt_sha256": "8009da2cc1e27f1768b656982a2862a40d7f547f9249d3e92ac4f2d3984e1ba2",
+  "request_bytes": 9156,
+  "input_tokens": 4480,
+  "output_tokens": 298,
+  "estimated_cost_usd": 0.01194,
+  "elapsed_seconds": 3.8811519145965576,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "HazCom training is triggered only when a new chemical hazard not previously trained on is introduced. The scenario does not establish whether the cleaning product is hazardous or presents a hazard employees have not already been trained on, which is the material fact needed to determine whether §1910.1200(h)(1) training obligation is triggered.",
+    "missing_information_or_escalation_reason": "Need to know whether the new cleaning product is a hazardous chemical (per its SDS) and whether it introduces a hazard class or hazard information employees have not previously received training on."
+  }
+}

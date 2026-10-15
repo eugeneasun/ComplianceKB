@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "dense",
+  "scenario_id": "DEV-014",
+  "prompt_sha256": "4f23a31da35a4a8ea51a9581d6ba9fafd211aa74bb95fe0ee23c2fb17bfaac70",
+  "request_bytes": 8386,
+  "input_tokens": 2287,
+  "output_tokens": 178,
+  "estimated_cost_usd": 0.00671,
+  "elapsed_seconds": 2.035346746444702,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-035",
+      "OSHA-PSM-037"
+    ],
+    "predicted_trigger_labels": [
+      "audit_preparation",
+      "periodic_review"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "inspection_record",
+      "retention_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(o)(1)",
+      "§1910.119(o)(4)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "Because the process is covered by federal OSHA PSM and the organization is conducting the required three-year compliance audit, it must certify that it evaluated compliance at least every three years to verify that PSM procedures and practices are adequate and followed. For each audit finding, it must promptly determine and document an appropriate response and document correction of deficiencies.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "rkm_agent",
+  "scenario_id": "DEV-018",
+  "prompt_sha256": "4be6133235943fcd993de11393bbe4107261872967c7a4542d0c6924ae9f79f6",
+  "request_bytes": 16484,
+  "input_tokens": 4359,
+  "output_tokens": 203,
+  "estimated_cost_usd": 0.011154,
+  "elapsed_seconds": 2.8666651248931885,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-010"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "physical_condition",
+      "procedure",
+      "training_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(e)(3)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "The lock must ordinarily be removed by the employee who applied it. Because that employee is unavailable, another employee may remove it only under employer direction using documented specific procedures and training that provide equivalent safety. The scenario does not establish that such a documented procedure exists, that it covers this removal, or that the person directed to remove the lock has received the required training.",
+    "missing_information_or_escalation_reason": "Confirm whether the employer has documented, specific off-site-employee lock-removal procedures that provide equivalent safety and whether the proposed remover is trained and acting under employer direction. Without those facts, removal by another employee cannot be determined compliant."
+  }
+}

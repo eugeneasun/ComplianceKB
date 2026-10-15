@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "hybrid",
+  "scenario_id": "DEV-020",
+  "prompt_sha256": "4d83eeb58575637d27ad539a611f3dd65a31031da96df87a29ca17144a911ffc",
+  "request_bytes": 9434,
+  "input_tokens": 2461,
+  "output_tokens": 426,
+  "estimated_cost_usd": 0.010034000000000001,
+  "elapsed_seconds": 5.347435474395752,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-PSM-029"
+    ],
+    "predicted_trigger_labels": [
+      "equipment_change"
+    ],
+    "predicted_evidence_labels": [
+      "written_program",
+      "procedure",
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.119(l)(1)"
+    ],
+    "predicted_decision": "human_escalation",
+    "rationale": "The reactor component swap is an equipment change in a PSM-covered process. Section 1910.119(l)(1) requires written management-of-change procedures unless the work is a replacement in kind. The documented different material specification and operating limit, together with the engineering/operations disagreement, prevent a determinate replacement-in-kind conclusion and require qualified engineering and safety review.",
+    "missing_information_or_escalation_reason": "Resolve whether the proposed component is technically equivalent to the existing design and operating basis, including compatibility of the changed material specification and operating limit with the process safety information and applicable design specifications. The supplied facts present a technical conflict requiring qualified engineering and safety judgment."
+  }
+}

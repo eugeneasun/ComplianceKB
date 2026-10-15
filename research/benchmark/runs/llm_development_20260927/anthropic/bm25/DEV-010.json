@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "system": "bm25",
+  "scenario_id": "DEV-010",
+  "prompt_sha256": "84a740570f1b5a3bda15d37640ed4af5796cb066459b384d5b230e8199399466",
+  "request_bytes": 9511,
+  "input_tokens": 4567,
+  "output_tokens": 383,
+  "estimated_cost_usd": 0.012964,
+  "elapsed_seconds": 4.464775800704956,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-REC-024"
+    ],
+    "predicted_trigger_labels": [
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "retention_record",
+      "manifest_or_form"
+    ],
+    "predicted_citations": [
+      "(B) When an authorized employee representative asks for copies of the OSHA 301 Incident Reports for an establishment where the agent represents employees under a collective bargaining agreement, you must give copies of those forms to the authorized employee representative within 7 calendar days. You are only required to give the authorized employee representative information from the OSHA 301 Incident Report section titled \"Tell us about the case.\" You must remove all other information from the copy of the OSHA 301 Incident Report or the equivalent substitute form that you give to the authorized employee representative."
+    ],
+    "predicted_decision": "answer",
+    "rationale": "§1904.35(b)(2)(v)(B) directly governs requests by authorized employee representatives for OSHA 301 reports covering represented employees, specifying a 7-calendar-day response and limiting disclosure to the 'Tell us about the case' section, with other information redacted.",
+    "missing_information_or_escalation_reason": ""
+  }
+}

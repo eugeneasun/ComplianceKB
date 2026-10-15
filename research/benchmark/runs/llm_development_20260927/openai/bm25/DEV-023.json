@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-023",
+  "prompt_sha256": "754216bb0844b0425b9b6da78de83df4df3531f705c657f9c7a9d5105c95d394",
+  "request_bytes": 8857,
+  "input_tokens": 2380,
+  "output_tokens": 232,
+  "estimated_cost_usd": 0.007544,
+  "elapsed_seconds": 2.753955364227295,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-001",
+      "OSHA-LOTO-011"
+    ],
+    "predicted_trigger_labels": [
+      "process_assignment"
+    ],
+    "predicted_evidence_labels": [
+      "procedure"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(1)",
+      "§1910.147(f)(2)(i)"
+    ],
+    "predicted_decision": "need_more_information",
+    "rationale": "Outside servicing personnel must mutually inform the on-site and outside employers of their respective lockout/tagout procedures only when they will perform activities covered by the scope and application of the lockout/tagout standard. Covered servicing or maintenance exists where unexpected energization, startup, or release of stored energy could occur and cause injury. The scenario confirms outside-vendor routine maintenance but does not establish that hazard predicate.",
+    "missing_information_or_escalation_reason": "Determine whether the maintenance exposes employees to a potential unexpected energization, startup, or release of stored/residual energy that could cause injury. If yes, the work is covered and the on-site and outside employers must inform each other of their respective lockout/tagout procedures."
+  }
+}

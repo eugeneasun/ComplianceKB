@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "system": "bm25",
+  "scenario_id": "DEV-001",
+  "prompt_sha256": "e67f20b231809701937d8530d44355057426b4bce440a30589a99727f765e538",
+  "request_bytes": 9686,
+  "input_tokens": 2533,
+  "output_tokens": 430,
+  "estimated_cost_usd": 0.010225999999999999,
+  "elapsed_seconds": 4.765005826950073,
+  "attempts": 1,
+  "duplicate_output_items": {},
+  "answer": {
+    "predicted_requirement_ids": [
+      "OSHA-HAZCOM-007",
+      "OSHA-HAZCOM-016",
+      "OSHA-HAZCOM-005"
+    ],
+    "predicted_trigger_labels": [
+      "chemical_procurement",
+      "always_on"
+    ],
+    "predicted_evidence_labels": [
+      "training_record",
+      "safety_data_sheet"
+    ],
+    "predicted_citations": [
+      "§1910.1200(h)(1)",
+      "§1910.1200(h)(3)",
+      "§1910.1200(g)(1)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The new hazardous solvent introduces a chemical hazard that employees have not previously been trained about; effective hazard communication training is required when it is introduced. The training must cover the specified detection, hazard, protective-measure, program/label, and SDS topics. Because the employer uses the hazardous solvent, it must have its safety data sheet in the workplace. The portable-container labeling exception cannot be applied because the facts do not establish that the containers are intended only for the immediate use of the employee performing the transfer.",
+    "missing_information_or_escalation_reason": ""
+  }
+}
