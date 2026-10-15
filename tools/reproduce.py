@@ -76,7 +76,7 @@ def main():
     for release in ['v1.2.0','v1.3.0','v1.4.0','v1.5.0']:
         run('tests/test_full_dataset.py','--release',release)
         run('tests/test_release_exports.py','--release',release)
-    for name in ['test_benchmark_metrics.py','test_bm25_baseline.py','test_llm_benchmark.py','test_completed_llm_run.py']:
+    for name in ['test_benchmark_metrics.py','test_bm25_baseline.py','test_llm_benchmark.py','test_completed_llm_run.py','test_readme_walkthrough.py']:
         run('tests/'+name)
     run('research/benchmark/validate_scenarios.py','research/benchmark/scenarios_HUMAN_CONFIRMED_DEVELOPMENT.csv')
     run('research/benchmark/aggregate_llm_results.py','--output-dir',str(output/'llm_analysis'))

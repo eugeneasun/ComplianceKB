@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">From regulatory source to human-reviewed audit proposal</title>
+<desc id="desc">Four stages: official source, author-reviewed regulatory record, retrieved and cited AI proposal, and human verification of applicability, workplace evidence and final judgment.</desc>
+<rect width="1200" height="300" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#414b56"/></marker></defs>
+<g font-family="Arial, Helvetica, sans-serif" fill="#18212b">
+<g id="stage-1"><rect x="16" y="16" width="262" height="190" rx="5" fill="#fff" stroke="#8a939d" stroke-width="1.5"/>
+<text x="34" y="44" font-size="16" fill="#66717d">01</text>
+<text x="34" y="77" font-size="23" font-weight="700">Regulatory source</text>
+<path d="M34 94H260" stroke="#d3d8de"/>
+<text x="34" y="123" font-size="18">Clause + dated excerpt</text>
+<text x="34" y="152" font-size="18">Official source link</text>
+<text x="34" y="181" font-size="18">Stored text fingerprint</text>
+</g>
+<path d="M286 111H308" fill="none" stroke="#414b56" stroke-width="2" marker-end="url(#arrow)"/>
+<g id="stage-2"><rect x="318" y="16" width="262" height="190" rx="5" fill="#fff" stroke="#8a939d" stroke-width="1.5"/>
+<text x="336" y="44" font-size="16" fill="#66717d">02</text>
+<text x="336" y="77" font-size="23" font-weight="700">Reviewed record</text>
+<path d="M336 94H562" stroke="#d3d8de"/>
+<text x="336" y="123" font-size="18">Requirement + scope</text>
+<text x="336" y="152" font-size="18">Trigger + evidence</text>
+<text x="336" y="181" font-size="18">Author-reviewed fields</text>
+</g>
+<path d="M588 111H610" fill="none" stroke="#414b56" stroke-width="2" marker-end="url(#arrow)"/>
+<g id="stage-3"><rect x="620" y="16" width="262" height="190" rx="5" fill="#fff" stroke="#8a939d" stroke-width="1.5"/>
+<text x="638" y="44" font-size="16" fill="#66717d">03</text>
+<text x="638" y="77" font-size="23" font-weight="700">AI audit proposal</text>
+<path d="M638 94H864" stroke="#d3d8de"/>
+<text x="638" y="123" font-size="18">Retrieve record IDs</text>
+<text x="638" y="152" font-size="18">One constrained model call</text>
+<text x="638" y="181" font-size="18">Return labels + citations</text>
+</g>
+<path d="M890 111H912" fill="none" stroke="#414b56" stroke-width="2" marker-end="url(#arrow)"/>
+<g id="stage-4"><rect x="922" y="16" width="262" height="190" rx="5" fill="#fff" stroke="#8a939d" stroke-width="1.5"/>
+<text x="940" y="44" font-size="16" fill="#66717d">04</text>
+<text x="940" y="77" font-size="23" font-weight="700">Human verification</text>
+<path d="M940 94H1166" stroke="#d3d8de"/>
+<text x="940" y="123" font-size="18">Check applicability</text>
+<text x="940" y="152" font-size="18">Inspect workplace evidence</text>
+<text x="940" y="181" font-size="18">Make the final judgment</text>
+</g>
+<rect x="16" y="226" width="1168" height="58" rx="5" fill="#f2f4f6"/>
+<text x="600" y="250" text-anchor="middle" font-size="18" font-weight="700">AI output is a proposal, not proof that a workplace complies.</text>
+<text x="600" y="273" text-anchor="middle" font-size="17" fill="#46525f">Source review happens during curation; site-specific verification remains a human task.</text>
+</g></svg>

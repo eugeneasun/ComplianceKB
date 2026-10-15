@@ -1,0 +1,90 @@
+{
+  "kind": "Traceable walkthrough of an existing synthetic development case; not a new experiment or real facility audit",
+  "release": "v1.2.0",
+  "record": {
+    "id": "OSHA-LOTO-005",
+    "requirement_text": "The employer shall conduct a periodic inspection of the energy control procedure at least annually to ensure that the procedure and the requirements of this standard are being followed.",
+    "is_mandatory": true,
+    "requirement_type": "obligation",
+    "risk_level": "high",
+    "verification_method": "record_review",
+    "audit_evidence_type": "inspection_record",
+    "workflow_trigger": "annual_review",
+    "applicability": {
+      "industries_naics": [
+        31,
+        32
+      ],
+      "business_activities": [
+        "equipment_maintenance"
+      ],
+      "employee_size_band": "any",
+      "jurisdictions": [
+        "federal"
+      ],
+      "industry_scope": "listed_naics_only"
+    },
+    "provenance": {
+      "source_document_id": "CFR-29-1910-147",
+      "source_framework": "OSHA_LOTO",
+      "source_version": "2024-07-01",
+      "source_clause": "§1910.147(c)(6)(i)",
+      "source_text_excerpt": "The employer shall conduct a periodic inspection of the energy control procedure at least annually to ensure that the procedure and the requirements of this standard are being followed.",
+      "source_url": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(6)(i)",
+      "source_retrieved_at": "2026-06-13T00:00:00Z",
+      "source_text_hash": "6beaa0d404d1d95f102d5cbc8fd86cfd8a533da77072d1a0c1fe0b0f6cf93504",
+      "curation_method": "ai_assisted_with_human_review",
+      "curator": "Eugene Sun",
+      "review_date": "2026-09-22"
+    },
+    "verification_status": "implemented_from_human_verification"
+  },
+  "scenario": {
+    "scenario_id": "DEV-006",
+    "scenario_text": "The anniversary of the last review of a machine-specific energy-control procedure is approaching.",
+    "organization_context": "Employees service equipment where unexpected energization or stored energy could cause injury; federal OSHA applies.",
+    "task_types": "workflow_trigger|evidence|citation|decision_and_escalation",
+    "gold_requirement_ids": "OSHA-LOTO-005",
+    "gold_trigger_labels": "annual_review",
+    "gold_evidence_labels": "inspection_record",
+    "gold_citations": "§1910.147(c)(6)(i)",
+    "gold_decision": "answer",
+    "gold_rationale": "The energy-control procedure must be inspected at least annually and the inspection record is the principal evidence.",
+    "scenario_author": "Codex AI draft",
+    "gold_verifier": "Claude (AI-assisted) + Eugene Sun (confirmed)",
+    "source_basis": "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(6)(i)",
+    "split": "development",
+    "generation_method": "AI-drafted; AI-assisted human-confirmed mapping",
+    "leakage_notes": "Human confirmation is recorded, but Claude assisted the review and Codex drafted the scenarios. Use for exploratory development evaluation only; not an independent blinded confirmatory set."
+  },
+  "saved_call_path": "research/benchmark/runs/llm_development_20260927/openai/rkm_agent/DEV-006.json",
+  "saved_call_model": "gpt-5.6-terra",
+  "saved_call_prompt_sha256": "30d2dcb8edb4c829422396c73e46a47868475cfc7806d90c50d400426cf413db",
+  "saved_answer": {
+    "predicted_requirement_ids": [
+      "OSHA-LOTO-005"
+    ],
+    "predicted_trigger_labels": [
+      "annual_review"
+    ],
+    "predicted_evidence_labels": [
+      "inspection_record"
+    ],
+    "predicted_citations": [
+      "§1910.147(c)(6)(i)"
+    ],
+    "predicted_decision": "answer",
+    "rationale": "The approaching anniversary of the last review triggers the annual periodic-inspection requirement for the machine-specific energy-control procedure. The employer must conduct the inspection at least annually to verify that the procedure and the standard's requirements are followed.",
+    "missing_information_or_escalation_reason": ""
+  },
+  "human_review": {
+    "performed_on_actual_workplace": false,
+    "checklist_type": "Illustrative next steps for a human reviewer, not text generated in the saved call",
+    "checklist": [
+      "Confirm that the equipment, task and energy-control procedure fall within the applicable regulatory scope and exceptions.",
+      "Inspect the actual periodic-inspection evidence, its date, coverage and provenance; check the full clause and related requirements.",
+      "Confirm the inspection was actually performed and any deficiencies addressed; a stored source or model answer cannot establish this.",
+      "Record any missing information and make or escalate the site-specific judgment. No workplace verification was performed in this synthetic example."
+    ]
+  }
+}

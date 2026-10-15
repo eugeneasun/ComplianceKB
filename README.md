@@ -1,67 +1,46 @@
 # ComplianceKB
 
-**Source-linked OSHA requirements, operational audit fields, and documented human verification for compliance AI.**
+**Turn a regulatory passage into a traceable audit proposal—with explicit human review.**
 
-ComplianceKB means **Compliance Knowledge Base**. It implements a Regulatory Knowledge Model (RKM) that connects a regulatory requirement—what an employer must do—to its scope, official source, activating event, expected evidence, and human review history.
+ComplianceKB (**Compliance Knowledge Base**) links selected OSHA requirements to their sources, scope, activating events, expected evidence and verification methods. It implements the Regulatory Knowledge Model (RKM) as reusable infrastructure for human-supervised compliance AI.
 
-**Eugene Sun and Dupeng Liu · Research conducted during a TrusOne internship.**
+**[Read the paper](paper/ComplianceKB_Manuscript.pdf)** · **[View the poster](poster/ComplianceKB_ESS_2026.pdf)** · [Browse the dataset](data/releases/v1.2.0/) · [Reproduce results](docs/REPRODUCIBILITY.md) · [Project QR code](sharing/ComplianceKB_QR.png)
 
-**Upcoming presentation:** accepted for poster presentation at **AIAS+ 2026 — Chen Institute Symposium for AI Advancing Science and Society**; preparing to present this work at the symposium. **Publication status:** the revised manuscript is under publication-eligibility review for possible inclusion in the **ACM International Conference Proceedings Series (ICPS)**. Proceedings publication is not yet confirmed. ICPS is a conference-proceedings series, not a journal. [Status and sources](docs/PUBLICATION_STATUS.md).
+**Eugene Sun and Dupeng Liu · Research conducted during a TrusOne internship.** Preparing for the accepted **AIAS+ 2026 / Chen Institute** poster presentation. The revised manuscript is under publication-eligibility review for possible **ACM ICPS proceedings** inclusion; publication is not confirmed. [Status and sources](docs/PUBLICATION_STATUS.md)
 
+## How it works
 
-**[Read the full paper](paper/ComplianceKB_Manuscript.pdf)** · [Poster](poster/ComplianceKB_ESS_2026.pdf) · [Example record](examples/training_record.json) · [Reproduce the results](docs/REPRODUCIBILITY.md) · [Dataset card](docs/DATASET_CARD.md) · [Methods and limits](docs/METHODS.md)
+![Four stages: regulatory source, reviewed record, AI audit proposal, and human verification of applicability and workplace evidence.](docs/figures/how_it_works.png)
 
-## Why this resource
+The source passage provides the regulatory basis; reviewed fields make the interpretation reusable. The implemented agent retrieves records and makes **one constrained model call** to propose IDs, operational labels, citations and a decision. People still verify applicability, workplace evidence and final judgments. [Exact method and formulas](docs/METHODS.md) · [Editable diagram](docs/figures/how_it_works.svg)
 
-The focus is the **combination of a reusable dataset and an inspectable review process**, rather than a claim that OSHA knowledge bases or regulatory AI are new.
+## One concrete example: annual energy-control inspection
 
-- **Four-framework scope:** selected requirements from PSM, HazCom, Recordkeeping, and LOTO; not complete coverage of all four regulations.
-- **From source to proposed check:** each record links a specific regulatory source to applicability descriptions, a workflow trigger, an evidence category, and a verification method.
-- **Visible verification artifacts:** author source review and documented corrections, frozen releases, and an independent second annotator's unadjudicated agreement results.
+**Scenario DEV-006:** “The anniversary of the last review of a machine-specific energy-control procedure is approaching.” This is an existing synthetic development scenario, not a real factory audit.
 
-In our targeted review of the public resources documented in [Related resources and positioning](docs/RELATED_RESOURCES.md), we did not identify a dataset covering selected requirements across these four OSHA frameworks that combines all of those operational fields with documented source review, corrections, and annotation-agreement artifacts. ComplianceKB explores this combination as a reusable knowledge resource for human-supervised compliance AI.
+| Step | What you can inspect |
+|---|---|
+| **1 · Regulatory source** | Stored excerpt from **§1910.147(c)(6)(i)**: “The employer shall conduct a periodic inspection of the energy control procedure at least annually…” [Source link](https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(c)(6)(i)); stored source version: 2024-07-01. |
+| **2 · Reviewed record** | **OSHA-LOTO-005** connects `annual_review` → `inspection_record` → `record_review`, alongside the source and applicability descriptors. |
+| **3 · Actual saved AI output** | GPT-5.6-terra / RKM returned **OSHA-LOTO-005**, `annual_review`, `inspection_record`, the same citation, and decision `answer`. [Inspect the unchanged saved response](research/benchmark/runs/llm_development_20260927/openai/rkm_agent/DEV-006.json). |
+| **4 · Human verification still needed** | Confirm scope and exceptions; inspect authentic inspection evidence and dates; determine what actually happened at the site. **No workplace check or final compliance confirmation was performed in this example.** |
 
-This is a bounded search finding, not a claim to be the first or only such resource. Related OSHA datasets, regulatory knowledge graphs, and enterprise compliance models already exist; individual field types are not claimed as unique. [Inspect the source-review record](research/source_review/) and [paired annotation results](research/annotation/).
+`answer` means the model supplied a response under the benchmark policy; it does **not** mean the facility passed an audit. This case matches its reference labels; the full benchmark includes errors and mixed results. [Full walkthrough, exact JSON and a failure case](docs/WALKTHROUGH.md) · [Machine-readable example](examples/end_to_end_loto.json)
 
-## Start here
+## What is distinctive
 
-1. Open the [training-record example](examples/training_record.json). Follow `provenance.source_url` to inspect the regulatory source.
-2. Compare `requirement_text`, `workflow_trigger`, and `audit_evidence_type`: these connect a source passage to a proposed audit check.
-3. Run the offline checks below. No API key, model download, or paid call is required.
+The focus is the **combination**, not a claim that OSHA datasets or regulatory AI are new:
 
-```bash
-python tools/check_release.py
-python tools/demo.py --query "employee training records"
-python tools/reproduce.py
-```
+- **Selected requirements across four frameworks:** PSM, HazCom, Recordkeeping and LOTO—not exhaustive regulatory coverage.
+- **Operational, source-linked records:** applicability, triggers, evidence and verification methods connect text to proposed checks.
+- **Inspectable human review:** documented corrections, frozen releases, historical source-review fields and independent second-person annotation-agreement analysis.
+- **A testable agent comparison:** saved outputs and scoring code compare excerpt contexts with richer RKM records using the same models and hybrid candidate IDs.
 
-Run these commands from this repository's root with Python 3.12 or later. The offline checks use only the Python standard library. For formal JSON Schema validation, install the optional development dependency in `requirements-dev.txt`.
+Our targeted review did not identify a public dataset for which this entire combination could be confirmed. This is **not** a first/only claim. [Related resources and search limits](docs/RELATED_RESOURCES.md) · [Review/correction artifacts](research/source_review/) · [Annotation results](research/annotation/)
 
-## What this contributes
+## What the experiment shows
 
-- **Knowledge infrastructure:** reviewed, source-linked records make regulatory interpretations inspectable and reusable across queries.
-- **An explicit AI workflow:** retrieval selects records; one constrained model call proposes requirement IDs, operational labels, citations, and an answer / request-for-information / escalation decision.
-- **A representation benchmark:** compare excerpt-only contexts with richer RKM records using the same models and, for hybrid versus RKM, the same candidate IDs.
-- **Separate verification layers:** structural checks, author source review, independent annotation, and output scoring test different claims instead of treating any one score as legal correctness.
-
-The implemented agent is a bounded proposal-generation workflow, not an autonomous compliance auditor or a multi-step action-taking system.
-
-## Dataset versions: do not mix them
-
-| Release | Records | Role |
-|---|---:|---|
-| **v1.2.0** | **108** | Frozen dataset used in the reported benchmark and independent-label analysis |
-| v1.3.0 | 113 | Later coverage-audit additions |
-| v1.4.0 | 131 | Further coverage-audit additions |
-| **v1.5.0** | **133** | Latest included extension; not evaluated by the reported model experiment |
-
-The v1.2.0 corpus covers PSM (55 records), HazCom (16), Recordkeeping (26), and LOTO (11). It contains 103 obligations, 3 prohibitions, and 2 permissions. A later, larger dataset does not retroactively enlarge the paper's experiment.
-
-Read the [release notes](docs/RELEASES.md). Each version includes JSON, CSV, JSON-LD and SQL exports and a file-hash manifest. Source data files retain their original bytes.
-
-## Reported exploratory experiment
-
-**24 AI-assisted, author-confirmed development scenarios × 5 input conditions × 2 models = 240 saved responses.**
+**24 AI-assisted, author-confirmed development scenarios × 5 inputs × 2 models = 240 saved responses.**
 
 | Model | Context | Requirement F1 | Trigger F1 | Evidence F1 | Decision accuracy |
 |---|---|---:|---:|---:|---:|
@@ -70,56 +49,37 @@ Read the [release notes](docs/RELEASES.md). Each version includes JSON, CSV, JSO
 | Claude Sonnet 5 | Hybrid | .745 | .628 | .544 | .958 |
 | Claude Sonnet 5 | RKM | .771 | .858 | .888 | .958 |
 
-RKM improves agreement with reference **trigger and evidence labels** in these paired comparisons. Requirement identification and citation scores do not improve consistently; final decision accuracy is unchanged. This does not establish real-world legal correctness, calibrated safety, or reduced human labor.
+RKM improves **trigger and evidence label recovery** in these paired comparisons. Requirement/citation gains are inconsistent; decision accuracy is unchanged. There is no independent holdout, the scenarios share the label taxonomy, and RKM adds information and context tokens. These scores do not establish legal correctness, calibrated safety or measured labor savings. [All results and saved responses](research/benchmark/runs/) · [Paired results figure](docs/figures/paired_results.svg)
 
-The full five-condition results, saved answers, retrieval rankings, and paired-bootstrap outputs are in [`research/benchmark/runs/`](research/benchmark/runs/). BM25, MiniLM dense retrieval, reciprocal-rank hybrid retrieval, and a separate post-hoc E5 sensitivity analysis are included.
+## Run it without an API key
 
-**Important:** these are development results, not independent holdout findings. Scenarios share the RKM label taxonomy, and RKM includes additional information and context tokens. Candidate parity does not isolate formatting as the cause of gains.
+From the repository root, with Python 3.12 or later:
 
-## Human verification
-
-- All 108 v1.2.0 records received author source review with AI assistance.
-- The 24 development scenarios were author-confirmed; they were not independently authored or independently verified test cases.
-- A second annotator labeled 50 retained IDs from the original 89-record pool. Unadjudicated nominal Cohen's κ: **risk .234; evidence .642; trigger .443**.
-
-These agreement scores expose ambiguity; they are not certificates of expert correctness. Labels were not revised to improve agreement. [Paired labels and results](research/annotation/) and the [frozen English codebook](docs/annotation_codebook.md) are included without reviewers' correspondence or personal review notes.
-
-## Structure
-
-```text
-data/releases/           Frozen datasets and later extensions
-docs/                    Methods, dataset card, release notes and reproducibility
-examples/                One source-linked record
-paper/                   Full submission manuscript PDF
-poster/                  ESS poster PDF
-research/annotation/     Anonymized paired labels and reported agreement
-research/benchmark/      Retrieval, prompt construction, scoring and saved outputs
-tests/                   Selected implementation and integrity checks
-tools/                   Offline demo, integrity checks and reproduction entry point
+```bash
+python tools/demo.py --query "annual energy control inspection"
+python tools/check_release.py
+python tools/reproduce.py
 ```
 
-## Scope and safety
+The demo runs BM25 retrieval and displays stored fields; it does not generate a new AI decision. Reproduction rescores saved answers, rankings and annotations without paid calls or model downloads. [Full setup and optional retrieval/model reruns](docs/REPRODUCIBILITY.md)
 
-The model's record structure can be applied to other regulatory domains in principle; only OSHA examples were evaluated here. Applicability fields are descriptive, not an executable legal rule engine. Excerpt hashes support integrity checks and change detection; they do not prove that a source is authoritative, current, complete, or correctly interpreted. No temporal regulatory graph or temporal-reasoning evaluation is claimed.
+## Find the materials
 
-People must verify site facts, regulatory applicability and exceptions, evidence authenticity, and final compliance judgments. This is a research prototype, not legal advice or a deployed safety-critical decision system.
+| Material | Location |
+|---|---|
+| **Experimental dataset: 108 records** | [`data/releases/v1.2.0/`](data/releases/v1.2.0/) — JSON, CSV, JSON-LD and SQL |
+| **Later extension: 133 records** | [`data/releases/v1.5.0/`](data/releases/v1.5.0/) — not evaluated by the reported 240-call experiment |
+| Agent, retrieval and scoring | [`research/benchmark/`](research/benchmark/) — BM25, MiniLM, hybrid, model runner and post-hoc E5 sensitivity |
+| Source review and independent labels | [`research/source_review/`](research/source_review/) · [`research/annotation/`](research/annotation/) |
+| Full manuscript and ESS poster | [`paper/`](paper/) · [`poster/`](poster/) |
+| Schema, methods and release history | [Dataset card](docs/DATASET_CARD.md) · [Schema](data/SCHEMA.md) · [Methods](docs/METHODS.md) · [Releases](docs/RELEASES.md) |
 
-## Presentation and publication status
+The 108 experimental records received author source review with AI assistance. A second annotator labeled 50 retained IDs from the original 89-record pool; unadjudicated nominal κ was **risk .234, evidence .642, trigger .443**. Agreement measures consistency, not expert correctness. [Codebook](docs/annotation_codebook.md)
 
-Prepared for the Berkeley Engineering Undergraduate Research Poster Session, October 15, 2026, and for the accepted AIAS+ 2026 poster presentation at the Chen Institute Symposium for AI Advancing Science and Society. The revised manuscript is awaiting the publication-eligibility review outcome for possible ACM ICPS proceedings inclusion; this is not an ACM journal acceptance or a confirmed proceedings publication. AIAS+ and the Chen Institute symposium refer to the same event, not two independent speaking engagements. See [publication status and sources](docs/PUBLICATION_STATUS.md).
+## Scope, reuse and sharing
 
-The [full submission manuscript](paper/ComplianceKB_Manuscript.pdf) is shared by the authors for readers who want the complete method and results. It retains its original anonymous submission title page; the project homepage and poster identify the authors. Reviewer correspondence and the response letter are not distributed.
+Only OSHA examples were evaluated. Applicability is descriptive, not an executable legal rule engine; excerpt hashes fingerprint stored text, not legal validity or temporal reasoning. People remain responsible for source-version checks, site facts, exceptions, evidence authenticity and final judgments.
 
-## Licenses and attribution
+**Code: [MIT](LICENSE-CODE.txt). Data/annotations: [CC BY 4.0](LICENSE-DATA.txt).** Poster and third-party assets have separate attribution considerations: [NOTICE](NOTICE.md). [Cite this project](CITATION.cff).
 
-- **Code:** existing [MIT license](LICENSE-CODE.txt), copyright TrusOne, Inc.
-- **Dataset and annotations:** existing [CC BY 4.0 terms](LICENSE-DATA.txt); cite the specific version used. Federal regulatory source text retains its original public-domain status.
-- **Poster and third-party visuals:** see [NOTICE](NOTICE.md). The code/data licenses do not grant rights to Berkeley branding or third-party assets.
-
-See [`CITATION.cff`](CITATION.cff). This attributed research release is shared at the repository owner’s request; it is not a publisher version of record.
-
-## Share this project
-
-Project homepage: **https://github.com/eugeneasun/ComplianceKB**
-
-Share the homepage link or scan the [project QR code](sharing/ComplianceKB_QR.png). The homepage offers the full paper, poster, example record, datasets and offline reproduction instructions. GitHub's **Code → Download ZIP** downloads the repository. **[Releases](https://github.com/eugeneasun/ComplianceKB/releases)** provide packaged snapshots; the main branch contains the latest project introduction and documentation.
+Share **https://github.com/eugeneasun/ComplianceKB** or the [QR code](sharing/ComplianceKB_QR.png). Visitors can read the paper, inspect records and download everything via **Code → Download ZIP** or a [packaged release](https://github.com/eugeneasun/ComplianceKB/releases). Prepared for the Berkeley Engineering undergraduate poster session on October 15, 2026; [AIAS+ / ACM review status](docs/PUBLICATION_STATUS.md).
