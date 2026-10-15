@@ -1,12 +1,27 @@
 # ComplianceKB
 
-**Auditable regulatory knowledge for human-supervised compliance AI.**
+**Source-linked OSHA requirements, operational audit fields, and documented human verification for compliance AI.**
 
 ComplianceKB means **Compliance Knowledge Base**. It implements a Regulatory Knowledge Model (RKM) that connects a regulatory requirement—what an employer must do—to its scope, official source, activating event, expected evidence, and human review history.
 
 **Eugene Sun and Dupeng Liu · Research conducted during a TrusOne internship.**
 
+**Upcoming presentation:** accepted for poster presentation at **AIAS+ 2026 — Chen Institute Symposium for AI Advancing Science and Society**; preparing to present this work at the symposium. **Publication status:** the revised manuscript is under publication-eligibility review for possible inclusion in the **ACM International Conference Proceedings Series (ICPS)**. Proceedings publication is not yet confirmed. ICPS is a conference-proceedings series, not a journal. [Status and sources](docs/PUBLICATION_STATUS.md).
+
+
 **[Read the full paper](paper/ComplianceKB_Manuscript.pdf)** · [Poster](poster/ComplianceKB_ESS_2026.pdf) · [Example record](examples/training_record.json) · [Reproduce the results](docs/REPRODUCIBILITY.md) · [Dataset card](docs/DATASET_CARD.md) · [Methods and limits](docs/METHODS.md)
+
+## Why this resource
+
+The focus is the **combination of a reusable dataset and an inspectable review process**, rather than a claim that OSHA knowledge bases or regulatory AI are new.
+
+- **Four-framework scope:** selected requirements from PSM, HazCom, Recordkeeping, and LOTO; not complete coverage of all four regulations.
+- **From source to proposed check:** each record links a specific regulatory source to applicability descriptions, a workflow trigger, an evidence category, and a verification method.
+- **Visible verification artifacts:** author source review and documented corrections, frozen releases, and an independent second annotator's unadjudicated agreement results.
+
+In our targeted review of the public resources documented in [Related resources and positioning](docs/RELATED_RESOURCES.md), we did not identify a dataset covering selected requirements across these four OSHA frameworks that combines all of those operational fields with documented source review, corrections, and annotation-agreement artifacts. ComplianceKB explores this combination as a reusable knowledge resource for human-supervised compliance AI.
+
+This is a bounded search finding, not a claim to be the first or only such resource. Related OSHA datasets, regulatory knowledge graphs, and enterprise compliance models already exist; individual field types are not claimed as unique. [Inspect the source-review record](research/source_review/) and [paired annotation results](research/annotation/).
 
 ## Start here
 
@@ -91,7 +106,7 @@ People must verify site facts, regulatory applicability and exceptions, evidence
 
 ## Presentation and publication status
 
-Prepared for the Berkeley Engineering Undergraduate Research Poster Session, October 15, 2026. The project has been accepted for poster presentation at AIAS+ 2026; ACM proceedings publication was not confirmed in the supplied project materials. Do not cite this repository as an ACM-published article or imply Berkeley endorsement.
+Prepared for the Berkeley Engineering Undergraduate Research Poster Session, October 15, 2026, and for the accepted AIAS+ 2026 poster presentation at the Chen Institute Symposium for AI Advancing Science and Society. The revised manuscript is awaiting the publication-eligibility review outcome for possible ACM ICPS proceedings inclusion; this is not an ACM journal acceptance or a confirmed proceedings publication. AIAS+ and the Chen Institute symposium refer to the same event, not two independent speaking engagements. See [publication status and sources](docs/PUBLICATION_STATUS.md).
 
 The [full submission manuscript](paper/ComplianceKB_Manuscript.pdf) is shared by the authors for readers who want the complete method and results. It retains its original anonymous submission title page; the project homepage and poster identify the authors. Reviewer correspondence and the response letter are not distributed.
 
@@ -107,4 +122,4 @@ See [`CITATION.cff`](CITATION.cff). This attributed research release is shared a
 
 Project homepage: **https://github.com/eugeneasun/ComplianceKB**
 
-Share the homepage link or scan the [project QR code](sharing/ComplianceKB_QR.png). The homepage offers the full paper, poster, example record, datasets and offline reproduction instructions. GitHub's **Code → Download ZIP** downloads the repository. **Releases** can provide an additional packaged snapshot when one is published; a release tag is not required to read or download these materials.
+Share the homepage link or scan the [project QR code](sharing/ComplianceKB_QR.png). The homepage offers the full paper, poster, example record, datasets and offline reproduction instructions. GitHub's **Code → Download ZIP** downloads the repository. **[Releases](https://github.com/eugeneasun/ComplianceKB/releases)** provide packaged snapshots; the main branch contains the latest project introduction and documentation.
